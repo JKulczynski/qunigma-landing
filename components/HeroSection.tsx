@@ -127,11 +127,14 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
+          <a href="mailto:piotr@qunigma.ai" className="hidden md:inline-flex items-center text-white/80 border border-white/20 px-5 py-2.5 rounded-full text-[14px] font-medium hover:border-white/50 hover:text-white transition-colors duration-200">
+            Kontakt
+          </a>
           <button className="bg-[#6D28D9] text-white px-6 py-2.5 rounded-full text-[14px] font-medium hover:bg-[#5B21B6] transition-colors duration-200">
             Analiza Luk DORA
           </button>
-          
+
           <button className="md:hidden text-white flex items-center justify-center hover:text-purple-400 transition-colors">
              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
           </button>

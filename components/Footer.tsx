@@ -1,6 +1,6 @@
 function LinkedInIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6D28D9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
       <rect width="4" height="12" x="2" y="9"/>
       <circle cx="4" cy="4" r="2"/>
@@ -10,7 +10,7 @@ function LinkedInIcon() {
 
 function XIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6D28D9" strokeWidth="1.8" strokeLinecap="round" aria-hidden="true">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" aria-hidden="true">
       <path d="M4 4 L20 20"/>
       <path d="M20 4 L4 20"/>
     </svg>
@@ -23,7 +23,8 @@ export function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-12 border-b border-white/10 pb-12 mb-8">
 
-          <div className="flex flex-col gap-4">
+          {/* Brand */}
+          <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2 mb-2">
               <svg width="24" height="24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
@@ -40,53 +41,62 @@ export function Footer() {
             <p>Built in EU, for EU.</p>
             <p>DPO: privacy@qunigma.ai</p>
             <p>EU-sovereign infrastructure.</p>
-            <div className="flex items-center gap-3 mt-2">
-              <a href="#" aria-label="Qunigma on LinkedIn" className="hover:opacity-70 transition-opacity">
-                <LinkedInIcon />
-              </a>
-              <a href="#" aria-label="Qunigma on X" className="hover:opacity-70 transition-opacity">
-                <XIcon />
-              </a>
-            </div>
           </div>
 
+          {/* Platforma */}
           <div className="flex flex-col gap-3">
-            <h4 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-4">Platforma</h4>
+            <h4 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">Platforma</h4>
             <a href="#" className="hover:text-white transition-colors">MTTAV Engine</a>
             <a href="#" className="hover:text-white transition-colors">Honeypot LLM</a>
             <a href="#" className="hover:text-white transition-colors">Memory Guard</a>
             <a href="#" className="hover:text-white transition-colors">NHI Security</a>
           </div>
 
+          {/* Rozwiązania */}
           <div className="flex flex-col gap-3">
-            <h4 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-4">Rozwiązania</h4>
+            <h4 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">Rozwiązania</h4>
             <a href="#" className="hover:text-white transition-colors">All Green Fraud</a>
             <a href="#" className="hover:text-white transition-colors">NHI Governance</a>
             <a href="#" className="hover:text-white transition-colors">LLM Defense</a>
             <a href="#" className="hover:text-white transition-colors">Compliance & Risk</a>
           </div>
 
+          {/* Compliance */}
           <div className="flex flex-col gap-3">
-            <h4 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-4">Compliance</h4>
+            <h4 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">Compliance</h4>
             <a href="#" className="hover:text-white transition-colors">DORA 2025</a>
             <a href="#" className="hover:text-white transition-colors">AI Act Annex III</a>
             <a href="#" className="hover:text-white transition-colors">CRA</a>
             <a href="#" className="hover:text-white transition-colors">NIS2</a>
           </div>
 
-          <div className="flex flex-col gap-3">
-            <h4 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-4">Firma</h4>
-            <a href="#" className="hover:text-white transition-colors">piotr@qunigma.ai</a>
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">GDPR</a>
-            <a href="#" className="hover:text-white transition-colors">Imprint</a>
+          {/* Firma + Kontakt */}
+          <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-3">
+              <h4 className="text-white font-semibold text-[13px] tracking-[0.08em]">Kontakt</h4>
+              <a href="mailto:piotr@qunigma.ai" className="hover:text-white transition-colors">piotr@qunigma.ai</a>
+            </div>
+            <div className="flex flex-col gap-3">
+              <h4 className="text-white font-semibold text-[13px] tracking-[0.08em]">Firma</h4>
+              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-white transition-colors">GDPR</a>
+              <a href="#" className="hover:text-white transition-colors">Imprint</a>
+            </div>
           </div>
 
         </div>
 
+        {/* Bottom bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium">
-          <p>© {new Date().getFullYear()} Qunigma.</p>
-          <p>EU-sovereign. No CLOUD Act exposure. DORA-aligned.</p>
+          <p>© {new Date().getFullYear()} Qunigma. EU-sovereign. No CLOUD Act exposure. DORA-aligned.</p>
+          <div className="flex items-center gap-4 text-white/40">
+            <a href="#" aria-label="Qunigma on LinkedIn" className="hover:text-white/80 transition-colors">
+              <LinkedInIcon />
+            </a>
+            <a href="#" aria-label="Qunigma on X" className="hover:text-white/80 transition-colors">
+              <XIcon />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
