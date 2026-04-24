@@ -19,7 +19,7 @@ export function CTASection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
           
           <div className="bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-purple-600 transition-colors duration-200 cursor-pointer flex flex-col h-full group">
-            <h4 className="text-white font-bold mb-3">Download AI Security Readiness Check</h4>
+            <h4 className="text-white font-bold mb-3">Analiza Gotowości AI Security</h4>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">MTTAV Gap Analysis Template — wypełnij i przynieś na jutrzejszy board meeting.</p>
             <div className="mt-auto flex justify-end">
               <Download className="w-5 h-5 text-purple-400 group-hover:translate-y-1 transition-transform" />
@@ -27,7 +27,7 @@ export function CTASection() {
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-purple-600 transition-colors duration-200 cursor-pointer flex flex-col h-full group">
-            <h4 className="text-white font-bold mb-3">Technical Architecture Specs</h4>
+            <h4 className="text-white font-bold mb-3">Specyfikacja Techniczna dla CTO</h4>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">Pełna dokumentacja integracji dla CTO i Chief Architect.</p>
             <div className="mt-auto flex justify-end">
               <Download className="w-5 h-5 text-purple-400 group-hover:translate-y-1 transition-transform" />
@@ -35,8 +35,8 @@ export function CTASection() {
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-purple-600 transition-colors duration-200 cursor-pointer flex flex-col h-full group">
-            <h4 className="text-white font-bold mb-3">DORA & AI Act ROI Matrix</h4>
-            <p className="text-gray-400 text-sm leading-relaxed mb-6">CFO Business Case: TCO vs. ryzyko regulacyjne dla Tier-1.</p>
+            <h4 className="text-white font-bold mb-3">Matryca ROI: DORA & AI Act</h4>
+            <p className="text-gray-400 text-sm leading-relaxed mb-6">Business case dla CFO: TCO vs. ryzyko regulacyjne dla Tier-1.</p>
             <div className="mt-auto flex justify-end">
               <Download className="w-5 h-5 text-purple-400 group-hover:translate-y-1 transition-transform" />
             </div>
