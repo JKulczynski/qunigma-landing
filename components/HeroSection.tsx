@@ -65,7 +65,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative flex flex-col w-full min-h-screen bg-[#000000] overflow-hidden">
+    <section className="relative flex flex-col w-full min-h-[85vh] md:min-h-screen bg-[#000000] overflow-hidden">
       <div className="absolute inset-0 z-0" style={{
         background: 'radial-gradient(ellipse 60% 50% at 50% 40%, rgba(109,40,217,0.12) 0%, transparent 70%)'
       }} />
@@ -170,17 +170,17 @@ export function HeroSection() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col justify-center items-center px-6 pt-[120px] pb-10 w-full max-w-5xl mx-auto text-center flex-grow">
-        
+      <div className="relative z-10 flex flex-col justify-center items-center px-6 pt-[90px] md:pt-[120px] pb-12 md:pb-10 w-full max-w-5xl mx-auto text-center flex-grow">
+
         {/* Pill badge */}
-        <div className="rounded-full bg-white/10 border border-white/20 px-4 py-1.5 mb-8">
+        <div className="rounded-full bg-white/10 border border-white/20 px-4 py-1.5 mb-5 md:mb-8">
           <span className="text-[13px] font-medium tracking-[0.08em]" style={{ color: 'rgba(246,242,234,0.70)' }}>
             EU-NATIVE ACTIVE CYBER DEFENSE
           </span>
         </div>
 
         {/* Headline */}
-        <h1 className="text-[42px] md:text-[72px] font-medium leading-[1.1] mb-6 tracking-tight">
+        <h1 className="text-[38px] md:text-[72px] font-medium leading-[1.1] mb-4 md:mb-6 tracking-tight">
           <span className="block text-[#F6F2EA]">Pasywna detekcja</span>
           <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
             to przeszłość.
@@ -188,12 +188,12 @@ export function HeroSection() {
         </h1>
 
         {/* Subhead */}
-        <p className="text-[18px] max-w-[640px] mx-auto mb-6 leading-relaxed font-normal" style={{ color: 'rgba(246,242,234,0.80)' }}>
+        <p className="text-[16px] md:text-[18px] max-w-[640px] mx-auto mb-4 md:mb-6 leading-relaxed font-normal" style={{ color: 'rgba(246,242,234,0.80)' }}>
           W erze autonomicznych ataków AI potrzebujesz aktywnej neutralizacji w czasie poniżej 2 milisekund. Ochrona banków Tier-1 przed NHI, Memory Poisoning i All Green Fraud.
         </p>
 
         {/* Proof bar */}
-        <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 text-[13px] font-medium tracking-[0.06em] mb-8" style={{ color: 'rgba(246,242,234,0.60)' }}>
+        <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 text-[13px] font-medium tracking-[0.06em] mb-5 md:mb-8" style={{ color: 'rgba(246,242,234,0.60)' }}>
           <span>MTTAV &lt;2ms</span>
           <span className="hidden md:block">|</span>
           <span>DORA / AI Act / NIS2</span>
@@ -202,7 +202,7 @@ export function HeroSection() {
         </div>
 
         {/* MTTAV Live Counter */}
-        <div className="mb-8">
+        <div className="mb-5 md:mb-8">
            <MTTAVCounter className="text-purple-400 text-[14px] font-mono tracking-wider font-semibold opacity-90" />
         </div>
 
