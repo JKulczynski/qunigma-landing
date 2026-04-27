@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 function LinkedInIcon() {
   return (
@@ -27,7 +28,7 @@ export function Footer() {
 
           {/* Brand */}
           <div className="col-span-2 md:col-span-1 flex flex-col gap-3">
-            <div className="flex items-center mb-2">
+            <Link href="/" className="flex items-center mb-2">
               <Image
                 src="/logo.png"
                 alt="Qunigma"
@@ -35,7 +36,7 @@ export function Footer() {
                 height={33}
                 className="object-contain"
               />
-            </div>
+            </Link>
             <p>Built in EU, for EU.</p>
             <p>DPO: privacy@qunigma.ai</p>
             <p>EU-sovereign infrastructure.</p>
@@ -44,28 +45,28 @@ export function Footer() {
           {/* Platforma */}
           <div className="flex flex-col gap-3">
             <h4 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">Platforma</h4>
-            <a href="#" className="hover:text-white transition-colors">MTTAV Engine</a>
-            <a href="#" className="hover:text-white transition-colors">Honeypot LLM</a>
-            <a href="#" className="hover:text-white transition-colors">Memory Guard</a>
-            <a href="#" className="hover:text-white transition-colors">NHI Security</a>
+            <Link href="/platforma#mttav" className="hover:text-white transition-colors">MTTAV Engine</Link>
+            <Link href="/platforma#honeypot" className="hover:text-white transition-colors">Honeypot LLM</Link>
+            <Link href="/platforma#memory" className="hover:text-white transition-colors">Memory Guard</Link>
+            <Link href="/platforma#nhi" className="hover:text-white transition-colors">NHI Security</Link>
           </div>
 
           {/* Rozwiązania */}
           <div className="flex flex-col gap-3">
             <h4 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">Rozwiązania</h4>
-            <a href="#" className="hover:text-white transition-colors">All Green Fraud</a>
-            <a href="#" className="hover:text-white transition-colors">NHI Governance</a>
-            <a href="#" className="hover:text-white transition-colors">LLM Defense</a>
-            <a href="#" className="hover:text-white transition-colors">Compliance & Risk</a>
+            <Link href="/rozwiazania#fraud" className="hover:text-white transition-colors">All Green Fraud</Link>
+            <Link href="/rozwiazania#nhi" className="hover:text-white transition-colors">NHI Governance</Link>
+            <Link href="/rozwiazania#llm" className="hover:text-white transition-colors">LLM Defense</Link>
+            <Link href="/rozwiazania" className="hover:text-white transition-colors">Compliance & Risk</Link>
           </div>
 
           {/* Compliance */}
           <div className="flex flex-col gap-3">
             <h4 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">Compliance</h4>
-            <a href="#" className="hover:text-white transition-colors">DORA 2025</a>
-            <a href="#" className="hover:text-white transition-colors">AI Act Annex III</a>
-            <a href="#" className="hover:text-white transition-colors">CRA</a>
-            <a href="#" className="hover:text-white transition-colors">NIS2</a>
+            <Link href="/compliance#dora" className="hover:text-white transition-colors">DORA 2025</Link>
+            <Link href="/compliance#ai-act" className="hover:text-white transition-colors">AI Act Annex III</Link>
+            <Link href="/compliance#cra" className="hover:text-white transition-colors">CRA</Link>
+            <Link href="/compliance#nis2" className="hover:text-white transition-colors">NIS2</Link>
           </div>
 
           {/* Kontakt */}
@@ -77,9 +78,9 @@ export function Footer() {
           {/* Firma */}
           <div className="flex flex-col gap-3">
             <h4 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">Firma</h4>
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">GDPR</a>
-            <a href="#" className="hover:text-white transition-colors">Imprint</a>
+            <Link href="/firma" className="hover:text-white transition-colors">O nas</Link>
+            <Link href="/wiedza" className="hover:text-white transition-colors">Wiedza</Link>
+            <a href="mailto:privacy@qunigma.ai" className="hover:text-white transition-colors">Privacy Policy</a>
           </div>
 
         </div>
@@ -88,10 +89,10 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium">
           <p>© {new Date().getFullYear()} Qunigma. EU-sovereign. No CLOUD Act exposure. DORA-aligned.</p>
           <div className="flex items-center gap-4 text-[#6D28D9]">
-            <a href="#" aria-label="Qunigma on LinkedIn" className="hover:text-purple-400 transition-colors">
+            <a href="https://www.linkedin.com/company/qunigma" target="_blank" rel="noopener noreferrer" aria-label="Qunigma on LinkedIn" className="hover:text-purple-400 transition-colors">
               <LinkedInIcon />
             </a>
-            <a href="#" aria-label="Qunigma on X" className="hover:text-purple-400 transition-colors">
+            <a href="https://x.com/qunigma" target="_blank" rel="noopener noreferrer" aria-label="Qunigma on X" className="hover:text-purple-400 transition-colors">
               <XIcon />
             </a>
           </div>
