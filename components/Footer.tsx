@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 function LinkedInIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -25,18 +27,14 @@ export function Footer() {
 
           {/* Brand */}
           <div className="col-span-2 md:col-span-1 flex flex-col gap-3">
-            <div className="flex items-center gap-2 mb-2">
-              <svg width="24" height="24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="qGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#FFFFFF" />
-                    <stop offset="100%" stopColor="#A3A3A3" />
-                  </linearGradient>
-                </defs>
-                <circle cx="45" cy="45" r="32" stroke="url(#qGradFooter)" strokeWidth="20" />
-                <polygon points="50,50 95,95 65,95 40,70" fill="#FFFFFF" />
-              </svg>
-              <span className="text-white font-bold text-lg tracking-tighter uppercase leading-none">UNIGMA</span>
+            <div className="flex items-center mb-2">
+              <Image
+                src="/logo.png"
+                alt="Qunigma"
+                width={130}
+                height={33}
+                className="object-contain"
+              />
             </div>
             <p>Built in EU, for EU.</p>
             <p>DPO: privacy@qunigma.ai</p>

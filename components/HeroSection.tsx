@@ -77,7 +77,7 @@ export function HeroSection() {
         <div className="flex items-center gap-[60px]">
           <div className="flex items-center gap-2 cursor-pointer">
             <Image
-              src="/logo.jpeg"
+              src="/logo.png"
               alt="Qunigma"
               width={160}
               height={40}
