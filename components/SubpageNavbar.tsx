@@ -29,39 +29,15 @@ export function SubpageNavbar() {
           </Link>
 
           <div className="hidden md:flex items-center gap-[30px]">
-            <div className="relative group py-4">
-              <Link href={`${prefix}/platforma`} className="flex items-center text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200">
-                {isEn ? 'Platform' : 'Platforma'}
-              </Link>
-              <div className="absolute top-full left-0 mt-0 bg-black/90 backdrop-blur-md border border-white/10 rounded-xl p-4 min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col gap-2">
-                <Link href={`${prefix}/platforma#mttav`} className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">MTTAV Engine</Link>
-                <Link href={`${prefix}/platforma#honeypot`} className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">Honeypot LLM</Link>
-                <Link href={`${prefix}/platforma#memory`} className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">Memory Guard</Link>
-                <Link href={`${prefix}/platforma#nhi`} className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">NHI Security</Link>
-              </div>
-            </div>
-
-            <div className="relative group py-4">
-              <Link href={`${prefix}/rozwiazania`} className="flex items-center text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200">
-                {isEn ? 'Solutions' : 'Rozwiązania'}
-              </Link>
-              <div className="absolute top-full left-0 mt-0 bg-black/90 backdrop-blur-md border border-white/10 rounded-xl p-4 min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col gap-2">
-                <Link href={`${prefix}/rozwiazania#fraud`} className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">{isEn ? 'All Green Fraud' : 'All Green Fraud'}</Link>
-                <Link href={`${prefix}/rozwiazania#nhi`} className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">{isEn ? 'NHI Governance' : 'NHI Governance'}</Link>
-                <Link href={`${prefix}/rozwiazania#llm`} className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">{isEn ? 'LLM Defense' : 'LLM Defense'}</Link>
-              </div>
-            </div>
-
-            <div className="relative group py-4">
-              <Link href={`${prefix}/compliance`} className="flex items-center text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200">Compliance</Link>
-              <div className="absolute top-full left-0 mt-0 bg-black/90 backdrop-blur-md border border-white/10 rounded-xl p-4 min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col gap-2">
-                <Link href={`${prefix}/compliance#dora`} className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">DORA 2025</Link>
-                <Link href={`${prefix}/compliance#ai-act`} className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">AI Act Annex III</Link>
-                <Link href={`${prefix}/compliance#cra`} className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">CRA</Link>
-                <Link href={`${prefix}/compliance#nis2`} className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">NIS2</Link>
-              </div>
-            </div>
-
+            <Link href={`${prefix}/platforma`} className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">
+              {isEn ? 'Platform' : 'Platforma'}
+            </Link>
+            <Link href={`${prefix}/rozwiazania`} className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">
+              {isEn ? 'Solutions' : 'Rozwiązania'}
+            </Link>
+            <Link href={`${prefix}/compliance`} className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">
+              Compliance
+            </Link>
             <Link href={`${prefix}/wiedza`} className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">
               {isEn ? 'Resources' : 'Wiedza'}
             </Link>
@@ -101,31 +77,19 @@ export function SubpageNavbar() {
 
       {/* Mobile Menu Panel */}
       {isMenuOpen && (
-        <div className="md:hidden bg-black border-t border-white/10 px-6 py-8 flex flex-col gap-8 overflow-y-auto max-h-[calc(100vh-80px)]">
-          <div className="flex flex-col gap-1">
-            <span className="text-[11px] text-purple-500 font-bold tracking-[0.12em] uppercase mb-2">{isEn ? 'Platform' : 'Platforma'}</span>
-            {[['MTTAV Engine', `${prefix}/platforma#mttav`], ['Honeypot LLM', `${prefix}/platforma#honeypot`], ['Memory Guard', `${prefix}/platforma#memory`], ['NHI Security', `${prefix}/platforma#nhi`]].map(([label, href]) => (
-              <Link key={label} href={href} onClick={() => setIsMenuOpen(false)} className="text-white/80 text-[17px] font-medium py-2.5 border-b border-white/5 hover:text-purple-400 transition-colors">{label}</Link>
-            ))}
-          </div>
-          <div className="flex flex-col gap-1">
-            <span className="text-[11px] text-purple-500 font-bold tracking-[0.12em] uppercase mb-2">{isEn ? 'Solutions' : 'Rozwiązania'}</span>
-            {[['All Green Fraud', `${prefix}/rozwiazania#fraud`], ['NHI Governance', `${prefix}/rozwiazania#nhi`], ['LLM Defense', `${prefix}/rozwiazania#llm`]].map(([label, href]) => (
-              <Link key={label} href={href} onClick={() => setIsMenuOpen(false)} className="text-white/80 text-[17px] font-medium py-2.5 border-b border-white/5 hover:text-purple-400 transition-colors">{label}</Link>
-            ))}
-          </div>
-          <div className="flex flex-col gap-1">
-            <span className="text-[11px] text-purple-500 font-bold tracking-[0.12em] uppercase mb-2">Compliance</span>
-            {[['DORA 2025', `${prefix}/compliance#dora`], ['AI Act Annex III', `${prefix}/compliance#ai-act`], ['CRA', `${prefix}/compliance#cra`], ['NIS2', `${prefix}/compliance#nis2`]].map(([label, href]) => (
-              <Link key={label} href={href} onClick={() => setIsMenuOpen(false)} className="text-white/80 text-[17px] font-medium py-2.5 border-b border-white/5 hover:text-purple-400 transition-colors">{label}</Link>
-            ))}
-          </div>
-          <div className="flex flex-col gap-1">
-            {[[isEn ? 'Resources' : 'Wiedza', `${prefix}/wiedza`], [isEn ? 'Company' : 'Firma', `${prefix}/firma`]].map(([label, href]) => (
-              <Link key={label} href={href} onClick={() => setIsMenuOpen(false)} className="text-white/80 text-[17px] font-medium py-2.5 border-b border-white/5 hover:text-purple-400 transition-colors">{label}</Link>
-            ))}
-          </div>
-          <div className="flex flex-col gap-3 pt-2">
+        <div className="md:hidden bg-black border-t border-white/10 px-6 py-8 flex flex-col gap-1 overflow-y-auto max-h-[calc(100vh-80px)]">
+          {[
+            [isEn ? 'Platform' : 'Platforma', `${prefix}/platforma`],
+            [isEn ? 'Solutions' : 'Rozwiązania', `${prefix}/rozwiazania`],
+            ['Compliance', `${prefix}/compliance`],
+            [isEn ? 'Resources' : 'Wiedza', `${prefix}/wiedza`],
+            [isEn ? 'Company' : 'Firma', `${prefix}/firma`],
+          ].map(([label, href]) => (
+            <Link key={label} href={href} onClick={() => setIsMenuOpen(false)} className="text-white/80 text-[17px] font-medium py-3 border-b border-white/5 hover:text-purple-400 transition-colors">
+              {label}
+            </Link>
+          ))}
+          <div className="flex flex-col gap-3 pt-6">
             <Link href={langTogglePath} onClick={() => setIsMenuOpen(false)} className="text-center text-white/60 border border-white/10 px-5 py-2.5 rounded-full text-[14px] font-medium hover:text-white transition-colors">
               {isEn ? '🌐 Polski (PL)' : '🌐 English (EN)'}
             </Link>
