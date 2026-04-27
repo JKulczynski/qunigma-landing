@@ -1,6 +1,6 @@
 'use client';
 
-import { ShieldCheck, Cpu, FileCheck } from "lucide-react";
+import { ShieldCheck, Cpu, FileCheck, Network } from "lucide-react";
 
 export function ComplianceSection() {
   return (
@@ -16,7 +16,7 @@ export function ComplianceSection() {
           Jedyna cena bezpieczeństwa — pełna zgodność z najsurowszymi regulacyjnymi standardami prawa świata.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
 
           <div className="bg-white p-10 rounded-xl shadow-md border border-gray-100 flex flex-col hover:border-purple-200 hover:shadow-lg transition-all duration-200">
             <ShieldCheck className="w-10 h-10 text-[#6D28D9] mb-6" strokeWidth={1.5} />
@@ -46,6 +46,14 @@ export function ComplianceSection() {
             <div className="mt-auto">
               <span className="inline-block px-3 py-1 bg-amber-100 text-amber-800 text-[11px] font-bold rounded-md">⚠ DEADLINE: 11.09.2026</span>
             </div>
+          </div>
+
+          <div className="bg-white p-10 rounded-xl shadow-md border border-gray-100 flex flex-col hover:border-purple-200 hover:shadow-lg transition-all duration-200">
+            <Network className="w-10 h-10 text-[#6D28D9] mb-6" strokeWidth={1.5} />
+            <h3 className="text-[22px] font-bold mb-4">NIS2</h3>
+            <p className="text-[16px] text-gray-600 leading-relaxed">
+              Zgodność z dyrektywą o bezpieczeństwie sieci i systemów informacyjnych — suwerenność danych, odporność łańcucha dostaw.
+            </p>
           </div>
 
         </div>

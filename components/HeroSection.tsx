@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import { InfiniteSlider } from './InfiniteSlider';
 import { MTTAVCounter } from './MTTAVCounter';
 import ParticleBackground from './ParticleBackground';
 
@@ -211,35 +210,6 @@ export function HeroSection() {
         <button className="bg-[#F6F2EA] text-[#0A0E1A] px-8 py-3 rounded-full text-[14px] font-medium hover:bg-white transition-all shadow-[0_-1px_20px_rgba(246,242,234,0.2)] pointer-events-auto">
           Analiza Luk DORA
         </button>
-      </div>
-
-      {/* Logo Cloud / Social Proof */}
-      <div className="relative w-full z-30 bg-black/20 backdrop-blur-sm border-t border-white/10 py-8 px-6 md:px-12 mt-auto">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-14">
-          
-          <div className="w-full md:w-auto shrink-0 md:border-r border-white/10 md:pr-14 text-center md:text-left">
-            <p className="text-white/80 font-medium text-[13px] tracking-widest uppercase">
-              Zabezpieczamy infrastrukturę Tier-1
-            </p>
-          </div>
-          
-          <div className="flex-1 w-full overflow-hidden mask-horizontal-fades">
-            <style>{`
-              .mask-horizontal-fades {
-                mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-                -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-              }
-            `}</style>
-            <InfiniteSlider speed={40} className="items-center flex">
-              {['DACH Bank', 'Nordic Tier-1', 'CEE G-SIB', 'ECB Partner', 'DACH Bank', 'Nordic Tier-1'].map((logo, idx) => (
-                <div key={idx} className="text-white/90 font-semibold text-lg whitespace-nowrap transition-opacity duration-300 hover:opacity-100 uppercase tracking-widest px-8">
-                  {logo}
-                </div>
-              ))}
-            </InfiniteSlider>
-          </div>
-
-        </div>
       </div>
 
     </section>
