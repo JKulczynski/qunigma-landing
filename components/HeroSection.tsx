@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { MTTAVCounter } from './MTTAVCounter';
 import ParticleBackground from './ParticleBackground';
 
@@ -81,7 +82,7 @@ export function HeroSection() {
       <nav className={`fixed top-0 inset-x-0 z-50 flex flex-col w-full transition-colors duration-300 ${scrolled || isMenuOpen ? 'bg-black/95 backdrop-blur-md border-b border-white/5' : 'bg-transparent'}`}>
         <div className="flex items-center justify-between px-6 md:px-[60px] lg:px-[120px] py-[20px] w-full">
         <div className="flex items-center gap-[60px]">
-          <div className="flex items-center gap-2 cursor-pointer">
+          <Link href="/" className="flex items-center gap-2">
             <Image
               src="/logo.png"
               alt="Qunigma"
@@ -90,44 +91,45 @@ export function HeroSection() {
               className="object-contain"
               priority
             />
-          </div>
-          
+          </Link>
+
           <div className="hidden md:flex items-center gap-[30px]">
-            
+
             <div className="relative group py-4">
-              <a href="#" className="flex items-center text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200">Platforma</a>
+              <Link href="/platforma" className="flex items-center text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200">Platforma</Link>
               <div className="absolute top-full left-0 mt-0 bg-black/90 backdrop-blur-md border border-white/10 rounded-xl p-4 min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col gap-2">
-                <a href="#" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">MTTAV Engine</a>
-                <a href="#" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">Honeypot LLM</a>
-                <a href="#" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">Memory Guard</a>
-                <a href="#" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">NHI Security</a>
+                <Link href="/platforma#mttav" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">MTTAV Engine</Link>
+                <Link href="/platforma#honeypot" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">Honeypot LLM</Link>
+                <Link href="/platforma#memory" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">Memory Guard</Link>
+                <Link href="/platforma#nhi" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">NHI Security</Link>
               </div>
             </div>
 
             <div className="relative group py-4">
-              <a href="#" className="flex items-center text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200">Rozwiązania</a>
+              <Link href="/rozwiazania" className="flex items-center text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200">Rozwiązania</Link>
               <div className="absolute top-full left-0 mt-0 bg-black/90 backdrop-blur-md border border-white/10 rounded-xl p-4 min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col gap-2">
-                <a href="#" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">All Green Fraud</a>
-                <a href="#" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">NHI Governance</a>
-                <a href="#" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">LLM Defense</a>
+                <Link href="/rozwiazania#fraud" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">All Green Fraud</Link>
+                <Link href="/rozwiazania#nhi" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">NHI Governance</Link>
+                <Link href="/rozwiazania#llm" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">LLM Defense</Link>
               </div>
             </div>
 
             <div className="relative group py-4">
-              <a href="#" className="flex items-center text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200">Compliance</a>
+              <Link href="/compliance" className="flex items-center text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200">Compliance</Link>
               <div className="absolute top-full left-0 mt-0 bg-black/90 backdrop-blur-md border border-white/10 rounded-xl p-4 min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col gap-2">
-                <a href="#" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">DORA</a>
-                <a href="#" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">AI Act Annex III</a>
-                <a href="#" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">Data Sovereignty</a>
+                <Link href="/compliance#dora" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">DORA 2025</Link>
+                <Link href="/compliance#ai-act" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">AI Act Annex III</Link>
+                <Link href="/compliance#cra" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">CRA</Link>
+                <Link href="/compliance#nis2" className="text-white text-[14px] font-medium hover:text-purple-400 py-1 transition-colors">NIS2</Link>
               </div>
             </div>
 
             <div className="flex items-center py-4">
-              <a href="#" className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200">Wiedza</a>
+              <Link href="/wiedza" className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200">Wiedza</Link>
             </div>
 
             <div className="flex items-center py-4">
-              <a href="#" className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200">Firma</a>
+              <Link href="/firma" className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200">Firma</Link>
             </div>
 
           </div>
@@ -165,28 +167,28 @@ export function HeroSection() {
 
             <div className="flex flex-col gap-1">
               <span className="text-[11px] text-purple-500 font-bold tracking-[0.12em] uppercase mb-2">Platforma</span>
-              {['MTTAV Engine', 'Honeypot LLM', 'Memory Guard', 'NHI Security'].map((item) => (
-                <a key={item} href="#" onClick={() => setIsMenuOpen(false)} className="text-white/80 text-[17px] font-medium py-2.5 border-b border-white/5 hover:text-purple-400 transition-colors">{item}</a>
+              {[['MTTAV Engine', '/platforma#mttav'], ['Honeypot LLM', '/platforma#honeypot'], ['Memory Guard', '/platforma#memory'], ['NHI Security', '/platforma#nhi']].map(([label, href]) => (
+                <Link key={label} href={href} onClick={() => setIsMenuOpen(false)} className="text-white/80 text-[17px] font-medium py-2.5 border-b border-white/5 hover:text-purple-400 transition-colors">{label}</Link>
               ))}
             </div>
 
             <div className="flex flex-col gap-1">
               <span className="text-[11px] text-purple-500 font-bold tracking-[0.12em] uppercase mb-2">Rozwiązania</span>
-              {['All Green Fraud', 'NHI Governance', 'LLM Defense'].map((item) => (
-                <a key={item} href="#" onClick={() => setIsMenuOpen(false)} className="text-white/80 text-[17px] font-medium py-2.5 border-b border-white/5 hover:text-purple-400 transition-colors">{item}</a>
+              {[['All Green Fraud', '/rozwiazania#fraud'], ['NHI Governance', '/rozwiazania#nhi'], ['LLM Defense', '/rozwiazania#llm']].map(([label, href]) => (
+                <Link key={label} href={href} onClick={() => setIsMenuOpen(false)} className="text-white/80 text-[17px] font-medium py-2.5 border-b border-white/5 hover:text-purple-400 transition-colors">{label}</Link>
               ))}
             </div>
 
             <div className="flex flex-col gap-1">
               <span className="text-[11px] text-purple-500 font-bold tracking-[0.12em] uppercase mb-2">Compliance</span>
-              {['DORA 2025', 'AI Act Annex III', 'CRA', 'NIS2'].map((item) => (
-                <a key={item} href="#" onClick={() => setIsMenuOpen(false)} className="text-white/80 text-[17px] font-medium py-2.5 border-b border-white/5 hover:text-purple-400 transition-colors">{item}</a>
+              {[['DORA 2025', '/compliance#dora'], ['AI Act Annex III', '/compliance#ai-act'], ['CRA', '/compliance#cra'], ['NIS2', '/compliance#nis2']].map(([label, href]) => (
+                <Link key={label} href={href} onClick={() => setIsMenuOpen(false)} className="text-white/80 text-[17px] font-medium py-2.5 border-b border-white/5 hover:text-purple-400 transition-colors">{label}</Link>
               ))}
             </div>
 
             <div className="flex flex-col gap-1">
-              {['Wiedza', 'Firma'].map((item) => (
-                <a key={item} href="#" onClick={() => setIsMenuOpen(false)} className="text-white/80 text-[17px] font-medium py-2.5 border-b border-white/5 hover:text-purple-400 transition-colors">{item}</a>
+              {[['Wiedza', '/wiedza'], ['Firma', '/firma']].map(([label, href]) => (
+                <Link key={label} href={href} onClick={() => setIsMenuOpen(false)} className="text-white/80 text-[17px] font-medium py-2.5 border-b border-white/5 hover:text-purple-400 transition-colors">{label}</Link>
               ))}
             </div>
 
