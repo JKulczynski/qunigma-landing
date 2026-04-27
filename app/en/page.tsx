@@ -1,6 +1,8 @@
 import { SubpageNavbar } from '@/components/SubpageNavbar';
 import { Footer } from '@/components/Footer';
 import { MTTAVCounter } from '@/components/MTTAVCounter';
+import ParticleBackground from '@/components/ParticleBackground';
+import { StreamingVideo } from '@/components/StreamingVideo';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -16,8 +18,20 @@ export default function EnHomePage() {
 
         {/* Hero */}
         <section className="bg-[#000000] pt-[120px] pb-32 px-6 w-full relative overflow-hidden min-h-[85vh] flex flex-col justify-center">
-          <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 70% 60% at 50% 40%, rgba(109,40,217,0.12) 0%, transparent 70%)' }} />
-          <div className="relative max-w-5xl mx-auto text-center w-full">
+          <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 50% at 50% 40%, rgba(109,40,217,0.12) 0%, transparent 70%)' }} />
+          <ParticleBackground />
+          <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+            <style>{`@keyframes pulseFallback{0%{opacity:.8}100%{opacity:1}}.animate-pulse-fallback{animation:pulseFallback 4s ease-in-out infinite alternate}`}</style>
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(109,40,217,0.15)_0%,#000000_70%)] animate-pulse-fallback" />
+            <div className="absolute inset-x-0 bottom-0 flex flex-col justify-end mix-blend-screen opacity-100">
+              <div className="absolute bottom-0 inset-x-0 h-[300px] z-20 bg-gradient-to-b from-transparent to-[#000000]" />
+              <StreamingVideo
+                src="https://customer-cbeadsgr09pnsezs.cloudflarestream.com/697945ca6b876878dba3b23fbd2f1561/manifest/video.m3u8"
+                fallback="/video_fallback.mp4"
+              />
+            </div>
+          </div>
+          <div className="relative z-10 max-w-5xl mx-auto text-center w-full">
             <div className="rounded-full bg-white/10 border border-white/20 px-4 py-1.5 mb-8 inline-block">
               <span className="text-[13px] font-medium tracking-[0.08em] text-white/70 uppercase">EU-Native Active Cyber Defense</span>
             </div>
