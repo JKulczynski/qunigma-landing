@@ -136,10 +136,10 @@ export function HeroSection() {
         </div>
 
         <div className="flex items-center gap-3">
-          <button className="hidden md:inline-flex items-center gap-1.5 text-white/60 hover:text-white transition-colors duration-200 text-[13px] font-medium">
+          <Link href="/en" className="hidden md:inline-flex items-center gap-1.5 text-white/60 hover:text-white transition-colors duration-200 text-[13px] font-medium">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            PL
-          </button>
+            EN
+          </Link>
           <a href="mailto:piotr@qunigma.ai" className="hidden md:inline-flex items-center text-white/80 border border-white/20 px-5 py-2.5 rounded-full text-[14px] font-medium hover:border-white/50 hover:text-white transition-colors duration-200">
             Kontakt
           </a>
@@ -193,6 +193,9 @@ export function HeroSection() {
             </div>
 
             <div className="flex flex-col gap-3 pt-2">
+              <Link href="/en" onClick={() => setIsMenuOpen(false)} className="text-center text-white/60 border border-white/10 px-5 py-2.5 rounded-full text-[14px] font-medium hover:text-white transition-colors">
+                🌐 English (EN)
+              </Link>
               <a href="mailto:piotr@qunigma.ai" onClick={() => setIsMenuOpen(false)} className="text-center text-white/80 border border-white/20 px-5 py-3 rounded-full text-[15px] font-medium hover:border-white/50 hover:text-white transition-colors">
                 Kontakt
               </a>
