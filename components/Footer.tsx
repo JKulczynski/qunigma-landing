@@ -97,9 +97,9 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium">
           <p>© {new Date().getFullYear()} Qunigma. EU-sovereign. No CLOUD Act exposure. DORA-aligned.</p>
-          <div className="flex items-center gap-4 text-white/20">
-            <span aria-label="LinkedIn — coming soon"><LinkedInIcon /></span>
-            <span aria-label="X — coming soon"><XIcon /></span>
+          <div className="flex items-center gap-4">
+            <span aria-label="LinkedIn — coming soon" className="text-[#6D28D9] opacity-50 cursor-not-allowed"><LinkedInIcon /></span>
+            <span aria-label="X — coming soon" className="text-[#6D28D9] opacity-50 cursor-not-allowed"><XIcon /></span>
           </div>
         </div>
       </div>
