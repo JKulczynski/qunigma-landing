@@ -59,8 +59,8 @@ export function ComplianceSection() {
         </div>
 
         {/* Compliance Table */}
-        <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-          <table className="w-full text-left border-collapse">
+        <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm overflow-x-auto">
+          <table className="w-full min-w-[560px] text-left border-collapse">
             <thead className="bg-gray-50 border-b border-gray-200">
               <tr>
                 <th className="py-4 px-6 font-bold text-gray-900 text-[15px]">Regulacja</th>

@@ -3,7 +3,7 @@ export function ThreatsSection() {
     <section aria-label="Threat vectors section" className="bg-[#F6F2EA] text-gray-900 py-32 px-6 w-full">
       <div className="max-w-7xl mx-auto">
         <h2
-          className="text-[44px] font-bold text-center mb-24 max-w-4xl mx-auto leading-tight tracking-tight"
+          className="text-[28px] md:text-[44px] font-bold text-center mb-16 md:mb-24 max-w-4xl mx-auto leading-tight tracking-tight"
           style={{ backgroundImage: 'linear-gradient(135deg, #111827 0%, #6D28D9 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', color: 'transparent' }}
         >
           Twój system SIEM i obecny audyt są ślepe na nową generację wektorów AI.
