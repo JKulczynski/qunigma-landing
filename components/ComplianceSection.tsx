@@ -59,7 +59,9 @@ export function ComplianceSection() {
         </div>
 
         {/* Compliance Table */}
-        <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm overflow-x-auto">
+        <div className="relative">
+          <div className="md:hidden absolute right-0 top-0 bottom-0 w-14 bg-gradient-to-l from-[#F6F2EA] to-transparent z-10 pointer-events-none rounded-r-2xl" />
+          <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm overflow-x-auto">
           <table className="w-full min-w-[560px] text-left border-collapse">
             <thead className="bg-gray-50 border-b border-gray-200">
               <tr>
@@ -91,6 +93,8 @@ export function ComplianceSection() {
               </tr>
             </tbody>
           </table>
+          </div>
+          <p className="md:hidden text-right text-[11px] text-gray-400 mt-2 pr-1 tracking-wide">przewiń ›</p>
         </div>
 
       </div>
