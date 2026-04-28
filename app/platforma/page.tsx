@@ -151,7 +151,7 @@ export default function PlataformaPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { step: '01', name: 'CAPTURE', desc: 'MTTAV Engine i Honeypot LLM wykrywają anomalie na poziomie pakietu i ruchu AI. Każde odchylenie jest rejestrowane i klasyfikowane w czasie rzeczywistym.' },
+                { step: '01', name: 'CAPTURE', desc: 'MTTAV Engine i Honeypot AI agents wykrywają anomalie na poziomie pakietu i ruchu AI. Każde odchylenie jest rejestrowane i klasyfikowane w czasie rzeczywistym.' },
                 { step: '02', name: 'PUNISH', desc: 'Zidentyfikowany wektor jest automatycznie izolowany. Podejrzane węzły NHI i agenty AI są odcinane od infrastruktury — zanim zdążą wyrządzić szkody.' },
                 { step: '03', name: 'PREVENT', desc: 'Memory Guard i NHI Security uodparniają całą infrastrukturę na dany wektor ataku. Wiedza z incydentu wzmacnia ochronę globalnie.' },
               ].map((item) => (
@@ -161,6 +161,15 @@ export default function PlataformaPage() {
                   <p className="text-white/60 text-[15px] leading-relaxed">{item.desc}</p>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-16 max-w-4xl mx-auto flex flex-col gap-6">
+              <p className="text-white/70 text-[16px] leading-relaxed">
+                Zasilana zaawansowaną detekcją anomalii, nasza platforma identyfikuje nowe, zero-day threats, które tradycyjne narzędzia bezpieczeństwa oparte na sygnaturach pomijają. Podczas gdy konkurenci polegają na rejestrach zagrożeń i konwencjonalnych frameworkach takich jak FS-ISAC Adversarial AI Framework czy FS AI RMF, technologia Qunigma idzie dalej. Wykrywamy wysoce zaawansowane i wcześniej nieznane ataki poprzez rozpoznawanie subtelnych odchyleń behawioralnych — zabezpieczając środowisko przed ukrytymi zagrożeniami bez konieczności wcześniejszej ekspozycji lub danych treningowych.
+              </p>
+              <p className="text-white/70 text-[16px] leading-relaxed">
+                Nasze AI RED Team Engagements są zaprojektowane, by ujawniać krytyczne luki w zabezpieczeniach wykraczające poza standardowe frameworki bezpieczeństwa. Qunigma przeprowadza wysoce spersonalizowane symulacje ataków dostosowane do specyfiki klienta — testując prawdziwe granice Twojej ochrony. W miarę jak eksploatacja agentów AI staje się jednym z najszybciej rosnących wektorów zagrożeń w branży, jesteśmy pionierami w tym obszarze, proaktywnie zabezpieczając zaawansowane luki, które inni pomijają.
+              </p>
             </div>
           </div>
         </section>

@@ -13,8 +13,8 @@ export function ThreatsSection() {
           style={{ backgroundImage: 'linear-gradient(135deg, #111827 0%, #6D28D9 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', color: 'transparent' }}
         >
           {isEn
-            ? 'Your SIEM and current audit are blind to the new generation of AI vectors.'
-            : 'Twój system SIEM i obecny audyt są ślepe na nową generację wektorów AI.'}
+            ? 'Your SIEM and current audit are blind to the new generation of AI attack vectors.'
+            : 'Twój system SIEM i obecny audyt są ślepe na nową generację wektorów ataku AI.'}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12">

@@ -67,6 +67,33 @@ export default function FirmaPage() {
           </div>
         </section>
 
+        {/* Origin Story */}
+        <section className="bg-[#0A0A0A] py-24 px-6 w-full">
+          <div className="max-w-4xl mx-auto">
+            <span className="text-[11px] text-purple-400 font-bold tracking-[0.12em] uppercase mb-4 block">Nasza historia</span>
+            <h2
+              className="text-[28px] md:text-[40px] font-bold leading-tight tracking-tight mb-12 font-[family-name:var(--font-playfair)]"
+              style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
+            >
+              Historia Qunigma nie zaczęła się w sali konferencyjnej.
+            </h2>
+            <div className="flex flex-col gap-6 text-[17px] text-white/70 leading-relaxed">
+              <p>
+                Zaczęła się w 1998 roku w korytarzach technologicznych Waterloo. Nasz zespół założycielski był przy narodzinach BlackBerry (RIM) — obserwując, jak rodzi się prawdziwa innowacja w obszarze end-to-end cybersecurity. Podczas gdy świat widział urządzenie mobilne, nasze kierownictwo było w okopach, walcząc z pierwszą falą zaawansowanych zagrożeń zewnętrznych.
+              </p>
+              <p>
+                Gdy krajobraz się zmieniał, ewoluowaliśmy razem z nim. Kiedy branża przestawiła się na modernizację punktów końcowych i złożone włamania ery IoT, byliśmy na pierwszej linii — reagując, broniąc i ucząc się. Przez ostatnie 20 lat szybko ewoluujące taktyki "Red Teams" to nie tylko coś, co studiowaliśmy — to część naszego DNA.
+              </p>
+              <p>
+                Nie operujemy z pięciogwiazdkowych kurortów i nie znajdziesz nas na prywatnych odrzutowcach. Nasze zasoby nie są wydawane na luksusowe wyjazdy pracownicze — są inwestowane w portfele patentowe i taktyki obronne, które chronią naszych klientów. Wierzymy, że cyberbezpieczeństwo należy do rąk tych, którzy naprawdę spędzili dekady w "okopach."
+              </p>
+              <p>
+                Pomyśl o nas jak o starszym bracie, który zawsze miał twoje plecy w liceum. Gdy chuligani szukali celu, to my staliśmy w luce. Strzegliśmy obwodu przez długi czas — i nie zamierzamy teraz mrugać.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Team */}
         <TeamSection />
 

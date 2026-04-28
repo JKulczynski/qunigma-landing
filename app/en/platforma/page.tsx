@@ -28,7 +28,7 @@ const modules = [
     tag: '02',
     tagline: 'A trap designed specifically for attacking AI.',
     description:
-      'A decoy language model embedded in client infrastructure. Attacking AI agents are automatically directed to the trap, revealing attack methods and delivering threat intelligence.',
+      'A decoy language model embedded in client infrastructure, deceiving AI agents, drawing them into a trap, revealing attack methods and delivering threat intelligence.',
     stats: [
       { value: '100%', label: 'Attacker isolation' },
       { value: 'Zero', label: 'False positives' },
@@ -151,7 +151,7 @@ export default function EnPlatformaPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { step: '01', name: 'CAPTURE', desc: 'MTTAV Engine and Honeypot LLM detect anomalies at packet and AI traffic level. Every deviation is recorded and classified in real time.' },
+                { step: '01', name: 'CAPTURE', desc: 'MTTAV Engine and Honeypot AI agents detect anomalies at packet and AI traffic level. Every deviation is recorded and classified in real time.' },
                 { step: '02', name: 'PUNISH', desc: 'The identified vector is automatically isolated. Suspicious NHI nodes and AI agents are cut off from the infrastructure — before they can cause damage.' },
                 { step: '03', name: 'PREVENT', desc: 'Memory Guard and NHI Security harden the entire infrastructure against that attack vector. Knowledge from the incident strengthens global protection.' },
               ].map((item) => (
@@ -161,6 +161,15 @@ export default function EnPlatformaPage() {
                   <p className="text-white/60 text-[15px] leading-relaxed">{item.desc}</p>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-16 max-w-4xl mx-auto flex flex-col gap-6">
+              <p className="text-white/70 text-[16px] leading-relaxed">
+                Powered by advanced anomaly detection, our platform identifies novel, zero-day threats that traditional, signature-based security tools miss. While competitors rely heavily on established threat registries and conventional frameworks such as the FS-ISAC Adversarial AI Framework or FS AI RMF, Qunigma's technology goes further. We detect highly sophisticated and previously unseen attacks by recognizing subtle behavioral deviations, securing your environment against stealthy threats without requiring prior exposure or training data.
+              </p>
+              <p className="text-white/70 text-[16px] leading-relaxed">
+                Our AI RED Team Engagements are designed to expose critical blind spots that fall outside of standard security frameworks. Qunigma executes highly customized, client-specific attack simulations to test the true limits of your defenses. As the exploitation of AI agents rapidly emerges as one of the fastest-growing threat vectors in the industry, we are proud to be pioneers in this space, proactively securing the advanced vulnerabilities that others overlook.
+              </p>
             </div>
           </div>
         </section>

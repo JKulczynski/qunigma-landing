@@ -31,7 +31,7 @@ export function MTTAVVisual() {
         <div className="absolute top-0 w-6 h-6 bg-[#6D28D9] rounded-full pulse-animation pointer-events-none" />
         <div className="absolute top-0 w-6 h-6 bg-[#6D28D9] rounded-full pulse-animation-delayed pointer-events-none" />
         <div className="w-6 h-6 rounded-full bg-[#6D28D9] shadow-[0_0_20px_rgba(109,40,217,1)] relative z-10" />
-        <span className="text-white font-bold text-xs tracking-widest font-mono mt-1 relative z-20">HONEYPOT LLM</span>
+        <span className="text-white font-bold text-xs tracking-widest font-mono mt-1 relative z-20">HONEYPOT AI AGENTS</span>
       </div>
 
       {/* Dashed line connecting 2 -> 3 */}
