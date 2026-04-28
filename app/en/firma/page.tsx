@@ -67,6 +67,33 @@ export default function EnFirmaPage() {
           </div>
         </section>
 
+        {/* Origin Story */}
+        <section className="bg-[#0A0A0A] py-24 px-6 w-full">
+          <div className="max-w-4xl mx-auto">
+            <span className="text-[11px] text-purple-400 font-bold tracking-[0.12em] uppercase mb-4 block">Our Story</span>
+            <h2
+              className="text-[28px] md:text-[40px] font-bold leading-tight tracking-tight mb-12 font-[family-name:var(--font-playfair)]"
+              style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
+            >
+              Qunigma's story didn't start in a boardroom.
+            </h2>
+            <div className="flex flex-col gap-6 text-[17px] text-white/70 leading-relaxed">
+              <p>
+                It started in 1998 in the tech corridors of Waterloo. Our founding team was there at the dawn of BlackBerry (RIM), witnessing the birth of true end-to-end cybersecurity innovation. While the world saw a handheld device, our leadership was in the trenches, innovating against the first wave of sophisticated external threats.
+              </p>
+              <p>
+                As the landscape shifted, we evolved alongside it. When the industry pivoted toward modernizing endpoints and addressing the complex intrusions of the IoT era, we were on the front lines reacting, defending, and learning. Over the last 20 years, the fast-evolving tactics of "Red Teams" haven't just been something we've studied — they've been embedded into our DNA.
+              </p>
+              <p>
+                We don't operate out of five-star resorts, and you won't find us on executive jets. Our resources aren't spent on lavish employee retreats — they are poured into the patent portfolios and defensive tactics that keep our customers safe. We believe cybersecurity belongs in the hands of those who have actually spent decades in the "trenches."
+              </p>
+              <p>
+                Think of us as the older brother who was always watching your back in high school. When the bullies were out and looking for a target, we were the ones standing in the gap. We've been watching the perimeter for a long time, and we aren't planning on blinking now.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Team */}
         <TeamSection />
 
