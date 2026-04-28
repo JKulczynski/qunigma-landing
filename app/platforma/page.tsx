@@ -4,7 +4,7 @@ import { CTASection } from '@/components/CTASection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Platforma | Qunigma — MTTAV Engine, Honeypot LLM, Memory Guard, NHI Security',
+  title: 'Platforma | Qunigma, MTTAV Engine, Honeypot LLM, Memory Guard, NHI Security',
   description: 'Cztery warstwy aktywnej obrony AI w jednej architekturze. MTTAV Engine wykrywa i neutralizuje zagrożenia w czasie poniżej 2ms.',
 };
 
@@ -13,7 +13,7 @@ const modules = [
     id: 'mttav',
     tag: '01',
     name: 'MTTAV Engine',
-    tagline: 'Mean Time To Active Vectorization — poniżej 2ms.',
+    tagline: 'Mean Time To Active Vectorization, poniżej 2ms.',
     description:
       'Rdzeń platformy. Wykrywa anomalie na poziomie pakietu w czasie rzeczywistym i autonomicznie neutralizuje zagrożenie zanim dotrze do systemu docelowego. Żaden SIEM nie działa w tej skali czasowej.',
     stats: [
@@ -54,7 +54,7 @@ const modules = [
     tag: '04',
     tagline: 'Governance dla 80% ruchu w chmurze korporacyjnej.',
     description:
-      'Automatyczna inwentaryzacja, klasyfikacja i monitoring wszystkich tożsamości maszynowych — API keys, service accounts, tokeny OAuth. Eliminuje niewidoczne wektory ataku zanim zostaną wykorzystane.',
+      'Automatyczna inwentaryzacja, klasyfikacja i monitoring wszystkich tożsamości maszynowych, API keys, service accounts, tokeny OAuth. Eliminuje niewidoczne wektory ataku zanim zostaną wykorzystane.',
     stats: [
       { value: 'Auto', label: 'Inwentaryzacja NHI' },
       { value: '25 min', label: 'Czas eksfiltracji bez ochrony' },
@@ -83,7 +83,7 @@ export default function PlataformaPage() {
               </span>
             </h1>
             <p className="text-[17px] md:text-[19px] text-white/70 max-w-[680px] mx-auto leading-relaxed">
-              MTTAV Engine, Honeypot LLM, Memory Guard i NHI Security działają jako jedna zintegrowana platforma — wymieniając dane wywiadowcze w czasie rzeczywistym.
+              MTTAV Engine, Honeypot LLM, Memory Guard i NHI Security działają jako jedna zintegrowana platforma, wymieniając dane wywiadowcze w czasie rzeczywistym.
             </p>
           </div>
         </section>
@@ -99,7 +99,7 @@ export default function PlataformaPage() {
               >
                 {/* Text */}
                 <div className={i % 2 === 1 ? 'lg:col-start-2' : ''}>
-                  <span className="text-[11px] text-purple-600 font-bold tracking-[0.12em] uppercase mb-4 block">{mod.tag} — {mod.name}</span>
+                  <span className="text-[11px] text-purple-600 font-bold tracking-[0.12em] uppercase mb-4 block">{mod.tag}, {mod.name}</span>
                   <h2
                     className="text-[32px] md:text-[40px] font-bold leading-tight tracking-tight mb-4"
                     style={{ backgroundImage: 'linear-gradient(135deg, #111827 0%, #6D28D9 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
@@ -135,7 +135,7 @@ export default function PlataformaPage() {
           </div>
         </section>
 
-        {/* How it works — CAPTURE / PUNISH / PREVENT */}
+        {/* How it works, CAPTURE / PUNISH / PREVENT */}
         <section className="bg-[#171717] py-24 px-6 w-full">
           <div className="max-w-5xl mx-auto text-center">
             <span className="text-[11px] text-purple-500 font-bold tracking-[0.12em] uppercase mb-4 block">Jak to działa</span>
@@ -146,13 +146,13 @@ export default function PlataformaPage() {
               Od detekcji do neutralizacji w jednym cyklu.
             </h2>
             <p className="text-[17px] text-white/60 max-w-2xl mx-auto mb-20 leading-relaxed">
-              Trzyetapowy cykl obrony działa autonomicznie — bez interwencji człowieka, bez opóźnienia.
+              Trzyetapowy cykl obrony działa autonomicznie, bez interwencji człowieka, bez opóźnienia.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 { step: '01', name: 'CAPTURE', desc: 'MTTAV Engine i Honeypot AI agents wykrywają anomalie na poziomie pakietu i ruchu AI. Każde odchylenie jest rejestrowane i klasyfikowane w czasie rzeczywistym.' },
-                { step: '02', name: 'PUNISH', desc: 'Zidentyfikowany wektor jest automatycznie izolowany. Podejrzane węzły NHI i agenty AI są odcinane od infrastruktury — zanim zdążą wyrządzić szkody.' },
+                { step: '02', name: 'PUNISH', desc: 'Zidentyfikowany wektor jest automatycznie izolowany. Podejrzane węzły NHI i agenty AI są odcinane od infrastruktury, zanim zdążą wyrządzić szkody.' },
                 { step: '03', name: 'PREVENT', desc: 'Memory Guard i NHI Security uodparniają całą infrastrukturę na dany wektor ataku. Wiedza z incydentu wzmacnia ochronę globalnie.' },
               ].map((item) => (
                 <div key={item.step} className="bg-white/5 border border-white/10 rounded-2xl p-8 text-left hover:border-purple-600/50 transition-colors">
@@ -165,10 +165,10 @@ export default function PlataformaPage() {
 
             <div className="mt-16 max-w-4xl mx-auto flex flex-col gap-6">
               <p className="text-white/70 text-[16px] leading-relaxed">
-                Zasilana zaawansowaną detekcją anomalii, nasza platforma identyfikuje nowe, zero-day threats, które tradycyjne narzędzia bezpieczeństwa oparte na sygnaturach pomijają. Podczas gdy konkurenci polegają na rejestrach zagrożeń i konwencjonalnych frameworkach takich jak FS-ISAC Adversarial AI Framework czy FS AI RMF, technologia Qunigma idzie dalej. Wykrywamy wysoce zaawansowane i wcześniej nieznane ataki poprzez rozpoznawanie subtelnych odchyleń behawioralnych — zabezpieczając środowisko przed ukrytymi zagrożeniami bez konieczności wcześniejszej ekspozycji lub danych treningowych.
+                Zasilana zaawansowaną detekcją anomalii, nasza platforma identyfikuje nowe, zero-day threats, które tradycyjne narzędzia bezpieczeństwa oparte na sygnaturach pomijają. Podczas gdy konkurenci polegają na rejestrach zagrożeń i konwencjonalnych frameworkach takich jak FS-ISAC Adversarial AI Framework czy FS AI RMF, technologia Qunigma idzie dalej. Wykrywamy wysoce zaawansowane i wcześniej nieznane ataki poprzez rozpoznawanie subtelnych odchyleń behawioralnych, zabezpieczając środowisko przed ukrytymi zagrożeniami bez konieczności wcześniejszej ekspozycji lub danych treningowych.
               </p>
               <p className="text-white/70 text-[16px] leading-relaxed">
-                Nasze AI RED Team Engagements są zaprojektowane, by ujawniać krytyczne luki w zabezpieczeniach wykraczające poza standardowe frameworki bezpieczeństwa. Qunigma przeprowadza wysoce spersonalizowane symulacje ataków dostosowane do specyfiki klienta — testując prawdziwe granice Twojej ochrony. W miarę jak eksploatacja agentów AI staje się jednym z najszybciej rosnących wektorów zagrożeń w branży, jesteśmy pionierami w tym obszarze, proaktywnie zabezpieczając zaawansowane luki, które inni pomijają.
+                Nasze AI RED Team Engagements są zaprojektowane, by ujawniać krytyczne luki w zabezpieczeniach wykraczające poza standardowe frameworki bezpieczeństwa. Qunigma przeprowadza wysoce spersonalizowane symulacje ataków dostosowane do specyfiki klienta, testując prawdziwe granice Twojej ochrony. W miarę jak eksploatacja agentów AI staje się jednym z najszybciej rosnących wektorów zagrożeń w branży, jesteśmy pionierami w tym obszarze, proaktywnie zabezpieczając zaawansowane luki, które inni pomijają.
               </p>
             </div>
           </div>
@@ -191,7 +191,7 @@ export default function PlataformaPage() {
                 </p>
                 <div className="flex flex-col gap-4">
                   {[
-                    'REST API + Webhook — integracja z dowolnym SIEM',
+                    'REST API + Webhook, integracja z dowolnym SIEM',
                     'On-premise lub EU-sovereign cloud (brak CLOUD Act)',
                     'Pre-built connectors: Splunk, Microsoft Sentinel, IBM QRadar',
                     'DORA Art. 19 reporting packs gotowe od dnia 1',

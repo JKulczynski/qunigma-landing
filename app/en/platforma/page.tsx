@@ -4,7 +4,7 @@ import { CTASection } from '@/components/CTASection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Platform | Qunigma — MTTAV Engine, Honeypot LLM, Memory Guard, NHI Security',
+  title: 'Platform | Qunigma, MTTAV Engine, Honeypot LLM, Memory Guard, NHI Security',
   description: 'Four layers of active AI defense in one architecture. MTTAV Engine detects and neutralizes threats in under 2ms.',
 };
 
@@ -13,7 +13,7 @@ const modules = [
     id: 'mttav',
     tag: '01',
     name: 'MTTAV Engine',
-    tagline: 'Mean Time To Active Vectorization — under 2ms.',
+    tagline: 'Mean Time To Active Vectorization, under 2ms.',
     description:
       'The platform core. Detects anomalies at packet level in real time and autonomously neutralizes threats before they reach the target system. No SIEM operates at this time scale.',
     stats: [
@@ -54,7 +54,7 @@ const modules = [
     tag: '04',
     tagline: 'Governance for 80% of corporate cloud traffic.',
     description:
-      'Automatic inventory, classification and monitoring of all machine identities — API keys, service accounts, OAuth tokens. Eliminates invisible attack vectors before they are exploited.',
+      'Automatic inventory, classification and monitoring of all machine identities, API keys, service accounts, OAuth tokens. Eliminates invisible attack vectors before they are exploited.',
     stats: [
       { value: 'Auto', label: 'NHI inventory' },
       { value: '25 min', label: 'Exfiltration time without protection' },
@@ -83,7 +83,7 @@ export default function EnPlatformaPage() {
               </span>
             </h1>
             <p className="text-[17px] md:text-[19px] text-white/70 max-w-[680px] mx-auto leading-relaxed">
-              MTTAV Engine, Honeypot LLM, Memory Guard and NHI Security operate as one integrated platform — sharing threat intelligence in real time.
+              MTTAV Engine, Honeypot LLM, Memory Guard and NHI Security operate as one integrated platform, sharing threat intelligence in real time.
             </p>
           </div>
         </section>
@@ -99,7 +99,7 @@ export default function EnPlatformaPage() {
               >
                 {/* Text */}
                 <div className={i % 2 === 1 ? 'lg:col-start-2' : ''}>
-                  <span className="text-[11px] text-purple-600 font-bold tracking-[0.12em] uppercase mb-4 block">{mod.tag} — {mod.name}</span>
+                  <span className="text-[11px] text-purple-600 font-bold tracking-[0.12em] uppercase mb-4 block">{mod.tag}, {mod.name}</span>
                   <h2
                     className="text-[32px] md:text-[40px] font-bold leading-tight tracking-tight mb-4"
                     style={{ backgroundImage: 'linear-gradient(135deg, #111827 0%, #6D28D9 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
@@ -146,13 +146,13 @@ export default function EnPlatformaPage() {
               From detection to neutralization in one cycle.
             </h2>
             <p className="text-[17px] text-white/60 max-w-2xl mx-auto mb-20 leading-relaxed">
-              The three-stage defense cycle operates autonomously — no human intervention, no delay.
+              The three-stage defense cycle operates autonomously, no human intervention, no delay.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 { step: '01', name: 'CAPTURE', desc: 'MTTAV Engine and Honeypot AI agents detect anomalies at packet and AI traffic level. Every deviation is recorded and classified in real time.' },
-                { step: '02', name: 'PUNISH', desc: 'The identified vector is automatically isolated. Suspicious NHI nodes and AI agents are cut off from the infrastructure — before they can cause damage.' },
+                { step: '02', name: 'PUNISH', desc: 'The identified vector is automatically isolated. Suspicious NHI nodes and AI agents are cut off from the infrastructure, before they can cause damage.' },
                 { step: '03', name: 'PREVENT', desc: 'Memory Guard and NHI Security harden the entire infrastructure against that attack vector. Knowledge from the incident strengthens global protection.' },
               ].map((item) => (
                 <div key={item.step} className="bg-white/5 border border-white/10 rounded-2xl p-8 text-left hover:border-purple-600/50 transition-colors">
@@ -191,7 +191,7 @@ export default function EnPlatformaPage() {
                 </p>
                 <div className="flex flex-col gap-4">
                   {[
-                    'REST API + Webhook — integration with any SIEM',
+                    'REST API + Webhook, integration with any SIEM',
                     'On-premise or EU-sovereign cloud (no CLOUD Act)',
                     'Pre-built connectors: Splunk, Microsoft Sentinel, IBM QRadar',
                     'DORA Art. 19 reporting packs ready from day 1',

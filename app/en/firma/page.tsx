@@ -4,7 +4,7 @@ import { TeamSection } from '@/components/TeamSection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Company | Qunigma — About Us, Team, Mission',
+  title: 'Company | Qunigma, About Us, Team, Mission',
   description: 'Qunigma is an EU-native active cyber defense platform built by AI and security experts for European Tier-1 banks.',
 };
 
@@ -28,7 +28,7 @@ export default function EnFirmaPage() {
               </span>
             </h1>
             <p className="text-[17px] md:text-[19px] text-white/70 max-w-[680px] mx-auto leading-relaxed">
-              Qunigma was created in response to a new generation of AI-native threats — invisible to traditional SIEM systems and out of reach for existing security solutions.
+              Qunigma was created in response to a new generation of AI-native threats, invisible to traditional SIEM systems and out of reach for existing security solutions.
             </p>
           </div>
         </section>
@@ -45,18 +45,18 @@ export default function EnFirmaPage() {
                 AI-native active defense for European financial infrastructure.
               </h2>
               <p className="text-[17px] text-gray-600 leading-relaxed mb-8">
-                European Tier-1 banks face threats that traditional security systems cannot detect — All Green Fraud, Memory Poisoning and NHI attacks operate below the SIEM visibility threshold, for weeks or months.
+                European Tier-1 banks face threats that traditional security systems cannot detect, All Green Fraud, Memory Poisoning and NHI attacks operate below the SIEM visibility threshold, for weeks or months.
               </p>
               <p className="text-[17px] text-gray-600 leading-relaxed">
-                Qunigma designed the first active defense platform built specifically for these vectors — with EU-sovereign architecture, no CLOUD Act exposure, and readiness for DORA, AI Act, CRA and NIS2 from day one of deployment.
+                Qunigma designed the first active defense platform built specifically for these vectors, with EU-sovereign architecture, no CLOUD Act exposure, and readiness for DORA, AI Act, CRA and NIS2 from day one of deployment.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-5">
               {[
                 { label: 'EU-sovereign', desc: 'Zero CLOUD Act. Not a single byte of data leaves EU jurisdiction.' },
                 { label: 'DORA-aligned', desc: 'Pre-built packs for Art. 8, 19 and 25. Regulatory readiness from day 1.' },
-                { label: 'AI-native', desc: 'Designed specifically for AI threats — not adapted from traditional systems.' },
-                { label: 'Active defense', desc: 'Neutralization in under 2ms. Not just detection — active response.' },
+                { label: 'AI-native', desc: 'Designed specifically for AI threats, not adapted from traditional systems.' },
+                { label: 'Active defense', desc: 'Neutralization in under 2ms. Not just detection, active response.' },
               ].map((item) => (
                 <div key={item.label} className="bg-white rounded-xl border border-gray-200 p-6 hover:border-purple-200 transition-colors">
                   <h4 className="text-[16px] font-bold text-gray-900 mb-2">{item.label}</h4>
@@ -82,10 +82,10 @@ export default function EnFirmaPage() {
                 It started in 1998 in the tech corridors of Waterloo. Our founding team was there at the dawn of BlackBerry (RIM), witnessing the birth of true end-to-end cybersecurity innovation. While the world saw a handheld device, our leadership was in the trenches, innovating against the first wave of sophisticated external threats.
               </p>
               <p>
-                As the landscape shifted, we evolved alongside it. When the industry pivoted toward modernizing endpoints and addressing the complex intrusions of the IoT era, we were on the front lines reacting, defending, and learning. Over the last 20 years, the fast-evolving tactics of "Red Teams" haven't just been something we've studied — they've been embedded into our DNA.
+                As the landscape shifted, we evolved alongside it. When the industry pivoted toward modernizing endpoints and addressing the complex intrusions of the IoT era, we were on the front lines reacting, defending, and learning. Over the last 20 years, the fast-evolving tactics of "Red Teams" haven't just been something we've studied, they've been embedded into our DNA.
               </p>
               <p>
-                We don't operate out of five-star resorts, and you won't find us on executive jets. Our resources aren't spent on lavish employee retreats — they are poured into the patent portfolios and defensive tactics that keep our customers safe. We believe cybersecurity belongs in the hands of those who have actually spent decades in the "trenches."
+                We don't operate out of five-star resorts, and you won't find us on executive jets. Our resources aren't spent on lavish employee retreats, they are poured into the patent portfolios and defensive tactics that keep our customers safe. We believe cybersecurity belongs in the hands of those who have actually spent decades in the "trenches."
               </p>
               <p>
                 Think of us as the older brother who was always watching your back in high school. When the bullies were out and looking for a target, we were the ones standing in the gap. We've been watching the perimeter for a long time, and we aren't planning on blinking now.
@@ -140,7 +140,7 @@ export default function EnFirmaPage() {
               Let&apos;s talk.
             </h2>
             <p className="text-[17px] text-gray-600 mb-10 leading-relaxed">
-              Are you a CISO, CTO or compliance leader at a European financial institution? Get in touch — we will conduct a free DORA gap analysis and show how Qunigma integrates with your infrastructure.
+              Are you a CISO, CTO or compliance leader at a European financial institution? Get in touch, we will conduct a free DORA gap analysis and show how Qunigma integrates with your infrastructure.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a

@@ -4,7 +4,7 @@ import { CTASection } from '@/components/CTASection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Solutions | Qunigma — All Green Fraud, NHI Governance, LLM Defense',
+  title: 'Solutions | Qunigma, All Green Fraud, NHI Governance, LLM Defense',
   description: 'Three AI-native attack vectors. Three solutions built for DORA and AI Act. Active neutralization in under 2ms.',
 };
 
@@ -14,42 +14,42 @@ const solutions = [
     tag: '01',
     name: 'All Green Fraud',
     tagline: 'Your SOC sees green. The attacker sees an open door.',
-    description: 'Malicious code systematically falsifies system logs, compliance reports, and SecOps dashboards. Every sensor shows "All Green" — while the attack has been in progress for weeks or months. Average detection time: 90+ days (OWASP ASI06).',
-    solution: 'MTTAV Engine detects inconsistencies at the bit level — comparing the actual state of infrastructure with what the logs report. Forgery is detected and neutralized before it can influence operational decisions.',
+    description: 'Malicious code systematically falsifies system logs, compliance reports, and SecOps dashboards. Every sensor shows "All Green", while the attack has been in progress for weeks or months. Average detection time: 90+ days (OWASP ASI06).',
+    solution: 'MTTAV Engine detects inconsistencies at the bit level, comparing the actual state of infrastructure with what the logs report. Forgery is detected and neutralized before it can influence operational decisions.',
     stats: [
       { value: '90+ days', label: 'Avg. dwell time without Qunigma' },
       { value: '<2ms', label: 'Neutralization with MTTAV' },
       { value: 'OWASP', label: 'ASI06 coverage' },
     ],
-    regulation: 'DORA Art. 19 — incident reporting',
+    regulation: 'DORA Art. 19, incident reporting',
   },
   {
     id: 'nhi',
     tag: '02',
     name: 'NHI Governance',
     tagline: '80% of cloud traffic is not humans. Do you know where their keys are?',
-    description: 'API keys, service accounts, OAuth tokens — machine identities account for 80% of all corporate cloud traffic (IBM X-Force 2025). One compromised machine identity enables full data exfiltration in just 25 minutes.',
-    solution: 'NHI Security automatically inventories, classifies and monitors every machine identity in client infrastructure. Unauthorized NHI creation, key rotation anomalies and suspicious access patterns are detected immediately — with no delay.',
+    description: 'API keys, service accounts, OAuth tokens, machine identities account for 80% of all corporate cloud traffic (IBM X-Force 2025). One compromised machine identity enables full data exfiltration in just 25 minutes.',
+    solution: 'NHI Security automatically inventories, classifies and monitors every machine identity in client infrastructure. Unauthorized NHI creation, key rotation anomalies and suspicious access patterns are detected immediately, with no delay.',
     stats: [
       { value: '80%', label: 'Corporate traffic is NHI (IBM 2025)' },
       { value: '25 min', label: 'To exfiltration without protection' },
-      { value: 'DORA', label: 'Art. 8 — auto-inventory' },
+      { value: 'DORA', label: 'Art. 8, auto-inventory' },
     ],
-    regulation: 'DORA Art. 8 — ICT asset inventory',
+    regulation: 'DORA Art. 8, ICT asset inventory',
   },
   {
     id: 'llm',
     tag: '03',
     name: 'LLM Defense',
     tagline: 'The attacker does not attack the system. They attack the AI memory that manages it.',
-    description: 'Memory Poisoning is an advanced attack vector targeting the context memory of LLM models. Over weeks, the attacker manipulates historical context — gradually and imperceptibly degrading transaction decisions, risk assessments, and compliance recommendations.',
-    solution: 'Honeypot LLM intercepts and neutralizes attacks before they reach production models. Memory Guard verifies the integrity of every context using SHA-256 at every request level — with overhead under 1ms.',
+    description: 'Memory Poisoning is an advanced attack vector targeting the context memory of LLM models. Over weeks, the attacker manipulates historical context, gradually and imperceptibly degrading transaction decisions, risk assessments, and compliance recommendations.',
+    solution: 'Honeypot LLM intercepts and neutralizes attacks before they reach production models. Memory Guard verifies the integrity of every context using SHA-256 at every request level, with overhead under 1ms.',
     stats: [
       { value: 'SHA-256', label: 'Verification of every context' },
       { value: '<1ms', label: 'Overhead per request' },
-      { value: 'AI Act', label: 'Art. 15 — AI cybersecurity' },
+      { value: 'AI Act', label: 'Art. 15, AI cybersecurity' },
     ],
-    regulation: 'AI Act Annex III Art. 15 — cybersecurity for high-risk AI systems',
+    regulation: 'AI Act Annex III Art. 15, cybersecurity for high-risk AI systems',
   },
 ];
 
@@ -73,7 +73,7 @@ export default function EnRozwiazaniaPage() {
               </span>
             </h1>
             <p className="text-[17px] md:text-[19px] text-white/70 max-w-[680px] mx-auto leading-relaxed">
-              All Green Fraud, NHI Governance and LLM Defense — each solution designed for a specific AI-native attack vector and a specific regulatory article.
+              All Green Fraud, NHI Governance and LLM Defense, each solution designed for a specific AI-native attack vector and a specific regulatory article.
             </p>
           </div>
         </section>
@@ -100,7 +100,7 @@ export default function EnRozwiazaniaPage() {
               {/* Text */}
               <div className={i % 2 === 1 ? 'lg:order-1' : ''}>
                 <span className={`text-[11px] font-bold tracking-[0.12em] uppercase mb-3 block ${i % 2 === 0 ? 'text-purple-600' : 'text-purple-400'}`}>
-                  {sol.tag} — {sol.name}
+                  {sol.tag}, {sol.name}
                 </span>
                 <h2
                   className="text-[28px] md:text-[38px] font-bold leading-tight tracking-tight mb-5"

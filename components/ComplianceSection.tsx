@@ -17,8 +17,8 @@ export function ComplianceSection() {
         </h2>
         <p className="text-[20px] text-gray-600 text-center max-w-3xl mx-auto mb-20 leading-relaxed font-medium">
           {isEn
-            ? 'The only price of security — full compliance with the world\'s most stringent regulatory standards.'
-            : 'Jedyna cena bezpieczeństwa — pełna zgodność z najsurowszymi regulacyjnymi standardami prawa świata.'}
+            ? 'The only price of security, full compliance with the world\'s most stringent regulatory standards.'
+            : 'Jedyna cena bezpieczeństwa, pełna zgodność z najsurowszymi regulacyjnymi standardami prawa świata.'}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
@@ -51,8 +51,8 @@ export function ComplianceSection() {
             <h3 className="text-[22px] font-bold mb-4">{isEn ? 'CRA Requirements' : 'Wymogi CRA'}</h3>
             <p className="text-[16px] text-gray-600 leading-relaxed mb-6">
               {isEn
-                ? 'Cyber Resilience Act certification — 24h incident reporting.'
-                : 'Certyfikacja zgodna z Cyber Resilience Act — 24h raportowanie incydentów.'}
+                ? 'Cyber Resilience Act certification, 24h incident reporting.'
+                : 'Certyfikacja zgodna z Cyber Resilience Act, 24h raportowanie incydentów.'}
             </p>
             <div className="mt-auto">
               <span className="inline-block px-3 py-1 bg-amber-100 text-amber-800 text-[11px] font-bold rounded-md">⚠ DEADLINE: 11.09.2026</span>
@@ -64,8 +64,8 @@ export function ComplianceSection() {
             <h3 className="text-[22px] font-bold mb-4">NIS2</h3>
             <p className="text-[16px] text-gray-600 leading-relaxed">
               {isEn
-                ? 'Compliance with the network and information security directive — data sovereignty, supply chain resilience.'
-                : 'Zgodność z dyrektywą o bezpieczeństwie sieci i systemów informacyjnych — suwerenność danych, odporność łańcucha dostaw.'}
+                ? 'Compliance with the network and information security directive, data sovereignty, supply chain resilience.'
+                : 'Zgodność z dyrektywą o bezpieczeństwie sieci i systemów informacyjnych, suwerenność danych, odporność łańcucha dostaw.'}
             </p>
           </div>
 

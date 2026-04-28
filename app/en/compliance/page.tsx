@@ -4,7 +4,7 @@ import { CTASection } from '@/components/CTASection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Compliance | Qunigma — DORA, AI Act, CRA, NIS2',
+  title: 'Compliance | Qunigma, DORA, AI Act, CRA, NIS2',
   description: 'Full readiness for DORA 2025, AI Act Annex III, CRA and NIS2. Qunigma is designed from the ground up for EU regulatory requirements.',
 };
 
@@ -16,9 +16,9 @@ const regulations = [
     status: 'active' as const,
     statusLabel: 'Active since 17.01.2025',
     penalty: 'Up to 2% of annual turnover',
-    summary: 'DORA requires financial institutions to demonstrate digital operational resilience — including ICT risk management, system testing, and incident reporting within strictly defined time windows.',
+    summary: 'DORA requires financial institutions to demonstrate digital operational resilience, including ICT risk management, system testing, and incident reporting within strictly defined time windows.',
     articles: [
-      { art: 'Art. 8', req: 'ICT and NHI asset inventory', status: '✓ Automatic — NHI Security' },
+      { art: 'Art. 8', req: 'ICT and NHI asset inventory', status: '✓ Automatic, NHI Security' },
       { art: 'Art. 19', req: 'Incident reporting 4h / 24h / 72h', status: '✓ Pre-built reporting packs' },
       { art: 'Art. 25', req: 'Third-party and ICT provider risk', status: '✓ Third-party NHI monitoring' },
       { art: 'Art. 26', req: 'TLPT penetration testing', status: '✓ Honeypot LLM as TLPT-ready' },
@@ -27,7 +27,7 @@ const regulations = [
   {
     id: 'ai-act',
     name: 'AI Act Annex III',
-    fullName: 'EU Artificial Intelligence Act — High-Risk Systems',
+    fullName: 'EU Artificial Intelligence Act, High-Risk Systems',
     status: 'upcoming' as const,
     statusLabel: 'Deadline: 02.08.2026',
     penalty: 'Up to 3% of turnover or €15M',
@@ -46,10 +46,10 @@ const regulations = [
     status: 'upcoming' as const,
     statusLabel: 'Deadline: 11.09.2026',
     penalty: 'Up to €15M or 2.5% of turnover',
-    summary: 'CRA introduces mandatory cybersecurity requirements for products with digital elements — including the obligation to disclose vulnerabilities within 24 hours and ensure security updates throughout the product lifecycle.',
+    summary: 'CRA introduces mandatory cybersecurity requirements for products with digital elements, including the obligation to disclose vulnerabilities within 24 hours and ensure security updates throughout the product lifecycle.',
     articles: [
       { art: 'Art. 14', req: 'Vulnerability disclosure within 24 hours', status: '✓ VDP (Vulnerability Disclosure Program)' },
-      { art: 'Art. 13', req: 'Manufacturer obligations — secure configuration', status: '✓ Secure-by-default architecture' },
+      { art: 'Art. 13', req: 'Manufacturer obligations, secure configuration', status: '✓ Secure-by-default architecture' },
       { art: 'Art. 10', req: 'Essential cybersecurity requirements', status: '✓ MTTAV Engine covers full scope' },
       { art: 'Art. 23', req: 'Reporting actively exploited vulnerabilities', status: '✓ Integrated with ENISA and CERT' },
     ],
@@ -61,11 +61,11 @@ const regulations = [
     status: 'active' as const,
     statusLabel: 'Active since 17.10.2024',
     penalty: 'Up to €10M or 2% of global turnover',
-    summary: 'NIS2 extends the scope of mandatory cybersecurity measures to "important entities" in the financial sector — including supply chain management, network security, and mandatory incident reporting.',
+    summary: 'NIS2 extends the scope of mandatory cybersecurity measures to "important entities" in the financial sector, including supply chain management, network security, and mandatory incident reporting.',
     articles: [
       { art: 'Art. 21', req: 'Network security risk management measures', status: '✓ MTTAV real-time protection' },
       { art: 'Art. 23', req: 'Incident reporting (24h preliminary)', status: '✓ Pre-built NIS2 reporting packs' },
-      { art: 'Art. 21(2)(d)', req: 'Supply chain security', status: '✓ NHI Security — third-party monitoring' },
+      { art: 'Art. 21(2)(d)', req: 'Supply chain security', status: '✓ NHI Security, third-party monitoring' },
       { art: 'Art. 21(2)(j)', req: 'HR security and training', status: '✓ Security awareness module' },
     ],
   },

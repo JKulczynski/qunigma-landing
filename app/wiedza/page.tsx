@@ -3,7 +3,7 @@ import { Footer } from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Wiedza | Qunigma — Analizy, Raporty, Webinaria AI Security',
+  title: 'Wiedza | Qunigma, Analizy, Raporty, Webinaria AI Security',
   description: 'Baza wiedzy o AI-native threats, regulacjach DORA i AI Act oraz architekturze active defense dla liderów bezpieczeństwa w europejskich bankach Tier-1.',
 };
 
@@ -12,14 +12,14 @@ const articles = [
     category: 'Analiza techniczna',
     categoryColor: 'purple',
     title: 'OWASP ASI06: Anatomia ataku All Green Fraud',
-    summary: 'Szczegółowa analiza mechanizmu manipulacji logami systemowymi — od initial access po eksfiltrację. Jak MTTAV Engine wykrywa niespójności na poziomie bitowym.',
+    summary: 'Szczegółowa analiza mechanizmu manipulacji logami systemowymi, od initial access po eksfiltrację. Jak MTTAV Engine wykrywa niespójności na poziomie bitowym.',
     readTime: '12 min',
   },
   {
     category: 'Poradnik regulacyjny',
     categoryColor: 'blue',
     title: 'DORA Art. 19: Przewodnik po raportowaniu incydentów',
-    summary: 'Praktyczny przewodnik po oknach czasowych DORA — 4h, 24h, 72h. Jakie dane są wymagane na każdym etapie i jak automatyzacja eliminuje ryzyko przekroczenia deadline.',
+    summary: 'Praktyczny przewodnik po oknach czasowych DORA, 4h, 24h, 72h. Jakie dane są wymagane na każdym etapie i jak automatyzacja eliminuje ryzyko przekroczenia deadline.',
     readTime: '8 min',
   },
   {
@@ -80,7 +80,7 @@ export default function WiedzaPage() {
               </span>
             </h1>
             <p className="text-[17px] md:text-[19px] text-white/70 max-w-[680px] mx-auto leading-relaxed">
-              Analizy techniczne, raporty regulacyjne i badania AI-native threats — dla CISO, CTO i Compliance Officers europejskich banków Tier-1.
+              Analizy techniczne, raporty regulacyjne i badania AI-native threats, dla CISO, CTO i Compliance Officers europejskich banków Tier-1.
             </p>
           </div>
         </section>

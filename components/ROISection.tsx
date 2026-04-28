@@ -33,8 +33,8 @@ export function ROISection() {
             <span className="text-[72px] font-extrabold leading-none mb-6 text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #6D28D9 0%, #A855F7 100%)' }}>-99.4%</span>
             <p className="text-[17px] text-gray-600 leading-relaxed font-medium">
               {isEn
-                ? 'Reduction in response time — from 241 days to under 2ms. (IBM Cost of a Data Breach 2025)'
-                : 'Redukcja czasu reakcji — z 241 dni do poniżej 2ms. (IBM Cost of a Data Breach 2025)'}
+                ? 'Reduction in response time, from 241 days to under 2ms. (IBM Cost of a Data Breach 2025)'
+                : 'Redukcja czasu reakcji, z 241 dni do poniżej 2ms. (IBM Cost of a Data Breach 2025)'}
             </p>
           </div>
 

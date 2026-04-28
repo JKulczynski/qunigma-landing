@@ -12,8 +12,8 @@ import { StreamingVideo } from '@/components/StreamingVideo';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Qunigma — AI-Native Active Cyber Defense for Tier-1 EU Banks',
-  description: 'The first EU-sovereign active defense platform built specifically for AI-native threats — NHI attacks, Memory Poisoning, and All Green Fraud. MTTAV under 2ms.',
+  title: 'Qunigma, AI-Native Active Cyber Defense for Tier-1 EU Banks',
+  description: 'The first EU-sovereign active defense platform built specifically for AI-native threats, NHI attacks, Memory Poisoning, and All Green Fraud. MTTAV under 2ms.',
 };
 
 export default function EnHomePage() {
@@ -55,7 +55,7 @@ export default function EnHomePage() {
               <span className="hidden md:block">|</span>
               <span>DORA / AI Act / NIS2</span>
               <span className="hidden md:block">|</span>
-              <span>EU-sovereign — no CLOUD Act</span>
+              <span>EU-sovereign, no CLOUD Act</span>
             </div>
             <div className="mb-8">
               <MTTAVCounter className="text-purple-400 text-[14px] font-mono tracking-wider font-semibold opacity-90" />

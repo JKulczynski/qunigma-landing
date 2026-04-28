@@ -8,9 +8,9 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 
 export const metadata: Metadata = {
   title: 'Qunigma | AI-Native Active Defense dla banków Tier-1 UE',
-  description: 'Qunigma neutralizuje ataki NHI, Memory Poisoning i All Green Fraud w czasie poniżej 2ms. DORA, AI Act i NIS2 aligned. EU-sovereign — brak CLOUD Act.',
+  description: 'Qunigma neutralizuje ataki NHI, Memory Poisoning i All Green Fraud w czasie poniżej 2ms. DORA, AI Act i NIS2 aligned. EU-sovereign, brak CLOUD Act.',
   openGraph: {
-    title: 'Qunigma | MTTAV <2ms — Active AI Defense',
+    title: 'Qunigma | MTTAV <2ms, Active AI Defense',
     description: 'Platforma ochrony AI-native dla europejskich banków Tier-1. DORA/AI Act compliant. Zbudowane w UE.',
     type: 'website',
     locale: 'pl_PL',

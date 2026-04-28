@@ -4,7 +4,7 @@ import { CTASection } from '@/components/CTASection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Compliance | Qunigma — DORA, AI Act, CRA, NIS2',
+  title: 'Compliance | Qunigma, DORA, AI Act, CRA, NIS2',
   description: 'Pełna gotowość na DORA 2025, AI Act Annex III, CRA i NIS2. Qunigma jest zaprojektowane od fundamentu pod wymogi regulacyjne EU.',
 };
 
@@ -16,9 +16,9 @@ const regulations = [
     status: 'active' as const,
     statusLabel: 'Obowiązuje od 17.01.2025',
     penalty: 'Do 2% rocznego obrotu',
-    summary: 'DORA wymaga od instytucji finansowych udowodnienia operacyjnej odporności cyfrowej — w tym zarządzania ryzykiem ICT, testowania systemów i raportowania incydentów w ściśle określonych oknach czasowych.',
+    summary: 'DORA wymaga od instytucji finansowych udowodnienia operacyjnej odporności cyfrowej, w tym zarządzania ryzykiem ICT, testowania systemów i raportowania incydentów w ściśle określonych oknach czasowych.',
     articles: [
-      { art: 'Art. 8', req: 'Inwentaryzacja aktywów ICT i NHI', status: '✓ Automatyczna — NHI Security' },
+      { art: 'Art. 8', req: 'Inwentaryzacja aktywów ICT i NHI', status: '✓ Automatyczna, NHI Security' },
       { art: 'Art. 19', req: 'Raportowanie incydentów 4h / 24h / 72h', status: '✓ Pre-built reporting packs' },
       { art: 'Art. 25', req: 'Ryzyko stron trzecich i dostawców ICT', status: '✓ Third-party NHI monitoring' },
       { art: 'Art. 26', req: 'Testy penetracyjne TLPT', status: '✓ Honeypot LLM jako TLPT-ready' },
@@ -27,7 +27,7 @@ const regulations = [
   {
     id: 'ai-act',
     name: 'AI Act Annex III',
-    fullName: 'EU Artificial Intelligence Act — High-Risk Systems',
+    fullName: 'EU Artificial Intelligence Act, High-Risk Systems',
     status: 'upcoming' as const,
     statusLabel: 'Deadline: 02.08.2026',
     penalty: 'Do 3% obrotu lub 15M EUR',
@@ -46,10 +46,10 @@ const regulations = [
     status: 'upcoming' as const,
     statusLabel: 'Deadline: 11.09.2026',
     penalty: 'Do 15M EUR lub 2.5% obrotu',
-    summary: 'CRA wprowadza obowiązkowe wymogi cybersecurity dla produktów z elementami cyfrowymi — w tym obowiązek ujawniania luk w ciągu 24 godzin i zapewnienie aktualizacji bezpieczeństwa przez cały cykl życia produktu.',
+    summary: 'CRA wprowadza obowiązkowe wymogi cybersecurity dla produktów z elementami cyfrowymi, w tym obowiązek ujawniania luk w ciągu 24 godzin i zapewnienie aktualizacji bezpieczeństwa przez cały cykl życia produktu.',
     articles: [
       { art: 'Art. 14', req: 'Ujawnienie luk w ciągu 24 godzin', status: '✓ VDP (Vulnerability Disclosure Program)' },
-      { art: 'Art. 13', req: 'Obowiązki producentów — bezpieczna konfiguracja', status: '✓ Secure-by-default architektura' },
+      { art: 'Art. 13', req: 'Obowiązki producentów, bezpieczna konfiguracja', status: '✓ Secure-by-default architektura' },
       { art: 'Art. 10', req: 'Wymagania zasadnicze cybersecurity', status: '✓ MTTAV Engine covers full scope' },
       { art: 'Art. 23', req: 'Raportowanie aktywnie wykorzystywanych luk', status: '✓ Zintegrowane z ENISA i CERT' },
     ],
@@ -61,11 +61,11 @@ const regulations = [
     status: 'active' as const,
     statusLabel: 'Obowiązuje od 17.10.2024',
     penalty: 'Do 10M EUR lub 2% obrotu globalnego',
-    summary: 'NIS2 rozszerza zakres obowiązkowych środków cybersecurity na "ważne podmioty" w sektorze finansowym — w tym zarządzanie łańcuchem dostaw, bezpieczeństwo sieci i obowiązkowe raportowanie incydentów.',
+    summary: 'NIS2 rozszerza zakres obowiązkowych środków cybersecurity na "ważne podmioty" w sektorze finansowym, w tym zarządzanie łańcuchem dostaw, bezpieczeństwo sieci i obowiązkowe raportowanie incydentów.',
     articles: [
       { art: 'Art. 21', req: 'Środki zarządzania ryzykiem bezpieczeństwa sieci', status: '✓ MTTAV real-time protection' },
       { art: 'Art. 23', req: 'Raportowanie incydentów (24h wstępne)', status: '✓ Pre-built NIS2 reporting packs' },
-      { art: 'Art. 21(2)(d)', req: 'Bezpieczeństwo łańcucha dostaw', status: '✓ NHI Security — third-party monitoring' },
+      { art: 'Art. 21(2)(d)', req: 'Bezpieczeństwo łańcucha dostaw', status: '✓ NHI Security, third-party monitoring' },
       { art: 'Art. 21(2)(j)', req: 'Bezpieczeństwo kadr i szkolenia', status: '✓ Security awareness moduł' },
     ],
   },
@@ -87,7 +87,7 @@ export default function CompliancePage() {
             <h1 className="text-[38px] md:text-[64px] font-medium leading-[1.1] tracking-tight mb-6">
               <span className="block text-[#F6F2EA]">Regulacje się zmieniają.</span>
               <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
-                Twoja odpowiedzialność — nie.
+                Twoja odpowiedzialność, nie.
               </span>
             </h1>
             <p className="text-[17px] md:text-[19px] text-white/70 max-w-[680px] mx-auto leading-relaxed">

@@ -25,7 +25,7 @@ export function ThreatsSection() {
               <h3 className="text-[22px] font-bold text-gray-900 mb-4">All Green Fraud</h3>
               <p className="text-[17px] text-gray-700 leading-relaxed mb-6">
                 {isEn
-                  ? 'Malicious code falsifies system logs, SecOps dashboards show "All Green" status — while capital is leaking. Average detection time: 90+ days (OWASP ASI06).'
+                  ? 'Malicious code falsifies system logs, SecOps dashboards show "All Green" status, while capital is leaking. Average detection time: 90+ days (OWASP ASI06).'
                   : "Złośliwy kod fałszuje logi systemowe, dashboardy SecOps pokazują status 'All Green', podczas gdy kapitał wycieka. Średni czas wykrycia: 90+ dni (OWASP ASI06)."}
               </p>
               <span className="text-[11px] text-purple-600 font-medium tracking-[0.08em] uppercase">RISK ASSESSMENT: CRITICAL →</span>
@@ -38,8 +38,8 @@ export function ThreatsSection() {
               <h3 className="text-[22px] font-bold text-gray-900 mb-4">Memory Poisoning</h3>
               <p className="text-[17px] text-gray-700 leading-relaxed mb-6">
                 {isEn
-                  ? 'Infiltration via LLM memory vector. Attackers manipulate historical context, deliberately degrading transaction decisions — staying under the radar for weeks.'
-                  : 'Infiltracja wektorem pamięci modeli LLM. Atakujący manipulują kontekstem historycznym, celowo degradując decyzje transakcyjne — pozostając pod radarem przez wiele tygodni.'}
+                  ? 'Infiltration via LLM memory vector. Attackers manipulate historical context, deliberately degrading transaction decisions, staying under the radar for weeks.'
+                  : 'Infiltracja wektorem pamięci modeli LLM. Atakujący manipulują kontekstem historycznym, celowo degradując decyzje transakcyjne, pozostając pod radarem przez wiele tygodni.'}
               </p>
               <span className="text-[11px] text-purple-600 font-medium tracking-[0.08em] uppercase">RISK ASSESSMENT: HIGH →</span>
             </div>

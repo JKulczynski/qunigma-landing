@@ -4,7 +4,7 @@ import { TeamSection } from '@/components/TeamSection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Firma | Qunigma — O nas, Zespół, Misja',
+  title: 'Firma | Qunigma, O nas, Zespół, Misja',
   description: 'Qunigma to EU-native platforma active cyber defense zbudowana przez ekspertów AI i bezpieczeństwa dla europejskich banków Tier-1.',
 };
 
@@ -28,7 +28,7 @@ export default function FirmaPage() {
               </span>
             </h1>
             <p className="text-[17px] md:text-[19px] text-white/70 max-w-[680px] mx-auto leading-relaxed">
-              Qunigma powstała jako odpowiedź na nową generację zagrożeń AI-native — niewidocznych dla tradycyjnych systemów SIEM i niedostępnych dla istniejących rozwiązań security.
+              Qunigma powstała jako odpowiedź na nową generację zagrożeń AI-native, niewidocznych dla tradycyjnych systemów SIEM i niedostępnych dla istniejących rozwiązań security.
             </p>
           </div>
         </section>
@@ -45,18 +45,18 @@ export default function FirmaPage() {
                 Aktywna obrona AI-native dla europejskiej infrastruktury finansowej.
               </h2>
               <p className="text-[17px] text-gray-600 leading-relaxed mb-8">
-                Europejskie banki Tier-1 stają przed zagrożeniami, które tradycyjne systemy bezpieczeństwa nie są w stanie wykryć — All Green Fraud, Memory Poisoning i ataki NHI działają poniżej progu widzialności SIEM, przez tygodnie lub miesiące.
+                Europejskie banki Tier-1 stają przed zagrożeniami, które tradycyjne systemy bezpieczeństwa nie są w stanie wykryć, All Green Fraud, Memory Poisoning i ataki NHI działają poniżej progu widzialności SIEM, przez tygodnie lub miesiące.
               </p>
               <p className="text-[17px] text-gray-600 leading-relaxed">
-                Qunigma zaprojektowało pierwszą platformę active defense zbudowaną specjalnie pod te wektory — z architekturą EU-sovereign, bez CLOUD Act exposure i gotowością na DORA, AI Act, CRA i NIS2 od dnia wdrożenia.
+                Qunigma zaprojektowało pierwszą platformę active defense zbudowaną specjalnie pod te wektory, z architekturą EU-sovereign, bez CLOUD Act exposure i gotowością na DORA, AI Act, CRA i NIS2 od dnia wdrożenia.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-5">
               {[
                 { label: 'EU-sovereign', desc: 'Zero CLOUD Act. Żaden bajt danych nie opuszcza jurysdykcji UE.' },
                 { label: 'DORA-aligned', desc: 'Pre-built packs dla Art. 8, 19 i 25. Gotowość regulacyjna od dnia 1.' },
-                { label: 'AI-native', desc: 'Zaprojektowane specjalnie dla zagrożeń AI — nie adaptowane z tradycyjnych systemów.' },
-                { label: 'Active defense', desc: 'Neutralizacja w czasie poniżej 2ms. Nie tylko detekcja — aktywna odpowiedź.' },
+                { label: 'AI-native', desc: 'Zaprojektowane specjalnie dla zagrożeń AI, nie adaptowane z tradycyjnych systemów.' },
+                { label: 'Active defense', desc: 'Neutralizacja w czasie poniżej 2ms. Nie tylko detekcja, aktywna odpowiedź.' },
               ].map((item) => (
                 <div key={item.label} className="bg-white rounded-xl border border-gray-200 p-6 hover:border-purple-200 transition-colors">
                   <h4 className="text-[16px] font-bold text-gray-900 mb-2">{item.label}</h4>
@@ -79,16 +79,16 @@ export default function FirmaPage() {
             </h2>
             <div className="flex flex-col gap-6 text-[17px] text-white/70 leading-relaxed">
               <p>
-                Zaczęła się w 1998 roku w korytarzach technologicznych Waterloo. Nasz zespół założycielski był przy narodzinach BlackBerry (RIM) — obserwując, jak rodzi się prawdziwa innowacja w obszarze end-to-end cybersecurity. Podczas gdy świat widział urządzenie mobilne, nasze kierownictwo było w okopach, walcząc z pierwszą falą zaawansowanych zagrożeń zewnętrznych.
+                Zaczęła się w 1998 roku w korytarzach technologicznych Waterloo. Nasz zespół założycielski był przy narodzinach BlackBerry (RIM), obserwując, jak rodzi się prawdziwa innowacja w obszarze end-to-end cybersecurity. Podczas gdy świat widział urządzenie mobilne, nasze kierownictwo było w okopach, walcząc z pierwszą falą zaawansowanych zagrożeń zewnętrznych.
               </p>
               <p>
-                Gdy krajobraz się zmieniał, ewoluowaliśmy razem z nim. Kiedy branża przestawiła się na modernizację punktów końcowych i złożone włamania ery IoT, byliśmy na pierwszej linii — reagując, broniąc i ucząc się. Przez ostatnie 20 lat szybko ewoluujące taktyki "Red Teams" to nie tylko coś, co studiowaliśmy — to część naszego DNA.
+                Gdy krajobraz się zmieniał, ewoluowaliśmy razem z nim. Kiedy branża przestawiła się na modernizację punktów końcowych i złożone włamania ery IoT, byliśmy na pierwszej linii, reagując, broniąc i ucząc się. Przez ostatnie 20 lat szybko ewoluujące taktyki "Red Teams" to nie tylko coś, co studiowaliśmy, to część naszego DNA.
               </p>
               <p>
-                Nie operujemy z pięciogwiazdkowych kurortów i nie znajdziesz nas na prywatnych odrzutowcach. Nasze zasoby nie są wydawane na luksusowe wyjazdy pracownicze — są inwestowane w portfele patentowe i taktyki obronne, które chronią naszych klientów. Wierzymy, że cyberbezpieczeństwo należy do rąk tych, którzy naprawdę spędzili dekady w "okopach."
+                Nie operujemy z pięciogwiazdkowych kurortów i nie znajdziesz nas na prywatnych odrzutowcach. Nasze zasoby nie są wydawane na luksusowe wyjazdy pracownicze, są inwestowane w portfele patentowe i taktyki obronne, które chronią naszych klientów. Wierzymy, że cyberbezpieczeństwo należy do rąk tych, którzy naprawdę spędzili dekady w "okopach."
               </p>
               <p>
-                Pomyśl o nas jak o starszym bracie, który zawsze miał twoje plecy w liceum. Gdy chuligani szukali celu, to my staliśmy w luce. Strzegliśmy obwodu przez długi czas — i nie zamierzamy teraz mrugać.
+                Pomyśl o nas jak o starszym bracie, który zawsze miał twoje plecy w liceum. Gdy chuligani szukali celu, to my staliśmy w luce. Strzegliśmy obwodu przez długi czas, i nie zamierzamy teraz mrugać.
               </p>
             </div>
           </div>
@@ -140,7 +140,7 @@ export default function FirmaPage() {
               Porozmawiajmy.
             </h2>
             <p className="text-[17px] text-gray-600 mb-10 leading-relaxed">
-              Jesteś CISO, CTO lub liderem compliance w europejskiej instytucji finansowej? Skontaktuj się — przeprowadzimy bezpłatną analizę luk DORA i pokażemy jak Qunigma integruje się z Twoją infrastrukturą.
+              Jesteś CISO, CTO lub liderem compliance w europejskiej instytucji finansowej? Skontaktuj się, przeprowadzimy bezpłatną analizę luk DORA i pokażemy jak Qunigma integruje się z Twoją infrastrukturą.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a

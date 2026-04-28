@@ -29,8 +29,8 @@ export function CTASection() {
             </h4>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               {isEn
-                ? 'MTTAV Gap Analysis Template — complete and bring to tomorrow\'s board meeting.'
-                : 'MTTAV Gap Analysis Template — wypełnij i przynieś na jutrzejszy board meeting.'}
+                ? 'MTTAV Gap Analysis Template, complete and bring to tomorrow\'s board meeting.'
+                : 'MTTAV Gap Analysis Template, wypełnij i przynieś na jutrzejszy board meeting.'}
             </p>
             <div className="mt-auto flex justify-end">
               <Download className="w-5 h-5 text-purple-400 group-hover:translate-y-1 transition-transform" />

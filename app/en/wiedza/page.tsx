@@ -3,7 +3,7 @@ import { Footer } from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Resources | Qunigma — AI Security Analyses, Reports, Webinars',
+  title: 'Resources | Qunigma, AI Security Analyses, Reports, Webinars',
   description: 'Knowledge base on AI-native threats, DORA and AI Act regulations, and active defense architecture for security leaders at Tier-1 EU banks.',
 };
 
@@ -12,14 +12,14 @@ const articles = [
     category: 'Technical analysis',
     categoryColor: 'purple',
     title: 'OWASP ASI06: Anatomy of an All Green Fraud Attack',
-    summary: 'Detailed analysis of the system log manipulation mechanism — from initial access to exfiltration. How MTTAV Engine detects inconsistencies at the bit level.',
+    summary: 'Detailed analysis of the system log manipulation mechanism, from initial access to exfiltration. How MTTAV Engine detects inconsistencies at the bit level.',
     readTime: '12 min',
   },
   {
     category: 'Regulatory guide',
     categoryColor: 'blue',
     title: 'DORA Art. 19: Incident Reporting Guide',
-    summary: 'Practical guide to DORA time windows — 4h, 24h, 72h. What data is required at each stage and how automation eliminates the risk of missing deadlines.',
+    summary: 'Practical guide to DORA time windows, 4h, 24h, 72h. What data is required at each stage and how automation eliminates the risk of missing deadlines.',
     readTime: '8 min',
   },
   {
@@ -80,7 +80,7 @@ export default function EnWiedzaPage() {
               </span>
             </h1>
             <p className="text-[17px] md:text-[19px] text-white/70 max-w-[680px] mx-auto leading-relaxed">
-              Technical analyses, regulatory reports, and AI-native threat research — for CISOs, CTOs and Compliance Officers at Tier-1 EU banks.
+              Technical analyses, regulatory reports, and AI-native threat research, for CISOs, CTOs and Compliance Officers at Tier-1 EU banks.
             </p>
           </div>
         </section>

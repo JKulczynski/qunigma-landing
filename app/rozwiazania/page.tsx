@@ -4,7 +4,7 @@ import { CTASection } from '@/components/CTASection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Rozwiązania | Qunigma — All Green Fraud, NHI Governance, LLM Defense',
+  title: 'Rozwiązania | Qunigma, All Green Fraud, NHI Governance, LLM Defense',
   description: 'Trzy wektory AI-native attacks. Trzy rozwiązania zbudowane pod DORA i AI Act. Aktywna neutralizacja w czasie poniżej 2ms.',
 };
 
@@ -14,42 +14,42 @@ const solutions = [
     tag: '01',
     name: 'All Green Fraud',
     tagline: 'Twój SOC widzi zieleń. Atakujący widzi otwarte drzwi.',
-    description: 'Złośliwy kod systematycznie fałszuje logi systemowe, reporty compliance i dashboardy SecOps. Każdy sensor pokazuje "All Green" — podczas gdy atak jest w toku od tygodni lub miesięcy. Średni czas wykrycia: 90+ dni (OWASP ASI06).',
-    solution: 'MTTAV Engine wykrywa niespójności na poziomie bitowym — porównując stan rzeczywisty infrastruktury z tym, co raportują logi. Fałszerstwo jest wykrywane i neutralizowane zanim zdąży wpłynąć na decyzje operacyjne.',
+    description: 'Złośliwy kod systematycznie fałszuje logi systemowe, reporty compliance i dashboardy SecOps. Każdy sensor pokazuje "All Green", podczas gdy atak jest w toku od tygodni lub miesięcy. Średni czas wykrycia: 90+ dni (OWASP ASI06).',
+    solution: 'MTTAV Engine wykrywa niespójności na poziomie bitowym, porównując stan rzeczywisty infrastruktury z tym, co raportują logi. Fałszerstwo jest wykrywane i neutralizowane zanim zdąży wpłynąć na decyzje operacyjne.',
     stats: [
       { value: '90+ dni', label: 'Średni czas wykrycia bez Qunigma' },
       { value: '<2ms', label: 'Czas neutralizacji z MTTAV' },
       { value: 'OWASP', label: 'ASI06 coverage' },
     ],
-    regulation: 'DORA Art. 19 — raportowanie incydentów',
+    regulation: 'DORA Art. 19, raportowanie incydentów',
   },
   {
     id: 'nhi',
     tag: '02',
     name: 'NHI Governance',
     tagline: '80% ruchu w chmurze to nie ludzie. Czy wiesz gdzie są ich klucze?',
-    description: 'API keys, service accounts, tokeny OAuth — tożsamości maszynowe stanowią 80% całego ruchu w chmurze korporacyjnej (IBM X-Force 2025). Jedna przejęta tożsamość maszynowa umożliwia pełną eksfiltrację danych w zaledwie 25 minut.',
-    solution: 'NHI Security automatycznie inwentaryzuje, klasyfikuje i monitoruje każdą tożsamość maszynową w infrastrukturze klienta. Nieautoryzowane tworzenie NHI, anomalie rotacji kluczy i podejrzane wzorce dostępu są wykrywane natychmiast — bez opóźnienia.',
+    description: 'API keys, service accounts, tokeny OAuth, tożsamości maszynowe stanowią 80% całego ruchu w chmurze korporacyjnej (IBM X-Force 2025). Jedna przejęta tożsamość maszynowa umożliwia pełną eksfiltrację danych w zaledwie 25 minut.',
+    solution: 'NHI Security automatycznie inwentaryzuje, klasyfikuje i monitoruje każdą tożsamość maszynową w infrastrukturze klienta. Nieautoryzowane tworzenie NHI, anomalie rotacji kluczy i podejrzane wzorce dostępu są wykrywane natychmiast, bez opóźnienia.',
     stats: [
       { value: '80%', label: 'Ruchu korporacyjnego to NHI (IBM 2025)' },
       { value: '25 min', label: 'Do eksfiltracji bez ochrony' },
-      { value: 'DORA', label: 'Art. 8 — auto-inwentaryzacja' },
+      { value: 'DORA', label: 'Art. 8, auto-inwentaryzacja' },
     ],
-    regulation: 'DORA Art. 8 — inwentaryzacja aktywów ICT',
+    regulation: 'DORA Art. 8, inwentaryzacja aktywów ICT',
   },
   {
     id: 'llm',
     tag: '03',
     name: 'LLM Defense',
     tagline: 'Atakujący nie atakuje systemu. Atakuje pamięć AI, która nim zarządza.',
-    description: 'Memory Poisoning to zaawansowany wektor ataku celujący w pamięć kontekstową modeli LLM. Przez tygodnie atakujący manipuluje kontekstem historycznym — stopniowo i niezauważalnie degradując decyzje transakcyjne, oceny ryzyka i rekomendacje compliance.',
-    solution: 'Honeypot LLM przechwytuje i neutralizuje ataki przed dotarciem do produkcyjnych modeli. Memory Guard weryfikuje integralność każdego kontekstu za pomocą SHA-256 na poziomie każdego requestu — z overheadem poniżej 1ms.',
+    description: 'Memory Poisoning to zaawansowany wektor ataku celujący w pamięć kontekstową modeli LLM. Przez tygodnie atakujący manipuluje kontekstem historycznym, stopniowo i niezauważalnie degradując decyzje transakcyjne, oceny ryzyka i rekomendacje compliance.',
+    solution: 'Honeypot LLM przechwytuje i neutralizuje ataki przed dotarciem do produkcyjnych modeli. Memory Guard weryfikuje integralność każdego kontekstu za pomocą SHA-256 na poziomie każdego requestu, z overheadem poniżej 1ms.',
     stats: [
       { value: 'SHA-256', label: 'Weryfikacja każdego kontekstu' },
       { value: '<1ms', label: 'Overhead na request' },
-      { value: 'AI Act', label: 'Art. 15 — cybersecurity AI' },
+      { value: 'AI Act', label: 'Art. 15, cybersecurity AI' },
     ],
-    regulation: 'AI Act Annex III Art. 15 — cybersecurity systemów AI high-risk',
+    regulation: 'AI Act Annex III Art. 15, cybersecurity systemów AI high-risk',
   },
 ];
 
@@ -73,7 +73,7 @@ export default function RozwiazaniaPage() {
               </span>
             </h1>
             <p className="text-[17px] md:text-[19px] text-white/70 max-w-[680px] mx-auto leading-relaxed">
-              All Green Fraud, NHI Governance i LLM Defense — każde rozwiązanie zaprojektowane pod konkretny wektor AI-native attack i konkretny artykuł regulacyjny.
+              All Green Fraud, NHI Governance i LLM Defense, każde rozwiązanie zaprojektowane pod konkretny wektor AI-native attack i konkretny artykuł regulacyjny.
             </p>
           </div>
         </section>
@@ -100,7 +100,7 @@ export default function RozwiazaniaPage() {
               {/* Text */}
               <div className={i % 2 === 1 ? 'lg:order-1' : ''}>
                 <span className={`text-[11px] font-bold tracking-[0.12em] uppercase mb-3 block ${i % 2 === 0 ? 'text-purple-600' : 'text-purple-400'}`}>
-                  {sol.tag} — {sol.name}
+                  {sol.tag}, {sol.name}
                 </span>
                 <h2
                   className="text-[28px] md:text-[38px] font-bold leading-tight tracking-tight mb-5"

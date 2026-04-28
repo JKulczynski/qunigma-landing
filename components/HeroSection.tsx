@@ -157,7 +157,7 @@ export function HeroSection() {
           <span className="hidden md:block">|</span>
           <span>DORA / AI Act / NIS2</span>
           <span className="hidden md:block">|</span>
-          <span>EU-sovereign — brak CLOUD Act</span>
+          <span>EU-sovereign, brak CLOUD Act</span>
         </div>
 
         {/* MTTAV Live Counter */}

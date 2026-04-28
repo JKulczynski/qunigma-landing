@@ -72,7 +72,7 @@ export function TeamSection() {
               <div className="w-full h-full bg-gray-300" />
             </div>
             <h3 className="text-[20px] font-bold text-gray-900 mb-1">Andrei Buin, PhD</h3>
-            <span className="text-[12px] text-purple-600 font-bold uppercase tracking-widest mb-3 text-center">RESEARCH LEAD — AI & COMPUTATIONAL SECURITY</span>
+            <span className="text-[12px] text-purple-600 font-bold uppercase tracking-widest mb-3 text-center">RESEARCH LEAD, AI & COMPUTATIONAL SECURITY</span>
             <p className="text-[15px] text-gray-600 font-medium max-w-[280px] mb-4">
               {isEn
                 ? 'University of Toronto & Waterloo. MTTAV Architect. Publications: Nano Letters, Physical Review B.'
