@@ -28,7 +28,7 @@ const modules = [
     tag: '02',
     tagline: 'Pułapka zaprojektowana specjalnie dla atakujących AI.',
     description:
-      'Fałszywy model językowy wbudowany w infrastrukturę klienta. Atakujące agenty AI automatycznie kierowane są do pułapki, ujawniając metody ataku i dostarczając danych wywiadowczych o zagrożeniu.',
+      'Fałszywy model językowy wbudowany w infrastrukturę klienta, zwodzący agenty AI i wciągający je w pułapkę, ujawniając metody ataku i dostarczając danych wywiadowczych o zagrożeniu.',
     stats: [
       { value: '100%', label: 'Izolacja atakującego' },
       { value: 'Zero', label: 'False positive' },
