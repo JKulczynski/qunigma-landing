@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/en/compliance`, priority: 0.8 },
     { url: `${base}/en/firma`, priority: 0.7 },
     { url: `${base}/en/wiedza`, priority: 0.7 },
+    { url: `${base}/en/privacy`, priority: 0.3 },
   ];
 
   return [...plPages, ...enPages].map(({ url, priority }) => ({
