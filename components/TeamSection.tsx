@@ -33,7 +33,7 @@ export function TeamSection() {
             : 'Połączone doświadczenie z globalnych instytucji finansowych, środowisk AI i czołowych ośrodków badań technologicznych.'}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-3xl mx-auto">
 
           <div className="flex flex-col items-center">
             <div className="w-32 h-32 rounded-full border-2 border-purple-300 mb-6 bg-gray-200 overflow-hidden">
@@ -46,7 +46,7 @@ export function TeamSection() {
                 ? 'BlackBerry Technical Lead. VP AI & Computer Vision, 4AG Robotics. Serial CEO and inventor in IoT.'
                 : 'BlackBerry Technical Lead. VP AI & Computer Vision, 4AG Robotics. Wielokrotny CEO i wynalazca w IoT.'}
             </p>
-            <a href="#" aria-label="Peter Mankowski on LinkedIn" className="hover:opacity-70 transition-opacity">
+            <a href="https://www.linkedin.com/in/peter-mankowski-18065619/" target="_blank" rel="noopener noreferrer" aria-label="Peter Mankowski on LinkedIn" className="hover:opacity-70 transition-opacity">
               <LinkedInIcon />
             </a>
           </div>
@@ -62,23 +62,7 @@ export function TeamSection() {
                 ? 'President of Norbsoft Mobile (12 years). Enterprise consulting: Samsung, Thomson Reuters, financial institutions.'
                 : 'Prezes Norbsoft Mobile (12 lat). Enterprise consulting: Samsung, Thomson Reuters, instytucje finansowe.'}
             </p>
-            <a href="#" aria-label="Paul Cebo on LinkedIn" className="hover:opacity-70 transition-opacity">
-              <LinkedInIcon />
-            </a>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <div className="w-32 h-32 rounded-full border-2 border-purple-300 mb-6 bg-gray-200 overflow-hidden">
-              <div className="w-full h-full bg-gray-300" />
-            </div>
-            <h3 className="text-[20px] font-bold text-gray-900 mb-1">Andrei Buin, PhD</h3>
-            <span className="text-[12px] text-purple-600 font-bold uppercase tracking-widest mb-3 text-center">RESEARCH LEAD, AI & COMPUTATIONAL SECURITY</span>
-            <p className="text-[15px] text-gray-600 font-medium max-w-[280px] mb-4">
-              {isEn
-                ? 'University of Toronto & Waterloo. MTTAV Architect. Publications: Nano Letters, Physical Review B.'
-                : 'University of Toronto & Waterloo. Architekt MTTAV. Publikacje: Nano Letters, Physical Review B.'}
-            </p>
-            <a href="#" aria-label="Andrei Buin on LinkedIn" className="hover:opacity-70 transition-opacity">
+            <a href="https://www.linkedin.com/in/paulcebo/" target="_blank" rel="noopener noreferrer" aria-label="Paul Cebo on LinkedIn" className="hover:opacity-70 transition-opacity">
               <LinkedInIcon />
             </a>
           </div>
