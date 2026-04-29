@@ -89,7 +89,7 @@ export function Footer() {
             </h4>
             <Link href={`${p}/firma`} className="hover:text-white transition-colors">{isEn ? 'About us' : 'O nas'}</Link>
             <Link href={`${p}/wiedza`} className="hover:text-white transition-colors">{isEn ? 'Resources' : 'Wiedza'}</Link>
-            <a href="mailto:privacy@qunigma.ai" className="hover:text-white transition-colors">Privacy Policy</a>
+            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
           </div>
 
         </div>
