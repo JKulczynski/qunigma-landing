@@ -1,6 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 function LinkedInIcon() {
   return (
@@ -37,7 +38,7 @@ export function TeamSection() {
 
           <div className="flex flex-col items-center">
             <div className="w-32 h-32 rounded-full border-2 border-purple-300 mb-6 bg-gray-200 overflow-hidden">
-              <div className="w-full h-full bg-gray-300" />
+              <Image src="/peter-mankowski.jpg" alt="Peter Mankowski" width={128} height={128} className="w-full h-full object-cover" />
             </div>
             <h3 className="text-[20px] font-bold text-gray-900 mb-1">Peter Mankowski</h3>
             <span className="text-[12px] text-purple-600 font-bold uppercase tracking-widest mb-3 text-center">CHIEF AI & EMERGING TECHNOLOGY ADVISOR</span>
@@ -53,7 +54,7 @@ export function TeamSection() {
 
           <div className="flex flex-col items-center">
             <div className="w-32 h-32 rounded-full border-2 border-purple-300 mb-6 bg-gray-200 overflow-hidden">
-              <div className="w-full h-full bg-gray-300" />
+              <Image src="/paul-cebo.jpg" alt="Paul Cebo" width={128} height={128} className="w-full h-full object-cover" />
             </div>
             <h3 className="text-[20px] font-bold text-gray-900 mb-1">Paul Cebo</h3>
             <span className="text-[12px] text-purple-600 font-bold uppercase tracking-widest mb-3 text-center">EXECUTIVE CONSULTANT & vCISO LEAD</span>
