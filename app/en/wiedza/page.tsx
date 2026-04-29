@@ -5,6 +5,13 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Resources | Qunigma, AI Security Analyses, Reports, Webinars',
   description: 'Knowledge base on AI-native threats, DORA and AI Act regulations, and active defense architecture for security leaders at Tier-1 EU banks.',
+  alternates: {
+    canonical: 'https://qunigma.ai/en/wiedza',
+    languages: {
+      'en-US': 'https://qunigma.ai/en/wiedza',
+      'pl-PL': 'https://qunigma.ai/wiedza',
+    },
+  },
 };
 
 const articles = [

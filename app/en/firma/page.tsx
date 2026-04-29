@@ -6,6 +6,13 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Company | Qunigma, About Us, Team, Mission',
   description: 'Qunigma is an EU-native active cyber defense platform built by AI and security experts for European Tier-1 banks.',
+  alternates: {
+    canonical: 'https://qunigma.ai/en/firma',
+    languages: {
+      'en-US': 'https://qunigma.ai/en/firma',
+      'pl-PL': 'https://qunigma.ai/firma',
+    },
+  },
 };
 
 export default function EnFirmaPage() {

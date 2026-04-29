@@ -4,8 +4,15 @@ import { CTASection } from '@/components/CTASection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Platforma | Qunigma, MTTAV Engine, Honeypot LLM, Memory Guard, NHI Security',
+  title: 'Platforma | Qunigma, MTTAV Engine, Honeypot AI Agents, Memory Guard, NHI Security',
   description: 'Cztery warstwy aktywnej obrony AI w jednej architekturze. MTTAV Engine wykrywa i neutralizuje zagrożenia w czasie poniżej 2ms.',
+  alternates: {
+    canonical: 'https://qunigma.ai/platforma',
+    languages: {
+      'pl-PL': 'https://qunigma.ai/platforma',
+      'en-US': 'https://qunigma.ai/en/platforma',
+    },
+  },
 };
 
 const modules = [

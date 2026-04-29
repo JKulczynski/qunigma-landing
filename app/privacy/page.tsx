@@ -5,6 +5,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacy Policy | Qunigma',
   description: 'Qunigma Privacy Policy — how we collect, use, and protect your personal data in compliance with GDPR.',
+  alternates: {
+    canonical: 'https://qunigma.ai/privacy',
+  },
 };
 
 export default function PrivacyPage() {

@@ -6,6 +6,13 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Rozwiązania | Qunigma, All Green Fraud, NHI Governance, LLM Defense',
   description: 'Trzy wektory AI-native attacks. Trzy rozwiązania zbudowane pod DORA i AI Act. Aktywna neutralizacja w czasie poniżej 2ms.',
+  alternates: {
+    canonical: 'https://qunigma.ai/rozwiazania',
+    languages: {
+      'pl-PL': 'https://qunigma.ai/rozwiazania',
+      'en-US': 'https://qunigma.ai/en/rozwiazania',
+    },
+  },
 };
 
 const solutions = [

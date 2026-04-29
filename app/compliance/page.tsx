@@ -6,6 +6,13 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Compliance | Qunigma, DORA, AI Act, CRA, NIS2',
   description: 'Pełna gotowość na DORA 2025, AI Act Annex III, CRA i NIS2. Qunigma jest zaprojektowane od fundamentu pod wymogi regulacyjne EU.',
+  alternates: {
+    canonical: 'https://qunigma.ai/compliance',
+    languages: {
+      'pl-PL': 'https://qunigma.ai/compliance',
+      'en-US': 'https://qunigma.ai/en/compliance',
+    },
+  },
 };
 
 const regulations = [

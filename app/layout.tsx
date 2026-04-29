@@ -7,6 +7,7 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jet
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://qunigma.ai'),
   title: 'Qunigma | AI-Native Active Defense dla banków Tier-1 UE',
   description: 'Qunigma neutralizuje ataki NHI, Memory Poisoning i All Green Fraud w czasie poniżej 2ms. DORA, AI Act i NIS2 aligned. EU-sovereign, brak CLOUD Act.',
   openGraph: {
@@ -14,6 +15,9 @@ export const metadata: Metadata = {
     description: 'Platforma ochrony AI-native dla europejskich banków Tier-1. DORA/AI Act compliant. Zbudowane w UE.',
     type: 'website',
     locale: 'pl_PL',
+    alternateLocale: 'en_US',
+    url: 'https://qunigma.ai',
+    siteName: 'Qunigma',
   },
   robots: { index: true, follow: true },
 };

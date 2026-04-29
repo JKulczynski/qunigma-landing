@@ -12,8 +12,15 @@ import { StreamingVideo } from '@/components/StreamingVideo';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Qunigma, AI-Native Active Cyber Defense for Tier-1 EU Banks',
+  title: 'Qunigma | AI-Native Active Cyber Defense for Tier-1 EU Banks',
   description: 'The first EU-sovereign active defense platform built specifically for AI-native threats, NHI attacks, Memory Poisoning, and All Green Fraud. MTTAV under 2ms.',
+  alternates: {
+    canonical: 'https://qunigma.ai/en',
+    languages: {
+      'en-US': 'https://qunigma.ai/en',
+      'pl-PL': 'https://qunigma.ai',
+    },
+  },
 };
 
 export default function EnHomePage() {
