@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Company | Qunigma, About Us, Team, Mission',
-  description: 'Qunigma is an EU-native active cyber defense platform built by AI and security experts for European Tier-1 banks.',
+  description: 'Qunigma is an EU-native active cyber defense platform built by AI and security experts for organizations where cybersecurity is a critical business element.',
   alternates: {
     canonical: 'https://qunigma.ai/en/firma',
     languages: {
@@ -31,7 +31,7 @@ export default function EnFirmaPage() {
             <h1 className="text-[38px] md:text-[64px] font-medium leading-[1.1] tracking-tight mb-6">
               <span className="block text-[#F6F2EA]">Built in the EU,</span>
               <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
-                by experts. For banks.
+                by experts. For security leaders.
               </span>
             </h1>
             <p className="text-[17px] md:text-[19px] text-white/70 max-w-[680px] mx-auto leading-relaxed">
@@ -49,10 +49,10 @@ export default function EnFirmaPage() {
                 className="text-[28px] md:text-[42px] font-bold leading-tight tracking-tight mb-6"
                 style={{ backgroundImage: 'linear-gradient(135deg, #111827 0%, #6D28D9 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
               >
-                AI-native active defense for European financial infrastructure.
+                AI-native active defense for European critical infrastructure.
               </h2>
               <p className="text-[17px] text-gray-600 leading-relaxed mb-8">
-                European Tier-1 banks face threats that traditional security systems cannot detect, All Green Fraud, Memory Poisoning and NHI attacks operate below the SIEM visibility threshold, for weeks or months.
+                Organizations with AI in their infrastructure face threats that traditional security systems cannot detect. All Green Fraud, Memory Poisoning and NHI attacks operate below the SIEM visibility threshold, for weeks or months.
               </p>
               <p className="text-[17px] text-gray-600 leading-relaxed">
                 Qunigma designed the first active defense platform built specifically for these vectors, with EU-sovereign architecture, no CLOUD Act exposure, and readiness for DORA, AI Act, CRA and NIS2 from day one of deployment.

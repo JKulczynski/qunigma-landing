@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Wiedza | Qunigma, Analizy, Raporty, Webinaria AI Security',
-  description: 'Baza wiedzy o AI-native threats, regulacjach DORA i AI Act oraz architekturze active defense dla liderów bezpieczeństwa w europejskich bankach Tier-1.',
+  description: 'Baza wiedzy o AI-native threats, regulacjach DORA i AI Act oraz architekturze active defense dla liderów bezpieczeństwa w europejskich organizacjach.',
   alternates: {
     canonical: 'https://qunigma.ai/wiedza',
     languages: {
@@ -87,7 +87,7 @@ export default function WiedzaPage() {
               </span>
             </h1>
             <p className="text-[17px] md:text-[19px] text-white/70 max-w-[680px] mx-auto leading-relaxed">
-              Analizy techniczne, raporty regulacyjne i badania AI-native threats, dla CISO, CTO i Compliance Officers europejskich banków Tier-1.
+              Analizy techniczne, raporty regulacyjne i badania AI-native threats, dla CISO, CTO i Compliance Officers europejskich organizacji.
             </p>
           </div>
         </section>

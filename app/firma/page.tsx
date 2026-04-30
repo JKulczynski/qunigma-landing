@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Firma | Qunigma, O nas, Zespół, Misja',
-  description: 'Qunigma to EU-native platforma active cyber defense zbudowana przez ekspertów AI i bezpieczeństwa dla europejskich banków Tier-1.',
+  description: 'Qunigma to EU-native platforma active cyber defense zbudowana przez ekspertów AI i bezpieczeństwa dla organizacji gdzie cybersecurity jest krytycznym elementem biznesu.',
   alternates: {
     canonical: 'https://qunigma.ai/firma',
     languages: {
@@ -31,7 +31,7 @@ export default function FirmaPage() {
             <h1 className="text-[38px] md:text-[64px] font-medium leading-[1.1] tracking-tight mb-6">
               <span className="block text-[#F6F2EA]">Zbudowane w UE,</span>
               <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
-                przez ekspertów. Dla banków.
+                przez ekspertów. Dla liderów bezpieczeństwa.
               </span>
             </h1>
             <p className="text-[17px] md:text-[19px] text-white/70 max-w-[680px] mx-auto leading-relaxed">
@@ -49,10 +49,10 @@ export default function FirmaPage() {
                 className="text-[28px] md:text-[42px] font-bold leading-tight tracking-tight mb-6"
                 style={{ backgroundImage: 'linear-gradient(135deg, #111827 0%, #6D28D9 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
               >
-                Aktywna obrona AI-native dla europejskiej infrastruktury finansowej.
+                Aktywna obrona AI-native dla europejskiej infrastruktury krytycznej.
               </h2>
               <p className="text-[17px] text-gray-600 leading-relaxed mb-8">
-                Europejskie banki Tier-1 stają przed zagrożeniami, które tradycyjne systemy bezpieczeństwa nie są w stanie wykryć, All Green Fraud, Memory Poisoning i ataki NHI działają poniżej progu widzialności SIEM, przez tygodnie lub miesiące.
+                Organizacje z AI w infrastrukturze stają przed zagrożeniami, które tradycyjne systemy bezpieczeństwa nie są w stanie wykryć. All Green Fraud, Memory Poisoning i ataki NHI działają poniżej progu widzialności SIEM, przez tygodnie lub miesiące.
               </p>
               <p className="text-[17px] text-gray-600 leading-relaxed">
                 Qunigma zaprojektowało pierwszą platformę active defense zbudowaną specjalnie pod te wektory, z architekturą EU-sovereign, bez CLOUD Act exposure i gotowością na DORA, AI Act, CRA i NIS2 od dnia wdrożenia.

@@ -48,8 +48,8 @@ export function ROISection() {
             <span className="text-[72px] font-extrabold leading-none mb-6 text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>€4.2M</span>
             <p className="text-[17px] text-white/80 leading-relaxed font-medium">
               {isEn
-                ? 'Average savings for a Tier-1 bank by eliminating AI-native fraud.'
-                : 'Średnia oszczędność dla banku Tier-1 poprzez eliminację AI-native fraud.'}
+                ? 'Average savings for an enterprise by eliminating AI-native fraud.'
+                : 'Średnia oszczędność dla organizacji poprzez eliminację AI-native fraud.'}
             </p>
           </div>
 

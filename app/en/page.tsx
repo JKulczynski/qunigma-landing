@@ -12,8 +12,8 @@ import { StreamingVideo } from '@/components/StreamingVideo';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Qunigma | AI-Native Active Cyber Defense for Tier-1 EU Banks',
-  description: 'The first EU-sovereign active defense platform built specifically for AI-native threats, NHI attacks, Memory Poisoning, and All Green Fraud. MTTAV under 2ms.',
+  title: 'Qunigma | AI-Native Active Cyber Defense. MTTAV <2ms.',
+  description: 'The first EU-sovereign active defense platform built specifically for AI-native threats: NHI attacks, Memory Poisoning, and All Green Fraud. MTTAV under 2ms.',
   alternates: {
     canonical: 'https://qunigma.ai/en',
     languages: {
@@ -55,7 +55,7 @@ export default function EnHomePage() {
               </span>
             </h1>
             <p className="text-[17px] md:text-[19px] max-w-[680px] mx-auto mb-6 leading-relaxed text-white/80">
-              In the era of autonomous AI attacks, you need active neutralization in under 2 milliseconds. Protecting Tier-1 banks from NHI attacks, Memory Poisoning, and All Green Fraud.
+              In the era of autonomous AI attacks, you need active neutralization in under 2 milliseconds. Detecting and neutralizing NHI attacks, Memory Poisoning, and All Green Fraud before they cause damage.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3 text-[13px] font-medium tracking-[0.06em] mb-8 text-white/60">
               <span>MTTAV &lt;2ms</span>

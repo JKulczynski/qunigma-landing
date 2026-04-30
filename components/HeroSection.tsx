@@ -148,7 +148,7 @@ export function HeroSection() {
 
         {/* Subhead */}
         <p className="text-[16px] md:text-[18px] max-w-[640px] mx-auto mb-4 md:mb-6 leading-relaxed font-normal" style={{ color: 'rgba(246,242,234,0.80)' }}>
-          W erze autonomicznych ataków AI potrzebujesz aktywnej neutralizacji w czasie poniżej 2 milisekund. Ochrona banków Tier-1 przed NHI, Memory Poisoning i All Green Fraud.
+          W erze autonomicznych ataków AI potrzebujesz aktywnej neutralizacji w czasie poniżej 2 milisekund. Wykrywamy i neutralizujemy NHI, Memory Poisoning i All Green Fraud zanim wyrządzą szkodę.
         </p>
 
         {/* Proof bar */}

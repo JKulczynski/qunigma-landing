@@ -9,7 +9,7 @@ import { MTTAVVisualSection } from '@/components/MTTAVVisualSection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Qunigma | AI-Native Active Defense dla banków Tier-1 UE',
+  title: 'Qunigma | AI-Native Active Defense. MTTAV <2ms.',
   description: 'Qunigma neutralizuje ataki NHI, Memory Poisoning i All Green Fraud w czasie poniżej 2ms. DORA, AI Act i NIS2 aligned. EU-sovereign, brak CLOUD Act.',
   alternates: {
     canonical: 'https://qunigma.ai',
@@ -26,13 +26,13 @@ export default function Page() {
     "@type": "SoftwareApplication",
     "name": "Qunigma",
     "applicationCategory": "SecurityApplication",
-    "description": "AI-native active defense platform for Tier-1 EU banks. MTTAV under 2 milliseconds. Neutralizes NHI attacks, Memory Poisoning, and All Green Fraud.",
+    "description": "AI-native active defense platform. MTTAV under 2 milliseconds. Neutralizes NHI attacks, Memory Poisoning, and All Green Fraud.",
     "operatingSystem": "Cloud, On-premise",
     "featureList": ["MTTAV <2ms", "Honeypot AI Agents", "NHI Security", "Memory Guard", "DORA Compliance", "AI Act Art.15"],
     "areaServed": "EU",
     "audience": {
       "@type": "Audience",
-      "audienceType": "CISO, CTO, CFO, Compliance Officer at Tier-1 EU banks"
+      "audienceType": "CISO, CTO, CFO, Compliance Officer at EU enterprises"
     }
   };
 

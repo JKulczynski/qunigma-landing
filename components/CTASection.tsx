@@ -57,8 +57,8 @@ export function CTASection() {
             </h4>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               {isEn
-                ? 'Business case for CFO: TCO vs. regulatory risk for Tier-1.'
-                : 'Business case dla CFO: TCO vs. ryzyko regulacyjne dla Tier-1.'}
+                ? 'Business case for CFO: TCO vs. regulatory and security risk.'
+                : 'Business case dla CFO: TCO vs. ryzyko regulacyjne i bezpieczeństwa.'}
             </p>
             <div className="mt-auto flex justify-end">
               <Download className="w-5 h-5 text-purple-400 group-hover:translate-y-1 transition-transform" />
