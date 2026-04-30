@@ -1,20 +1,50 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Qunigma — Landing Page
 
-# Run and deploy your AI Studio app
+Marketing landing page for [qunigma.ai](https://qunigma.ai) — AI-native active cyber defense platform.
 
-This contains everything you need to run your app locally.
+Built with **Next.js 14 App Router**, TypeScript, Tailwind CSS. Bilingual (PL/EN).
 
-View your app in AI Studio: https://ai.studio/apps/d2a407a7-a1b9-46da-bf3d-69ad295290db
+## Stack
 
-## Run Locally
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Video:** Cloudflare Stream (HLS)
+- **Deployment:** Vercel
 
-**Prerequisites:**  Node.js
+## Run locally
 
+**Prerequisites:** Node.js 18+
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Structure
+
+```
+app/
+├── layout.tsx          # Root layout, dynamic lang attr (PL/EN)
+├── page.tsx            # PL homepage
+├── privacy/            # PL Privacy Policy
+├── platforma/          # PL Platform page
+├── rozwiazania/        # PL Solutions page
+├── compliance/         # PL Compliance page
+├── firma/              # PL About page
+├── wiedza/             # PL Resources page
+└── en/                 # EN versions (mirrors PL structure)
+
+components/             # Shared React components
+middleware.ts           # Sets x-pathname header for lang detection
+```
+
+## SEO
+
+- `app/sitemap.ts` — dynamic sitemap (PL + EN)
+- `app/robots.ts` — robots.txt
+- hreflang alternates on all pages
+- schema.org JSON-LD (SoftwareApplication) on homepages
+- Dynamic `lang` attribute via middleware
