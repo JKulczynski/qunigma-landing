@@ -24,8 +24,27 @@ export const metadata: Metadata = {
 };
 
 export default function EnHomePage() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Qunigma",
+    "applicationCategory": "SecurityApplication",
+    "description": "AI-native active defense platform. MTTAV under 2 milliseconds. Neutralizes NHI attacks, Memory Poisoning, and All Green Fraud.",
+    "operatingSystem": "Cloud, On-premise",
+    "featureList": ["MTTAV <2ms", "Honeypot AI Agents", "NHI Security", "Memory Guard", "DORA Compliance", "AI Act Art.15"],
+    "areaServed": "EU",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "CISO, CTO, CFO, Compliance Officer at EU enterprises"
+    }
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <SubpageNavbar />
       <main className="flex flex-col w-full">
 

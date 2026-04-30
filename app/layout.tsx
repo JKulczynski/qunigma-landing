@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, JetBrains_Mono, Playfair_Display } from 'next/font/google';
+import { headers } from 'next/headers';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
@@ -20,15 +21,25 @@ export const metadata: Metadata = {
     siteName: 'Qunigma',
   },
   robots: { index: true, follow: true },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Qunigma | AI-Native Active Defense. MTTAV <2ms.',
+    description: 'Platforma active cyber defense AI-native. DORA/AI Act compliant. EU-sovereign, zbudowane w UE.',
+    site: '@qunigma_ai',
+  },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const headersList = await headers();
+  const pathname = headersList.get('x-pathname') || '';
+  const lang = pathname.startsWith('/en') ? 'en' : 'pl';
+
   return (
-    <html lang="pl" suppressHydrationWarning>
+    <html lang={lang} suppressHydrationWarning>
       <body className={`${inter.variable} ${jetbrainsMono.variable} ${playfair.variable} font-sans antialiased bg-black`} suppressHydrationWarning>
         {children}
       </body>
