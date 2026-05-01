@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@opennextjs/cloudflare": "latest"
+    "@opennextjs/cloudflare": "latest",
     "@google/genai": "^1.29.0",
     "clsx": "^2.1.1",
     "dotenv": "^17.2.3",
