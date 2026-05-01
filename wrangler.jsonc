@@ -1,7 +1,7 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"main": ".open-next/worker.js",
-	"name": "qunigma-landing",
+	"name": "qunigma-site",
 	"compatibility_date": "2026-05-01",
 	"compatibility_flags": [
 		"nodejs_compat",
