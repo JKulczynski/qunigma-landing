@@ -31,11 +31,11 @@ export function SubpageNavbar({ transparent = false }: { transparent?: boolean }
     <nav className={`fixed top-0 inset-x-0 z-50 flex flex-col w-full transition-colors duration-300 ${isTransparent ? 'bg-transparent' : 'bg-black/95 backdrop-blur-md border-b border-white/10'}`}>
 
       {/* Top bar */}
-      <div className="flex items-center justify-between px-6 md:px-[60px] lg:px-[120px] py-[18px] w-full">
+      <div className="flex items-center justify-between px-6 md:px-[60px] lg:px-[120px] py-[20px] w-full">
 
         <div className="flex items-center gap-[60px]">
           <Link href={isEn ? '/en' : '/'} className="flex items-center">
-            <Image src="/logo.png" alt="Qunigma" width={140} height={35} className="object-contain" priority />
+            <Image src="/logo.png" alt="Qunigma" width={160} height={40} className="object-contain" priority />
           </Link>
 
           <div className="hidden md:flex items-center gap-[30px]">
