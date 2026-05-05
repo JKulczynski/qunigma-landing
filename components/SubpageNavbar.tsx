@@ -7,8 +7,10 @@ import { usePathname } from 'next/navigation';
 
 export function SubpageNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
   const isEn = pathname.startsWith('/en');
+  const isHomepage = pathname === '/en';
   const prefix = isEn ? '/en' : '';
   const langTogglePath = isEn ? (pathname.slice(3) || '/') : `/en${pathname}`;
 
@@ -17,8 +19,17 @@ export function SubpageNavbar() {
     return () => { document.body.style.overflow = ''; };
   }, [isMenuOpen]);
 
+  useEffect(() => {
+    if (!isHomepage) return;
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isHomepage]);
+
+  const isTransparent = isHomepage && !scrolled && !isMenuOpen;
+
   return (
-    <nav className="fixed top-0 inset-x-0 z-50 flex flex-col w-full bg-black/95 backdrop-blur-md border-b border-white/10">
+    <nav className={`fixed top-0 inset-x-0 z-50 flex flex-col w-full transition-colors duration-300 ${isTransparent ? 'bg-transparent' : 'bg-black/95 backdrop-blur-md border-b border-white/10'}`}>
 
       {/* Top bar */}
       <div className="flex items-center justify-between px-6 md:px-[60px] lg:px-[120px] py-[18px] w-full">
@@ -58,7 +69,7 @@ export function SubpageNavbar() {
           <a href="mailto:piotr@qunigma.ai" className="hidden md:inline-flex items-center text-white/80 border border-white/20 px-5 py-2.5 rounded-full text-[14px] font-medium hover:border-white/50 hover:text-white transition-colors duration-200">
             {isEn ? 'Contact' : 'Kontakt'}
           </a>
-          <button className={`bg-[#6D28D9] text-white ${isEn ? 'px-2 py-1 text-[9px]' : 'px-2.5 py-1 text-[10px]'} md:px-6 md:py-2.5 rounded-full md:text-[14px] font-medium hover:bg-[#5B21B6] transition-colors duration-200`}>
+          <button className={`bg-[#6D28D9] text-white ${isEn ? 'px-2.5 py-1 text-[10px]' : 'px-3 py-1 text-[12px]'} md:px-6 md:py-2.5 rounded-full md:text-[14px] font-medium hover:bg-[#5B21B6] transition-colors duration-200`}>
             {isEn ? 'DORA Gap Analysis' : 'Analiza Luk DORA'}
           </button>
           <button
