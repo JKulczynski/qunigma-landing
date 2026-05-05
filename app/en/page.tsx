@@ -45,7 +45,7 @@ export default function EnHomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <SubpageNavbar />
+      <SubpageNavbar transparent />
       <main className="flex flex-col w-full">
 
         {/* Hero */}
