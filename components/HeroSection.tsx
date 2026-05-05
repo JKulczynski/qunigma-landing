@@ -63,7 +63,7 @@ export function HeroSection() {
           <a href="mailto:piotr@qunigma.ai" className="hidden md:inline-flex items-center text-white/80 border border-white/20 px-5 py-2.5 rounded-full text-[14px] font-medium hover:border-white/50 hover:text-white transition-colors duration-200">
             Kontakt
           </a>
-          <button className="bg-[#6D28D9] text-white px-6 py-2.5 rounded-full text-[14px] font-medium hover:bg-[#5B21B6] transition-colors duration-200">
+          <button className="bg-[#6D28D9] text-white px-2.5 py-1 md:px-6 md:py-2.5 rounded-full text-[10px] md:text-[14px] font-medium hover:bg-[#5B21B6] transition-colors duration-200">
             Analiza Luk DORA
           </button>
 
