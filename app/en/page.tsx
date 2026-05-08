@@ -24,6 +24,48 @@ export const metadata: Metadata = {
 };
 
 export default function EnHomePage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is MTTAV and why does it matter?",
+        "acceptedAnswer": { "@type": "Answer", "text": "MTTAV (Mean Time To Active Vectorization) is the time from threat detection to neutralization. Qunigma achieves MTTAV under 2ms, while traditional SIEM systems take hours or days. This is the difference between stopping an attack and dealing with its consequences." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is All Green Fraud?",
+        "acceptedAnswer": { "@type": "Answer", "text": "All Green Fraud (OWASP ASI06) is an attack where malicious code falsifies system logs and SOC dashboards, showing 'all clear' status while an attack has been ongoing for weeks or months. Average detection time without protection: 90+ days. Qunigma detects it in under 2ms." }
+      },
+      {
+        "@type": "Question",
+        "name": "What are Non-Human Identities (NHI) and why are they a threat?",
+        "acceptedAnswer": { "@type": "Answer", "text": "NHIs are machine identities: API keys, service accounts, OAuth tokens. They comprise 80% of all corporate cloud traffic (IBM X-Force 2025). One compromised machine identity enables full data exfiltration in just 25 minutes. Qunigma NHI Security automatically inventories and monitors every NHI." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Qunigma DORA compliant?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Qunigma is designed from the ground up for DORA 2025. It covers Art. 8 (ICT and NHI inventory), Art. 19 (incident reporting 4h/24h/72h), Art. 25 (third-party risk), and Art. 26 (TLPT testing). Pre-built reporting packs automate all reporting obligations." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Qunigma work on-premise or in the cloud?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Qunigma works both on-premise and in the cloud. It is EU-sovereign — built and operated in the EU, not subject to the US CLOUD Act. Customer data never leaves EU jurisdiction." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Qunigma and a traditional SIEM?",
+        "acceptedAnswer": { "@type": "Answer", "text": "SIEM detects threats after the fact and requires manual response (hours to days). Qunigma acts actively: it detects anomalies at the packet level and autonomously neutralizes threats in under 2ms, before they reach the target system. Qunigma also natively handles AI-specific threats (Memory Poisoning, LLM hijacking) that SIEM cannot address." }
+      },
+      {
+        "@type": "Question",
+        "name": "Who is Qunigma for?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Qunigma is designed for CISOs, CTOs, and Compliance Officers at EU enterprises operating under DORA, AI Act, and NIS2 — particularly financial institutions, insurers, banks, large corporations, and organizations processing high-risk data." }
+      }
+    ]
+  };
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -41,10 +83,8 @@ export default function EnHomePage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <SubpageNavbar transparent />
       <main className="flex flex-col w-full">
 
