@@ -51,6 +51,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </Script>
       </head>
       <body className={`${inter.variable} ${jetbrainsMono.variable} ${playfair.variable} font-sans antialiased bg-black`} suppressHydrationWarning>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Qunigma",
+            "url": "https://qunigma.ai",
+            "description": "AI-native active cyber defense platform. MTTAV under 2ms. EU-sovereign, DORA/AI Act/NIS2/CRA compliant.",
+            "sameAs": ["https://twitter.com/qunigma_ai"],
+            "areaServed": "EU",
+            "knowsAbout": ["cybersecurity", "DORA compliance", "AI Act", "NHI security", "active defense", "LLM security"],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Qunigma Platform",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "MTTAV Engine", "description": "Active threat neutralization in under 2ms" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Honeypot LLM", "description": "AI agent deception and threat intelligence" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Memory Guard", "description": "AI model memory protection against poisoning" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "NHI Security", "description": "Non-human identity governance and monitoring" }}
+              ]
+            }
+          })}}
+        />
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-N24HLF4X"

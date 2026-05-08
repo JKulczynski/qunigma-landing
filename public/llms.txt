@@ -1,0 +1,91 @@
+# Qunigma — AI-Native Active Cyber Defense
+
+> Qunigma is an EU-sovereign AI-native active defense platform that neutralizes NHI attacks, Memory Poisoning, and All Green Fraud in under 2 milliseconds. Designed from the ground up for DORA, AI Act, CRA, and NIS2 compliance.
+
+## What is Qunigma?
+
+Qunigma is a cybersecurity platform built for enterprises operating under EU regulatory frameworks (DORA, AI Act Annex III, NIS2, CRA). It provides active — not passive — threat neutralization using AI agents at machine speed. Mean Time To Active Vectorization (MTTAV) is under 2ms, compared to 90+ days industry average for threat detection.
+
+Qunigma is EU-sovereign: built and operated in the EU, not subject to the US CLOUD Act.
+
+## Core Platform Modules
+
+### MTTAV Engine
+The core of the platform. Detects anomalies at the packet level in real time and autonomously neutralizes threats before they reach the target system. No SIEM operates at this timescale. Stats: MTTAV <2ms, 99.4% MTTD reduction, 24/7 autonomous protection.
+
+### Honeypot LLM
+A false language model embedded in the client's infrastructure that deceives AI agents and draws them into a trap, revealing attack methods and providing threat intelligence. Stats: 100% attacker isolation, zero false positives, live threat intelligence.
+
+### Memory Guard
+Protects the contextual memory of AI models from Memory Poisoning attacks. Guards LLM context windows, RAG databases, and prompt histories against unauthorized modification. Uses SHA-256 integrity checks.
+
+### NHI Security
+Non-Human Identity governance. Automatically inventories, classifies, and monitors every machine identity in client infrastructure. 80% of corporate cloud traffic is NHI (IBM X-Force 2025). One compromised machine identity enables full data exfiltration in 25 minutes.
+
+## Threat Vectors Addressed
+
+### All Green Fraud (OWASP ASI06)
+Malicious code systematically falsifies system logs, compliance reports, and SecOps dashboards. Every sensor shows "All Green" while an attack has been ongoing for weeks or months. Average detection time without Qunigma: 90+ days. With MTTAV Engine: <2ms.
+
+### NHI Governance
+API keys, service accounts, OAuth tokens, and machine identities comprise 80% of all corporate cloud traffic. Qunigma provides automated inventory, anomaly detection, and key rotation monitoring.
+
+### LLM Defense
+Protection against prompt injection, context manipulation, and AI agent hijacking. Qunigma monitors LLM agent behavior and isolates compromised agents in real time.
+
+## Regulatory Compliance
+
+### DORA 2025 (Digital Operational Resilience Act)
+Active since 17.01.2025. Penalty: up to 2% annual turnover.
+- Art. 8: ICT asset inventory and NHI — automated via NHI Security
+- Art. 19: Incident reporting 4h/24h/72h — pre-built reporting packs
+- Art. 25: Third-party and ICT supplier risk — third-party NHI monitoring
+- Art. 26: Penetration tests TLPT — Honeypot LLM as TLPT-ready
+
+### AI Act Annex III (High-Risk AI Systems)
+Deadline: 02.08.2026. Penalty: up to 3% turnover or 15M EUR.
+- Art. 9: AI risk management system — MTTAV real-time risk scoring
+- Art. 15: Accuracy, robustness, cybersecurity — Memory Guard SHA-256
+- Art. 17: Quality management system — audit trail and immutable logs
+- Art. 72: Incident reporting — integrated with DORA Art. 19
+
+### CRA (Cyber Resilience Act)
+Deadline: 11.2027. Penalty: up to 2.5% turnover or 15M EUR.
+Security-by-design requirements for digital products with network elements.
+
+### NIS2 Directive
+Active since 10.2024. Penalty: up to 10M EUR or 2% turnover.
+Covers essential and important entities across 18 sectors.
+
+## Target Audience
+
+- CISO (Chief Information Security Officer)
+- CTO (Chief Technology Officer)
+- CFO and Risk Officers at EU financial institutions
+- Compliance Officers managing DORA/AI Act obligations
+- IT Security teams at enterprises with >50 employees
+
+## Key Differentiators vs. Traditional SIEM/SOC
+
+| | Traditional SIEM | Qunigma |
+|---|---|---|
+| Detection time | Hours to days | <2ms |
+| Response | Manual | Autonomous |
+| AI threat coverage | Limited | Native |
+| Regulatory alignment | Partial | DORA/AI Act/NIS2/CRA |
+| Sovereignty | Often US CLOUD Act | EU-sovereign |
+
+## Site URLs
+
+- Homepage (PL): https://qunigma.ai
+- Homepage (EN): https://qunigma.ai/en
+- Platform: https://qunigma.ai/platforma
+- Solutions: https://qunigma.ai/rozwiazania
+- Compliance: https://qunigma.ai/compliance
+- Company: https://qunigma.ai/firma
+- Knowledge: https://qunigma.ai/wiedza
+
+## Contact
+
+For executive briefings and demos: https://qunigma.ai
+Twitter/X: @qunigma_ai
