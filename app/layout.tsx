@@ -56,10 +56,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           dangerouslySetInnerHTML={{ __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
+            "@id": "https://qunigma.ai/#organization",
             "name": "Qunigma",
             "url": "https://qunigma.ai",
             "description": "AI-native active cyber defense platform. MTTAV under 2ms. EU-sovereign, DORA/AI Act/NIS2/CRA compliant.",
-            "sameAs": ["https://twitter.com/qunigma_ai"],
+            "sameAs": [
+              "https://twitter.com/qunigma_ai",
+              "https://x.com/qunigma_ai"
+            ],
             "areaServed": "EU",
             "knowsAbout": ["cybersecurity", "DORA compliance", "AI Act", "NHI security", "active defense", "LLM security"],
             "hasOfferCatalog": {

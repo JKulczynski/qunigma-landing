@@ -77,15 +77,15 @@ Covers essential and important entities across 18 sectors.
 
 ## Site URLs
 
-- Homepage (PL): https://qunigma.ai
-- Homepage (EN): https://qunigma.ai/en
-- Platform: https://qunigma.ai/platforma
-- Solutions: https://qunigma.ai/rozwiazania
-- Compliance: https://qunigma.ai/compliance
-- Company: https://qunigma.ai/firma
-- Knowledge: https://qunigma.ai/wiedza
+- [Homepage (PL)](https://qunigma.ai): Platforma AI-native active cyber defense dla EU
+- [Homepage (EN)](https://qunigma.ai/en): AI-native active cyber defense platform for EU enterprises
+- [Platform](https://qunigma.ai/platforma): MTTAV Engine, Honeypot LLM, Memory Guard, NHI Security
+- [Solutions](https://qunigma.ai/rozwiazania): Use cases — NHI Governance, All Green Fraud, LLM Defense
+- [Compliance](https://qunigma.ai/compliance): DORA, AI Act, NIS2, CRA — regulatory coverage
+- [Company](https://qunigma.ai/firma): Team, background, EU sovereignty
+- [Knowledge](https://qunigma.ai/wiedza): Articles on NHI security, DORA, Memory Poisoning
 
 ## Contact
 
-For executive briefings and demos: https://qunigma.ai
-Twitter/X: @qunigma_ai
+For executive briefings and demos: [qunigma.ai](https://qunigma.ai)
+Twitter/X: [@qunigma_ai](https://x.com/qunigma_ai)
