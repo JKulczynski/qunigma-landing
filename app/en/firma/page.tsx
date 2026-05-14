@@ -15,9 +15,42 @@ export const metadata: Metadata = {
   },
 };
 
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Qunigma Team",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Person",
+        "name": "Peter Mankowski",
+        "jobTitle": "Chief AI & Emerging Technology Advisor",
+        "description": "BlackBerry Technical Lead. VP AI & Computer Vision, 4AG Robotics. Serial CEO and inventor in IoT.",
+        "worksFor": { "@type": "Organization", "name": "Qunigma", "url": "https://qunigma.ai" },
+        "sameAs": "https://www.linkedin.com/in/peter-mankowski-18065619/"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Person",
+        "name": "Paul Cebo",
+        "jobTitle": "Executive Consultant & vCISO Lead",
+        "description": "President of Norbsoft Mobile (12 years). Enterprise consulting: Samsung, Thomson Reuters, financial institutions.",
+        "worksFor": { "@type": "Organization", "name": "Qunigma", "url": "https://qunigma.ai" },
+        "sameAs": "https://www.linkedin.com/in/paulcebo/"
+      }
+    }
+  ]
+};
+
 export default function EnFirmaPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
       <SubpageNavbar />
       <main className="flex flex-col w-full">
 

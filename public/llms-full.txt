@@ -1,0 +1,350 @@
+# Qunigma — Full Site Content for AI/LLM Indexing
+
+> This file contains the complete structured content of qunigma.ai for LLM training, RAG systems, and AI search indexing. See also: /llms.txt for the concise version.
+
+---
+
+## What is Qunigma?
+
+Qunigma is an EU-sovereign, AI-native active defense platform built for enterprises operating under EU regulatory frameworks: DORA, AI Act Annex III, NIS2, and CRA. It provides active — not passive — threat neutralization using AI agents at machine speed.
+
+Mean Time To Active Vectorization (MTTAV) is under 2ms, compared to the 90+ day industry average for threat detection.
+
+Qunigma is EU-sovereign: built and operated in the EU, not subject to the US CLOUD Act. No data leaves EU jurisdiction.
+
+### Core Mission
+
+To provide active AI-native cyber defense for European critical infrastructure. Organizations with AI in their infrastructure face threats that traditional security systems cannot detect: All Green Fraud, Memory Poisoning, and NHI attacks operate below the visibility threshold of SIEM, for weeks or months.
+
+Qunigma designed the first active defense platform built specifically for these vectors, with EU-sovereign architecture and full DORA/AI Act/CRA/NIS2 readiness from day one of deployment.
+
+### Origin
+
+The founding team's background traces to 1998 at Waterloo, during the birth of BlackBerry (RIM). The leadership was present at the first wave of advanced external threats. Over 20 years, evolving tactics of Red Teams are not just something the team studied — they are part of its DNA.
+
+---
+
+## Platform: /platforma
+
+### Architecture Overview
+
+Four layers of active defense, one architecture. MTTAV Engine, Honeypot LLM, Memory Guard, and NHI Security operate as one integrated platform, sharing threat intelligence in real time.
+
+Deployment cycle — Capture, Punish, Prevent — operates autonomously, without human intervention, without delay.
+
+### Module 01 — MTTAV Engine
+
+**Full name:** Mean Time To Active Vectorization Engine
+**Tagline:** Mean Time To Active Vectorization, under 2ms.
+
+The platform core. Detects anomalies at the packet level in real time and autonomously neutralizes threats before they reach the target system. No SIEM operates at this timescale.
+
+Powered by advanced anomaly detection, identifies novel zero-day threats that traditional, signature-based security tools miss. Detects highly sophisticated and previously unseen attacks by recognizing subtle behavioral deviations — without prior exposure or training data.
+
+**Key stats:**
+- Neutralization time: <2ms
+- MTTD reduction: 99.4%
+- Autonomous protection: 24/7
+
+### Module 02 — Honeypot LLM
+
+**Tagline:** A trap designed specifically for attacking AI.
+
+A decoy language model embedded in client infrastructure. Deceives AI agents and draws them into a trap, revealing attack methods and providing live threat intelligence. Designed to lure, isolate, and extract intelligence from attacking agents.
+
+AI RED Team Engagements expose critical blind spots that fall outside standard security frameworks. Qunigma executes highly customized, client-specific attack simulations to test the true limits of defenses.
+
+**Key stats:**
+- Attacker isolation: 100%
+- False positives: Zero
+- Threat intelligence: Live
+
+### Module 03 — Memory Guard
+
+**Tagline:** Protection for AI model context memory.
+
+Verifies the integrity of LLM system context memory in real time using SHA-256. Blocks Memory Poisoning attacks before they can degrade transaction decisions. Guards LLM context windows, RAG databases, and prompt histories against unauthorized modification.
+
+**Key stats:**
+- Integrity verification: SHA-256
+- Overhead per request: <1ms
+- Regulatory: AI Act Art. 15 compliant
+
+### Module 04 — NHI Security
+
+**Tagline:** Governance for 80% of corporate cloud traffic.
+
+Automatic inventory, classification, and monitoring of all machine identities: API keys, service accounts, OAuth tokens. Eliminates invisible attack vectors before they are exploited. 80% of corporate cloud traffic is NHI (IBM X-Force 2025).
+
+**Key stats:**
+- NHI inventory: Automatic
+- Exfiltration time without protection: 25 minutes
+- Regulatory: DORA Art. 8 compliant
+
+### How It Works — Three-Stage Defense Cycle
+
+**01 CAPTURE:** MTTAV Engine and Honeypot AI agents detect anomalies at packet and AI traffic level. Every deviation is recorded and classified in real time.
+
+**02 PUNISH:** The identified vector is automatically isolated. Suspicious NHI nodes and AI agents are cut off from the infrastructure before they can cause damage.
+
+**03 PREVENT:** Memory Guard and NHI Security harden the entire infrastructure against that attack vector. Knowledge from the incident strengthens global protection.
+
+### Deployment Integration
+
+- REST API + Webhook, integration with any SIEM
+- On-premise or EU-sovereign cloud (no CLOUD Act)
+- Pre-built connectors: Splunk, Microsoft Sentinel, IBM QRadar
+- DORA Art. 19 reporting packs ready from day 1
+- Full deployment in 8 business days: Day 1 API connect + NHI inventory, Day 2 Honeypot LLM calibration, Days 3-7 Memory Guard baseline + testing, Day 8+ full active protection
+
+### Platform FAQ
+
+**Q: What is MTTAV Engine and how does it work?**
+A: MTTAV Engine (Mean Time To Active Vectorization) is the core of the Qunigma platform. It detects anomalies at the packet level in real time and autonomously neutralizes threats in under 2ms, before they reach the target system. It reduces MTTD by 99.4% and operates 24/7 without human intervention.
+
+**Q: How does Honeypot LLM work?**
+A: Honeypot LLM is a decoy language model embedded in client infrastructure. It lures attacking AI agents and draws them into a trap, isolating them with 100% effectiveness and zero false positives. It simultaneously collects live threat intelligence about attack methods and vectors.
+
+**Q: What does Memory Guard protect?**
+A: Memory Guard protects the context memory of LLM systems against Memory Poisoning attacks. It verifies memory integrity in real time using SHA-256, with an overhead of under 1ms per request. The module is compliant with AI Act Art. 15.
+
+**Q: What is NHI Security and why does it matter?**
+A: NHI Security automatically inventories, classifies and monitors all machine identities: API keys, service accounts, OAuth tokens. Without NHI protection, attackers can exfiltrate data in as little as 25 minutes. The module is compliant with DORA Art. 8.
+
+**Q: How fast does Qunigma detect and neutralize threats?**
+A: The MTTAV Engine neutralizes threats in under 2ms from anomaly detection — a time window in which no traditional SIEM or SOC can respond. The platform reduces MTTD by 99.4% compared to conventional solutions.
+
+**Q: Is the Qunigma platform compliant with DORA and AI Act?**
+A: Yes. Qunigma is compliant with DORA Art. 8 (NHI Security), DORA Art. 19 (ready reporting packs from day 1), and AI Act Art. 15 (Memory Guard). It can be deployed on-premise or in an EU-sovereign cloud, eliminating CLOUD Act exposure.
+
+**Q: How long does it take to deploy the Qunigma platform?**
+A: Full deployment takes up to 8 business days. Day 1: API connection and NHI inventory. Day 2: Honeypot LLM calibration. Days 3-7: Memory Guard baseline and testing. Day 8+: full active protection. Integration via standard REST API requires no replacement of SIEM, SOC, or core banking systems.
+
+---
+
+## Solutions: /rozwiazania
+
+Three AI-native attack vectors. Three ready answers. Each solution designed for a specific threat vector and a specific regulatory article.
+
+### Solution 01 — All Green Fraud
+
+**Threat (OWASP ASI06):** Malicious code systematically falsifies system logs, compliance reports, and SecOps dashboards. Every sensor shows "All Green" while an attack has been ongoing for weeks or months. Average detection time: 90+ days.
+
+**Qunigma Solution:** MTTAV Engine detects inconsistencies at the bit level, comparing the real state of infrastructure with what logs report. Falsification is detected and neutralized before it can influence operational decisions.
+
+**Stats:**
+- Average detection time without Qunigma: 90+ days
+- Neutralization time with MTTAV: <2ms
+- Coverage: OWASP ASI06
+
+**Regulation:** DORA Art. 19, incident reporting
+
+### Solution 02 — NHI Governance
+
+**Threat:** API keys, service accounts, OAuth tokens, and machine identities comprise 80% of all corporate cloud traffic (IBM X-Force 2025). One compromised machine identity enables full data exfiltration in 25 minutes.
+
+**Qunigma Solution:** NHI Security automatically inventories, classifies, and monitors every machine identity in client infrastructure. Unauthorized NHI creation, key rotation anomalies, and suspicious access patterns are detected immediately, without delay.
+
+**Stats:**
+- 80% of corporate traffic is NHI (IBM 2025)
+- 25 min to exfiltration without protection
+- Coverage: DORA Art. 8, automatic inventory
+
+**Regulation:** DORA Art. 8, ICT asset inventory
+
+### Solution 03 — LLM Defense
+
+**Threat:** Memory Poisoning is an advanced attack vector targeting the context memory of LLM models. Over weeks, the attacker manipulates historical context, gradually and imperceptibly degrading transaction decisions, risk assessments, and compliance recommendations.
+
+**Qunigma Solution:** Honeypot LLM intercepts and neutralizes attacks before they reach production models. Memory Guard verifies the integrity of every context via SHA-256 at every request level, with overhead under 1ms.
+
+**Stats:**
+- Integrity verification: SHA-256 per context
+- Overhead per request: <1ms
+- Coverage: AI Act Art. 15, cybersecurity of high-risk AI
+
+**Regulation:** AI Act Annex III Art. 15, cybersecurity of high-risk AI systems
+
+---
+
+## Compliance: /compliance
+
+Full readiness for DORA 2025, AI Act Annex III, CRA, and NIS2. Qunigma is designed from the ground up for EU regulatory requirements.
+
+### Regulatory Timeline
+
+| Regulation | Status | Date |
+|---|---|---|
+| NIS2 | Active | Oct 2024 |
+| DORA | Active | Jan 2025 |
+| AI Act Annex III | Upcoming | Aug 2026 |
+| CRA | Upcoming | Sep 2026 |
+
+### DORA 2025 — Digital Operational Resilience Act
+
+**Status:** Active since 17.01.2025
+**Penalty:** Up to 2% annual turnover
+
+DORA requires financial institutions to demonstrate digital operational resilience, including ICT risk management, system testing, and incident reporting within strictly defined time windows.
+
+| Article | Requirement | Qunigma Status |
+|---|---|---|
+| Art. 8 | ICT asset inventory and NHI | Automatic, via NHI Security |
+| Art. 19 | Incident reporting 4h / 24h / 72h | Pre-built reporting packs |
+| Art. 25 | Third-party and ICT supplier risk | Third-party NHI monitoring |
+| Art. 26 | Penetration testing TLPT | Honeypot LLM as TLPT-ready |
+
+### AI Act Annex III — High-Risk AI Systems
+
+**Status:** Deadline 02.08.2026
+**Penalty:** Up to 3% turnover or 15M EUR
+
+AI systems classified as high-risk (including credit scoring, risk assessment) must meet rigorous cybersecurity, quality management, and risk management requirements.
+
+| Article | Requirement | Qunigma Status |
+|---|---|---|
+| Art. 9 | AI risk management system | MTTAV real-time risk scoring |
+| Art. 15 | Accuracy, robustness and cybersecurity | Memory Guard SHA-256 |
+| Art. 17 | Quality management system | Audit trail and immutable logs |
+| Art. 72 | Incident reporting to supervisory authority | Integrated with DORA Art. 19 |
+
+### CRA — Cyber Resilience Act
+
+**Status:** Deadline 11.09.2026
+**Penalty:** Up to 15M EUR or 2.5% turnover
+
+CRA introduces mandatory cybersecurity requirements for products with digital elements, including vulnerability disclosure within 24 hours and security updates throughout the product lifecycle.
+
+| Article | Requirement | Qunigma Status |
+|---|---|---|
+| Art. 14 | Vulnerability disclosure within 24 hours | VDP (Vulnerability Disclosure Program) |
+| Art. 13 | Manufacturer obligations, secure configuration | Secure-by-default architecture |
+| Art. 10 | Essential cybersecurity requirements | MTTAV Engine covers full scope |
+| Art. 23 | Reporting of actively exploited vulnerabilities | Integrated with ENISA and CERT |
+
+### NIS2 — Network and Information Security Directive 2
+
+**Status:** Active since 17.10.2024
+**Penalty:** Up to 10M EUR or 2% global turnover
+
+NIS2 extends mandatory cybersecurity measures to "important entities" in the financial sector, including supply chain management, network security, and mandatory incident reporting.
+
+| Article | Requirement | Qunigma Status |
+|---|---|---|
+| Art. 21 | Network security risk management measures | MTTAV real-time protection |
+| Art. 23 | Incident reporting (24h preliminary) | Pre-built NIS2 reporting packs |
+| Art. 21(2)(d) | Supply chain security | NHI Security, third-party monitoring |
+| Art. 21(2)(j) | Staff security and training | Security awareness module |
+
+---
+
+## Company: /firma
+
+### About Qunigma
+
+Qunigma is an EU-native active cyber defense platform built by AI and security experts for organizations where cybersecurity is a critical business element.
+
+**Four pillars:**
+- EU-sovereign: Zero CLOUD Act. No byte of data leaves EU jurisdiction.
+- DORA-aligned: Pre-built packs for Art. 8, 19, and 25. Regulatory readiness from day 1.
+- AI-native: Designed specifically for AI threats, not adapted from traditional systems.
+- Active defense: Neutralization in under 2ms. Not just detection — active response.
+
+### Team
+
+**Peter Mankowski**
+Title: Chief AI & Emerging Technology Advisor
+Background: BlackBerry Technical Lead. VP AI & Computer Vision, 4AG Robotics. Serial CEO and inventor in IoT.
+LinkedIn: https://www.linkedin.com/in/peter-mankowski-18065619/
+
+**Paul Cebo**
+Title: Executive Consultant & vCISO Lead
+Background: President of Norbsoft Mobile (12 years). Enterprise consulting: Samsung, Thomson Reuters, financial institutions.
+LinkedIn: https://www.linkedin.com/in/paulcebo/
+
+### Advisory Board
+
+Three advisory roles being filled: EU Regulatory Expert (DORA/AI Act implementation in financial institutions), AI Security Leader (AI-native attack research and active defense architecture), Financial Market Practitioner (Tier-1 risk management experience). Formation in progress.
+
+### Contact
+
+Executive briefings and demos: piotr@qunigma.ai
+DPO: privacy@qunigma.ai
+EU-sovereign infrastructure. GDPR compliant. No CLOUD Act.
+
+---
+
+## Knowledge Base: /wiedza
+
+Research and analysis for CISOs, CTOs, and Compliance Officers at European organizations.
+
+### Available Content
+
+1. **OWASP ASI06: Anatomy of an All Green Fraud Attack** (Technical analysis, 12 min)
+   Detailed analysis of the log manipulation mechanism, from initial access to exfiltration. How MTTAV Engine detects bit-level inconsistencies.
+
+2. **DORA Art. 19: Guide to Incident Reporting** (Regulatory guide, 8 min)
+   Practical guide to DORA time windows: 4h, 24h, 72h. What data is required at each stage and how automation eliminates deadline risk.
+
+3. **NHI: 25 Minutes from Identity Takeover to Data Leak** (Research report, 18 min)
+   Analysis of 47 NHI incidents from 2023-2024 in European financial institutions. Attack vectors, exfiltration times, and gaps in existing protection systems.
+
+4. **Memory Poisoning: Long-Term Threat to AI Decisions** (White paper, 25 min)
+   First comprehensive study of Memory Poisoning attacks on LLM systems in banking environments. Context degradation mechanism, detection, and defense.
+
+5. **AI Act Annex III: Tier-1 Bank Readiness Checklist** (Checklist, 5 min)
+   47-point readiness checklist for AI Act requirements for high-risk systems in the financial sector. Art. 9, 15, and 17 audit in one document.
+
+6. **MTTAV vs MTTD: Revolution in Security Metrics** (Analysis, 10 min)
+   Why Mean Time to Detect is an outdated metric in the era of autonomous AI attacks. Introduction to MTTAV and implications for SOC architecture.
+
+Newsletter: Monthly analysis of new AI-native attack vectors, regulatory changes, and practical case studies.
+
+---
+
+## Key Differentiators
+
+| | Traditional SIEM/SOC | Qunigma |
+|---|---|---|
+| Detection time | Hours to days | <2ms |
+| Response type | Manual | Autonomous |
+| AI threat coverage | Limited / Signature-based | AI-native, zero-day ready |
+| Regulatory alignment | Partial | DORA / AI Act / NIS2 / CRA |
+| Data sovereignty | Often US CLOUD Act | EU-sovereign |
+| Deployment time | Weeks to months | 8 business days |
+
+---
+
+## Target Audience
+
+- CISO (Chief Information Security Officer) at EU financial institutions
+- CTO (Chief Technology Officer) managing AI infrastructure
+- CFO and Risk Officers responsible for DORA compliance
+- Compliance Officers managing AI Act Annex III obligations
+- IT Security teams at enterprises with AI systems in production
+
+---
+
+## Site URLs
+
+- [Homepage PL](https://qunigma.ai) — AI-native active defense dla UE
+- [Homepage EN](https://qunigma.ai/en) — AI-native active defense platform for EU enterprises
+- [Platform PL](https://qunigma.ai/platforma) — MTTAV Engine, Honeypot LLM, Memory Guard, NHI Security
+- [Platform EN](https://qunigma.ai/en/platforma) — Platform architecture in English
+- [Solutions PL](https://qunigma.ai/rozwiazania) — All Green Fraud, NHI Governance, LLM Defense
+- [Solutions EN](https://qunigma.ai/en/rozwiazania) — Solutions in English
+- [Compliance PL](https://qunigma.ai/compliance) — DORA, AI Act, NIS2, CRA coverage
+- [Compliance EN](https://qunigma.ai/en/compliance) — Compliance in English
+- [Company PL](https://qunigma.ai/firma) — Team, mission, EU sovereignty
+- [Company EN](https://qunigma.ai/en/firma) — Company in English
+- [Knowledge PL](https://qunigma.ai/wiedza) — Technical analyses, regulatory reports
+- [Knowledge EN](https://qunigma.ai/en/wiedza) — Knowledge base in English
+- [Privacy Policy](https://qunigma.ai/privacy) — GDPR privacy policy
+
+---
+
+## Contact
+
+For executive briefings and demos: piotr@qunigma.ai
+DPO contact: privacy@qunigma.ai
+Twitter/X: [@qunigma_ai](https://x.com/qunigma_ai)
