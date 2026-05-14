@@ -70,9 +70,73 @@ const modules = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is MTTAV Engine and how does it work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MTTAV Engine (Mean Time To Active Vectorization) is the core of the Qunigma platform. It detects anomalies at the packet level in real time and autonomously neutralizes threats in under 2ms, before they reach the target system. It reduces MTTD by 99.4% and operates 24/7 without human intervention."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Honeypot LLM work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Honeypot LLM is a decoy language model embedded in client infrastructure. It lures attacking AI agents and draws them into a trap, isolating them with 100% effectiveness and zero false positives. It simultaneously collects live threat intelligence about attack methods and vectors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does Memory Guard protect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Memory Guard protects the context memory of LLM systems against Memory Poisoning attacks. It verifies memory integrity in real time using SHA-256, with an overhead of under 1ms per request. The module is compliant with AI Act Art. 15."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is NHI Security and why does it matter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NHI Security automatically inventories, classifies and monitors all machine identities: API keys, service accounts, OAuth tokens. Without NHI protection, attackers can exfiltrate data in as little as 25 minutes. The module is compliant with DORA Art. 8."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast does Qunigma detect and neutralize threats?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The MTTAV Engine neutralizes threats in under 2ms from anomaly detection — a time window in which no traditional SIEM or SOC can respond. The platform operates autonomously and reduces Mean Time To Detect by 99.4% compared to conventional solutions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the Qunigma platform compliant with DORA and AI Act?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Qunigma is compliant with DORA Art. 8 (NHI Security), DORA Art. 19 (ready reporting packs from day 1), and AI Act Art. 15 (Memory Guard). It can be deployed on-premise or in an EU-sovereign cloud, eliminating CLOUD Act exposure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to deploy the Qunigma platform?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Full deployment takes up to 8 business days. Day 1: API connection and NHI inventory. Day 2: Honeypot LLM calibration. Days 3-7: Memory Guard baseline and testing. Day 8 onwards: full active protection. Integration via standard REST API requires no replacement of SIEM, SOC or core banking systems."
+      }
+    }
+  ]
+};
+
 export default function EnPlatformaPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <SubpageNavbar />
       <main className="flex flex-col w-full">
 
