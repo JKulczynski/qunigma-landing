@@ -1,7 +1,10 @@
 import { SubpageNavbar } from '@/components/SubpageNavbar';
 import { Footer } from '@/components/Footer';
 import { CTASection } from '@/components/CTASection';
-import { ModuleVisual } from '@/components/ModuleVisual';
+import { MTTAVEngineVisual } from '@/components/MTTAVEngineVisual';
+import { HoneypotLLMVisual } from '@/components/HoneypotLLMVisual';
+import { MemoryGuardVisual } from '@/components/MemoryGuardVisual';
+import { NHISecurityVisual } from '@/components/NHISecurityVisual';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -200,11 +203,10 @@ export default function PlataformaPage() {
                 {/* Visual */}
                 <div className={`bg-[#0D0D0D] border border-purple-800/40 rounded-2xl h-[320px] md:h-[380px] flex items-center justify-center relative overflow-hidden ${i % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
                   <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 60% at 50% 50%, rgba(109,40,217,0.12) 0%, transparent 70%)' }} />
-                  <ModuleVisual
-                    topLabel={mod.visual.top}
-                    middleLabel={mod.visual.middle}
-                    bottomLabel={mod.visual.bottom}
-                  />
+                  {mod.id === 'mttav' && <MTTAVEngineVisual />}
+                  {mod.id === 'honeypot' && <HoneypotLLMVisual />}
+                  {mod.id === 'memory' && <MemoryGuardVisual />}
+                  {mod.id === 'nhi' && <NHISecurityVisual />}
                 </div>
               </div>
             ))}
