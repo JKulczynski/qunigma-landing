@@ -1,88 +1,120 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
-type Phase = 'probing' | 'trapping' | 'trapped' | 'intel';
+type Phase = 'idle' | 'approaching' | 'trapped' | 'intel';
 
 export function HoneypotLLMVisual() {
-  const [phase, setPhase] = useState<Phase>('probing');
-  const [blink, setBlink] = useState(false);
+  const [phase, setPhase] = useState<Phase>('idle');
+  const [lineProgress, setLineProgress] = useState(0);
 
   useEffect(() => {
     let cancelled = false;
+    let rafId: number;
     let t: ReturnType<typeof setTimeout>;
+    const APPROACH_DURATION = 1800;
 
     const runCycle = () => {
       if (cancelled) return;
-      setPhase('probing');
-      setBlink(false);
+      setPhase('idle');
+      setLineProgress(0);
 
-      let blinkCount = 0;
-      const doBlink = () => {
+      t = setTimeout(() => {
         if (cancelled) return;
-        setBlink(true);
-        t = setTimeout(() => {
+        setPhase('approaching');
+        const start = performance.now();
+
+        const tick = (now: number) => {
           if (cancelled) return;
-          setBlink(false);
-          blinkCount++;
-          if (blinkCount < 4) {
-            t = setTimeout(doBlink, 450);
+          const p = Math.min((now - start) / APPROACH_DURATION, 1);
+          setLineProgress(p);
+          if (p < 1) {
+            rafId = requestAnimationFrame(tick);
           } else {
+            setPhase('trapped');
             t = setTimeout(() => {
               if (cancelled) return;
-              setPhase('trapping');
-              t = setTimeout(() => {
-                if (cancelled) return;
-                setPhase('trapped');
-                t = setTimeout(() => {
-                  if (cancelled) return;
-                  setPhase('intel');
-                  t = setTimeout(runCycle, 1500);
-                }, 700);
-              }, 400);
-            }, 200);
+              setPhase('intel');
+              t = setTimeout(runCycle, 1500);
+            }, 700);
           }
-        }, 280);
-      };
-
-      t = setTimeout(doBlink, 700);
+        };
+        rafId = requestAnimationFrame(tick);
+      }, 800);
     };
 
     runCycle();
     return () => {
       cancelled = true;
+      cancelAnimationFrame(rafId);
       clearTimeout(t);
     };
   }, []);
 
-  const topFaded = phase === 'trapped' || phase === 'intel';
-  const midFlare = phase === 'trapping' || phase === 'trapped';
-  const bottomLit = phase === 'intel';
+  const attackerOpacity = phase === 'trapped' || phase === 'intel' ? 0.12 : 1;
+  const midFlare = phase === 'trapped';
 
   return (
-    <div className="relative flex flex-col items-center justify-center w-full h-full py-10 z-10 font-mono">
+    <div className="relative flex flex-col items-center justify-center w-full h-full py-8 z-10 font-mono gap-7 px-2">
 
-      <div className={`flex flex-col items-center gap-2.5 transition-opacity duration-400 ${topFaded ? 'opacity-15' : 'opacity-100'}`}>
-        <div className={`w-4 h-4 rounded-full bg-red-500 transition-all duration-150 ${blink ? 'shadow-[0_0_22px_rgba(239,68,68,0.95)]' : 'shadow-[0_0_10px_rgba(239,68,68,0.45)]'}`} />
-        <span className="text-white/70 text-xs tracking-widest">ATTACKING AI</span>
+      {/* Main row: attacker — line — honeypot | real system */}
+      <div className="flex items-center w-full px-5 gap-2">
+
+        {/* Attacking AI */}
+        <div
+          className="flex flex-col items-center gap-2 shrink-0 transition-opacity duration-400"
+          style={{ opacity: attackerOpacity }}
+        >
+          <div className="w-4 h-4 rounded-full bg-red-500 shadow-[0_0_12px_rgba(239,68,68,0.6)]" />
+          <span className="text-white/65 text-[8px] tracking-widest whitespace-nowrap">ATTACKING AI</span>
+        </div>
+
+        {/* Animated line */}
+        <div className="flex-1 relative h-px mx-1">
+          <div className="absolute inset-0 border-t border-dashed border-white/10" />
+          <div
+            className="absolute left-0 top-0 h-px bg-red-400/60"
+            style={{ width: `${lineProgress * 100}%` }}
+          />
+        </div>
+
+        {/* Honeypot LLM */}
+        <div className="flex flex-col items-center gap-2 shrink-0 relative">
+          <div className="absolute top-0 w-6 h-6 bg-[#6D28D9] rounded-full node-pulse pointer-events-none" />
+          <div className="absolute top-0 w-6 h-6 bg-[#6D28D9] rounded-full node-pulse-delayed pointer-events-none" />
+          <div className={`w-6 h-6 rounded-full bg-[#6D28D9] relative z-10 transition-shadow duration-300 ${midFlare ? 'shadow-[0_0_45px_rgba(109,40,217,1.5)]' : 'shadow-[0_0_20px_rgba(109,40,217,0.8)]'}`} />
+          <span className="text-white font-bold text-[8px] tracking-widest mt-1 relative z-20 text-center leading-tight">
+            HONEYPOT<br />LLM
+          </span>
+        </div>
+
+        {/* Divider */}
+        <div className="h-10 w-px bg-white/10 shrink-0 mx-1" />
+
+        {/* Real System */}
+        <div className="flex flex-col items-center gap-2 shrink-0">
+          <div className="w-3.5 h-3.5 rounded-full bg-emerald-500/50 shadow-[0_0_6px_rgba(16,185,129,0.25)]" />
+          <span className="text-white/30 text-[8px] tracking-widest text-center leading-tight whitespace-nowrap">
+            REAL<br />SYSTEM
+          </span>
+        </div>
+
       </div>
 
-      <div className="w-px h-14 border-l-2 border-dashed border-white/20 my-3" />
-
-      <div className="flex flex-col items-center gap-2.5 relative">
-        <div className="absolute top-0 w-6 h-6 bg-[#6D28D9] rounded-full node-pulse pointer-events-none" />
-        <div className="absolute top-0 w-6 h-6 bg-[#6D28D9] rounded-full node-pulse-delayed pointer-events-none" />
-        <div className={`w-6 h-6 rounded-full bg-[#6D28D9] relative z-10 transition-shadow duration-300 ${midFlare ? 'shadow-[0_0_45px_rgba(109,40,217,1.5)]' : 'shadow-[0_0_20px_rgba(109,40,217,0.8)]'}`} />
-        <span className="text-white font-bold text-xs tracking-widest mt-1 relative z-20 text-center transition-all duration-300">
-          {midFlare ? 'ATTACKER TRAPPED' : 'HONEYPOT LLM'}
+      {/* Status bottom */}
+      <div className="flex flex-col items-center gap-2">
+        <div className={`w-3 h-3 rounded-full transition-all duration-500 ${phase === 'intel' ? 'bg-emerald-500 shadow-[0_0_12px_rgba(16,185,129,0.5)]' : 'bg-white/10'}`} />
+        <span className={`text-[9px] tracking-widest transition-colors duration-300 ${
+          phase === 'trapped' ? 'text-purple-400' :
+          phase === 'intel' ? 'text-emerald-400' :
+          phase === 'approaching' ? 'text-red-400/70' :
+          'text-white/20'
+        }`}>
+          {phase === 'trapped' ? 'ATTACKER TRAPPED' :
+           phase === 'intel' ? 'THREAT INTEL GATHERED' :
+           phase === 'approaching' ? 'LURING IN...' :
+           'MONITORING'}
         </span>
-      </div>
-
-      <div className="w-px h-14 border-l-2 border-dashed border-white/20 my-3" />
-
-      <div className="flex flex-col items-center gap-2.5">
-        <div className={`w-4 h-4 rounded-full transition-all duration-500 ${bottomLit ? 'bg-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.5)]' : 'bg-white/15'}`} />
-        <span className={`text-xs tracking-widest transition-colors duration-500 ${bottomLit ? 'text-white/50' : 'text-white/20'}`}>THREAT INTEL</span>
       </div>
 
     </div>

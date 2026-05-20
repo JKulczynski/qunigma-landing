@@ -2,8 +2,8 @@ import { SubpageNavbar } from '@/components/SubpageNavbar';
 import { Footer } from '@/components/Footer';
 import { CTASection } from '@/components/CTASection';
 import { AllGreenFraudVisual } from '@/components/AllGreenFraudVisual';
-import { NHISecurityVisual } from '@/components/NHISecurityVisual';
-import { MemoryGuardVisual } from '@/components/MemoryGuardVisual';
+import { NHIGovernanceVisual } from '@/components/NHIGovernanceVisual';
+import { LLMDefenseVisual } from '@/components/LLMDefenseVisual';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -104,8 +104,8 @@ export default function EnRozwiazaniaPage() {
               <div className={`bg-[#0D0D0D] border border-purple-800/40 rounded-2xl h-[320px] md:h-[400px] flex items-center justify-center relative overflow-hidden ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
                 <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 60% at 50% 50%, rgba(109,40,217,0.12) 0%, transparent 70%)' }} />
                 {sol.id === 'fraud' && <AllGreenFraudVisual />}
-                {sol.id === 'nhi' && <NHISecurityVisual />}
-                {sol.id === 'llm' && <MemoryGuardVisual />}
+                {sol.id === 'nhi' && <NHIGovernanceVisual />}
+                {sol.id === 'llm' && <LLMDefenseVisual />}
               </div>
 
               {/* Text */}
