@@ -79,7 +79,7 @@ export function Footer() {
             <h3 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">
               {isEn ? 'Contact' : 'Kontakt'}
             </h3>
-            <a href="mailto:piotr@qunigma.ai" className="hover:text-white transition-colors">piotr@qunigma.ai</a>
+            <a href="mailto:info@qunigma.ai" className="hover:text-white transition-colors">info@qunigma.ai</a>
           </div>
 
           {/* Company */}

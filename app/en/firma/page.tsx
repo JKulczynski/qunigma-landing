@@ -184,10 +184,10 @@ export default function EnFirmaPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="mailto:piotr@qunigma.ai"
+                href="mailto:info@qunigma.ai"
                 className="bg-[#6D28D9] text-white px-8 py-3.5 rounded-full text-[15px] font-semibold hover:bg-[#5B21B6] transition-colors"
               >
-                piotr@qunigma.ai
+                info@qunigma.ai
               </a>
               <div className="flex items-center gap-3 text-gray-500 text-[14px]">
                 <span className="w-px h-5 bg-gray-300" />
