@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     alternateLocale: 'en_US',
     url: 'https://qunigma.ai',
     siteName: 'Qunigma',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Qunigma' }],
   },
   robots: { index: true, follow: true },
   twitter: {
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
     title: 'Qunigma | AI-Native Active Defense. MTTAV <2ms.',
     description: 'Platforma active cyber defense AI-native. DORA/AI Act compliant. EU-sovereign, zbudowane w UE.',
     site: '@qunigma_ai',
+    images: ['/og-image.png'],
   },
 };
 

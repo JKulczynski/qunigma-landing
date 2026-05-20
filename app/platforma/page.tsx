@@ -1,6 +1,7 @@
 import { SubpageNavbar } from '@/components/SubpageNavbar';
 import { Footer } from '@/components/Footer';
 import { CTASection } from '@/components/CTASection';
+import { ModuleVisual } from '@/components/ModuleVisual';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ const modules = [
       { value: '99.4%', label: 'Redukcja MTTD' },
       { value: '24/7', label: 'Autonomiczna ochrona' },
     ],
+    visual: { top: 'THREAT AGENT', middle: 'MTTAV ENGINE', bottom: 'NEUTRALIZED' },
   },
   {
     id: 'honeypot',
@@ -41,6 +43,7 @@ const modules = [
       { value: 'Zero', label: 'False positive' },
       { value: 'Live', label: 'Threat intelligence' },
     ],
+    visual: { top: 'ATTACKING AI', middle: 'HONEYPOT LLM', bottom: 'THREAT INTEL' },
   },
   {
     id: 'memory',
@@ -54,6 +57,7 @@ const modules = [
       { value: '<1ms', label: 'Overhead na request' },
       { value: 'AI Act', label: 'Art. 15 compliant' },
     ],
+    visual: { top: 'POISONED CONTEXT', middle: 'MEMORY GUARD', bottom: 'VERIFIED SHA-256' },
   },
   {
     id: 'nhi',
@@ -67,6 +71,7 @@ const modules = [
       { value: '25 min', label: 'Czas eksfiltracji bez ochrony' },
       { value: 'DORA', label: 'Art. 8 compliant' },
     ],
+    visual: { top: 'ROGUE NHI', middle: 'NHI SECURITY', bottom: 'GOVERNED' },
   },
 ];
 
@@ -192,14 +197,14 @@ export default function PlataformaPage() {
                   </div>
                 </div>
 
-                {/* Visual placeholder */}
+                {/* Visual */}
                 <div className={`bg-[#0D0D0D] border border-purple-800/40 rounded-2xl h-[320px] md:h-[380px] flex items-center justify-center relative overflow-hidden ${i % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
                   <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 60% at 50% 50%, rgba(109,40,217,0.12) 0%, transparent 70%)' }} />
-                  <div className="relative text-center">
-                    <div className="text-[64px] font-black text-purple-800/30 leading-none mb-2">{mod.tag}</div>
-                    <div className="text-white/40 text-[13px] font-medium tracking-widest uppercase">{mod.name}</div>
-                    <div className="text-white/20 text-[11px] mt-2">[ Wizualizacja modułu ]</div>
-                  </div>
+                  <ModuleVisual
+                    topLabel={mod.visual.top}
+                    middleLabel={mod.visual.middle}
+                    bottomLabel={mod.visual.bottom}
+                  />
                 </div>
               </div>
             ))}

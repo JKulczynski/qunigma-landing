@@ -1,6 +1,7 @@
 import { SubpageNavbar } from '@/components/SubpageNavbar';
 import { Footer } from '@/components/Footer';
 import { CTASection } from '@/components/CTASection';
+import { ModuleVisual } from '@/components/ModuleVisual';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ const solutions = [
       { value: 'OWASP', label: 'ASI06 coverage' },
     ],
     regulation: 'DORA Art. 19, raportowanie incydentów',
+    visual: { top: 'THREAT AGENT', middle: 'MTTAV ENGINE', bottom: 'FRAUD EXPOSED' },
   },
   {
     id: 'nhi',
@@ -43,6 +45,7 @@ const solutions = [
       { value: 'DORA', label: 'Art. 8, auto-inwentaryzacja' },
     ],
     regulation: 'DORA Art. 8, inwentaryzacja aktywów ICT',
+    visual: { top: 'ROGUE NHI', middle: 'NHI SECURITY', bottom: 'GOVERNED' },
   },
   {
     id: 'llm',
@@ -57,6 +60,7 @@ const solutions = [
       { value: 'AI Act', label: 'Art. 15, cybersecurity AI' },
     ],
     regulation: 'AI Act Annex III Art. 15, cybersecurity systemów AI high-risk',
+    visual: { top: 'POISONED CONTEXT', middle: 'MEMORY GUARD', bottom: 'CONTEXT SECURED' },
   },
 ];
 
@@ -95,13 +99,13 @@ export default function RozwiazaniaPage() {
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
               {/* Visual */}
-              <div className={`bg-[#0D0D0D] border border-purple-800/40 rounded-2xl h-[320px] md:h-[400px] flex flex-col items-center justify-center gap-4 relative overflow-hidden ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
+              <div className={`bg-[#0D0D0D] border border-purple-800/40 rounded-2xl h-[320px] md:h-[400px] flex items-center justify-center relative overflow-hidden ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
                 <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 60% at 50% 50%, rgba(109,40,217,0.12) 0%, transparent 70%)' }} />
-                <div className="relative text-center">
-                  <div className="text-[72px] font-black text-purple-800/30 leading-none mb-2">{sol.tag}</div>
-                  <div className="text-white/40 text-[13px] font-medium tracking-widest uppercase">{sol.name}</div>
-                  <div className="text-white/20 text-[11px] mt-2">[ Wizualizacja scenariusza ataku ]</div>
-                </div>
+                <ModuleVisual
+                  topLabel={sol.visual.top}
+                  middleLabel={sol.visual.middle}
+                  bottomLabel={sol.visual.bottom}
+                />
               </div>
 
               {/* Text */}
