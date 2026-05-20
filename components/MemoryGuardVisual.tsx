@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-const CONTEXTS = ['CTX-1', 'CTX-2', 'CTX-3', 'CTX-4', 'CTX-5'];
-const SHORT_HASHES = ['a3f8c2', 'f72b91', '8e4d3a', 'c91a2f', '2b7f9c'];
+const CONTEXTS = ['CONTEXT 1', 'CONTEXT 2', 'CONTEXT 3', 'CONTEXT 4', 'CONTEXT 5'];
 
 export function MemoryGuardVisual() {
   const [poisonedIdx, setPoisonedIdx] = useState<number | null>(null);
@@ -52,7 +51,7 @@ export function MemoryGuardVisual() {
         </div>
       </div>
 
-      <div className={`text-[10px] tracking-widest transition-colors duration-200 min-h-[14px] ${blocked ? 'text-emerald-400' : poisonedIdx !== null ? 'text-red-400' : 'text-white/25'}`}>
+      <div className={`text-[11px] font-bold tracking-widest transition-colors duration-200 min-h-[16px] ${blocked ? 'text-emerald-400' : poisonedIdx !== null ? 'text-red-400' : 'text-white/25'}`}>
         {blocked ? 'POISONING BLOCKED' : poisonedIdx !== null ? 'ANOMALY DETECTED' : 'ALL CONTEXTS VERIFIED'}
       </div>
 
@@ -62,19 +61,18 @@ export function MemoryGuardVisual() {
           const isBlocked = poisonedIdx === i && blocked;
           return (
             <div key={i} className="flex flex-col items-center gap-1">
-              <div className={`w-9 h-11 rounded border flex flex-col items-center justify-center gap-0.5 transition-all duration-250 ${
+              <div className={`w-11 h-11 rounded border flex items-center justify-center transition-all duration-250 ${
                 isBlocked
                   ? 'bg-emerald-950/40 border-emerald-500/50'
                   : isPoisoned
                   ? 'bg-red-950/40 border-red-500/50'
                   : 'bg-white/[0.03] border-white/10'
               }`}>
-                <span className={`text-[10px] font-bold transition-colors duration-200 ${isBlocked ? 'text-emerald-400' : isPoisoned ? 'text-red-400' : 'text-emerald-500/50'}`}>
+                <span className={`text-[13px] font-bold transition-colors duration-200 ${isBlocked ? 'text-emerald-400' : isPoisoned ? 'text-red-400' : 'text-emerald-500/50'}`}>
                   {isBlocked ? '✓' : isPoisoned ? '!' : '✓'}
                 </span>
-                <span className="text-[7px] text-white/20 font-mono">{SHORT_HASHES[i].slice(0, 4)}</span>
               </div>
-              <span className="text-[7px] text-white/20">{ctx}</span>
+              <span className="text-[7px] text-white/25 text-center leading-tight">{ctx}</span>
             </div>
           );
         })}

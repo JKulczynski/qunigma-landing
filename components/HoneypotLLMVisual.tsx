@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 type Phase = 'idle' | 'approaching' | 'trapped' | 'intel';
 
@@ -91,11 +91,11 @@ export function HoneypotLLMVisual() {
         {/* Divider */}
         <div className="h-10 w-px bg-white/10 shrink-0 mx-1" />
 
-        {/* Real System */}
+        {/* Client Infrastructure */}
         <div className="flex flex-col items-center gap-2 shrink-0">
-          <div className="w-3.5 h-3.5 rounded-full bg-emerald-500/50 shadow-[0_0_6px_rgba(16,185,129,0.25)]" />
-          <span className="text-white/30 text-[8px] tracking-widest text-center leading-tight whitespace-nowrap">
-            REAL<br />SYSTEM
+          <div className="w-5 h-5 rounded-full bg-emerald-500/70 shadow-[0_0_10px_rgba(16,185,129,0.4)]" />
+          <span className="text-white/55 text-[8px] font-bold tracking-widest text-center leading-tight whitespace-nowrap">
+            CLIENT<br />INFRA
           </span>
         </div>
 
