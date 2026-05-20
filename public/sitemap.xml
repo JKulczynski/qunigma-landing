@@ -57,6 +57,24 @@
   </url>
 
   <url>
+    <loc>https://qunigma.ai/wiedza</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qunigma.ai/wiedza"/>
+    <xhtml:link rel="alternate" hreflang="pl-PL" href="https://qunigma.ai/wiedza"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://qunigma.ai/en/wiedza"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://qunigma.ai/en/wiedza</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qunigma.ai/wiedza"/>
+    <xhtml:link rel="alternate" hreflang="pl-PL" href="https://qunigma.ai/wiedza"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://qunigma.ai/en/wiedza"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://qunigma.ai/compliance</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://qunigma.ai/compliance"/>
     <xhtml:link rel="alternate" hreflang="pl-PL" href="https://qunigma.ai/compliance"/>
@@ -93,21 +111,21 @@
   </url>
 
   <url>
-    <loc>https://qunigma.ai/wiedza</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://qunigma.ai/wiedza"/>
-    <xhtml:link rel="alternate" hreflang="pl-PL" href="https://qunigma.ai/wiedza"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://qunigma.ai/en/wiedza"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://qunigma.ai/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qunigma.ai/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl-PL" href="https://qunigma.ai/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://qunigma.ai/en/privacy"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://qunigma.ai/en/wiedza</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://qunigma.ai/wiedza"/>
-    <xhtml:link rel="alternate" hreflang="pl-PL" href="https://qunigma.ai/wiedza"/>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://qunigma.ai/en/wiedza"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://qunigma.ai/en/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://qunigma.ai/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl-PL" href="https://qunigma.ai/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://qunigma.ai/en/privacy"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>

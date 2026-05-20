@@ -12,7 +12,7 @@ import { StreamingVideo } from '@/components/StreamingVideo';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Qunigma | AI-Native Active Cyber Defense. MTTAV <2ms.',
+  title: 'Qunigma | AI-Native Active Defense. MTTAV <2ms.',
   description: 'The first EU-sovereign active defense platform built specifically for AI-native threats: NHI attacks, Memory Poisoning, and All Green Fraud. MTTAV under 2ms.',
   alternates: {
     canonical: 'https://qunigma.ai/en',
