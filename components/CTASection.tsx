@@ -24,9 +24,9 @@ export function CTASection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
 
           <div className="bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-purple-600 transition-colors duration-200 cursor-pointer flex flex-col h-full group">
-            <h4 className="text-white font-bold mb-3">
+            <h3 className="text-white font-bold mb-3">
               {isEn ? 'AI Security Readiness Analysis' : 'Analiza Gotowości AI Security'}
-            </h4>
+            </h3>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               {isEn
                 ? 'MTTAV Gap Analysis Template, complete and bring to tomorrow\'s board meeting.'
@@ -38,9 +38,9 @@ export function CTASection() {
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-purple-600 transition-colors duration-200 cursor-pointer flex flex-col h-full group">
-            <h4 className="text-white font-bold mb-3">
+            <h3 className="text-white font-bold mb-3">
               {isEn ? 'Technical Specification for CTO' : 'Specyfikacja Techniczna dla CTO'}
-            </h4>
+            </h3>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               {isEn
                 ? 'Full integration documentation for CTO and Chief Architect.'
@@ -52,9 +52,9 @@ export function CTASection() {
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-purple-600 transition-colors duration-200 cursor-pointer flex flex-col h-full group">
-            <h4 className="text-white font-bold mb-3">
+            <h3 className="text-white font-bold mb-3">
               {isEn ? 'ROI Matrix: DORA & AI Act' : 'Matryca ROI: DORA & AI Act'}
-            </h4>
+            </h3>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               {isEn
                 ? 'Business case for CFO: TCO vs. regulatory and security risk.'

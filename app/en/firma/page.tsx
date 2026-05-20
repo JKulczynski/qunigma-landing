@@ -99,7 +99,7 @@ export default function EnFirmaPage() {
                 { label: 'Active defense', desc: 'Neutralization in under 2ms. Not just detection, active response.' },
               ].map((item) => (
                 <div key={item.label} className="bg-white rounded-xl border border-gray-200 p-6 hover:border-purple-200 transition-colors">
-                  <h4 className="text-[16px] font-bold text-gray-900 mb-2">{item.label}</h4>
+                  <h3 className="text-[16px] font-bold text-gray-900 mb-2">{item.label}</h3>
                   <p className="text-[14px] text-gray-500 leading-snug">{item.desc}</p>
                 </div>
               ))}

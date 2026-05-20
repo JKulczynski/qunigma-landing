@@ -62,7 +62,7 @@ export function MTTAVVisualSection() {
             <div className="flex gap-6 items-start">
               <Radar className="w-5 h-5 text-[#6D28D9] mt-1 shrink-0" strokeWidth={1.5} />
               <div>
-                <h4 className="text-white font-bold mb-1 text-[16px]">CAPTURE</h4>
+                <h3 className="text-white font-bold mb-1 text-[16px]">CAPTURE</h3>
                 <p className="text-gray-400 leading-relaxed text-[16px]">
                   {isEn ? 'Real-time anomaly detection at packet level.' : 'Wykrywanie anomalii na poziomie pakietu w czasie rzeczywistym.'}
                 </p>
@@ -71,7 +71,7 @@ export function MTTAVVisualSection() {
             <div className="flex gap-6 items-start">
               <ShieldOff className="w-5 h-5 text-[#6D28D9] mt-1 shrink-0" strokeWidth={1.5} />
               <div>
-                <h4 className="text-white font-bold mb-1 text-[16px]">PUNISH</h4>
+                <h3 className="text-white font-bold mb-1 text-[16px]">PUNISH</h3>
                 <p className="text-gray-400 leading-relaxed text-[16px]">
                   {isEn ? 'Autonomous isolation of suspicious nodes and NHI agents.' : 'Autonomiczna izolacja podejrzanych węzłów i agentów NHI.'}
                 </p>
@@ -80,7 +80,7 @@ export function MTTAVVisualSection() {
             <div className="flex gap-6 items-start">
               <Lock className="w-5 h-5 text-[#6D28D9] mt-1 shrink-0" strokeWidth={1.5} />
               <div>
-                <h4 className="text-white font-bold mb-1 text-[16px]">PREVENT</h4>
+                <h3 className="text-white font-bold mb-1 text-[16px]">PREVENT</h3>
                 <p className="text-gray-400 leading-relaxed text-[16px]">
                   {isEn ? 'Hardening the network against the attack vector across all infrastructure.' : 'Uodparnianie sieci na dany wektor ataku w całej infrastrukturze.'}
                 </p>

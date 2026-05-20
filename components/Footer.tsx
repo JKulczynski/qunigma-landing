@@ -45,9 +45,9 @@ export function Footer() {
 
           {/* Platform */}
           <div className="flex flex-col gap-3">
-            <h4 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">
+            <h3 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">
               {isEn ? 'Platform' : 'Platforma'}
-            </h4>
+            </h3>
             <Link href={`${p}/platforma#mttav`} className="hover:text-white transition-colors">MTTAV Engine</Link>
             <Link href={`${p}/platforma#honeypot`} className="hover:text-white transition-colors">Honeypot LLM</Link>
             <Link href={`${p}/platforma#memory`} className="hover:text-white transition-colors">Memory Guard</Link>
@@ -56,9 +56,9 @@ export function Footer() {
 
           {/* Solutions */}
           <div className="flex flex-col gap-3">
-            <h4 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">
+            <h3 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">
               {isEn ? 'Solutions' : 'Rozwiązania'}
-            </h4>
+            </h3>
             <Link href={`${p}/rozwiazania#fraud`} className="hover:text-white transition-colors">All Green Fraud</Link>
             <Link href={`${p}/rozwiazania#nhi`} className="hover:text-white transition-colors">NHI Governance</Link>
             <Link href={`${p}/rozwiazania#llm`} className="hover:text-white transition-colors">LLM Defense</Link>
@@ -67,7 +67,7 @@ export function Footer() {
 
           {/* Compliance */}
           <div className="flex flex-col gap-3">
-            <h4 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">Compliance</h4>
+            <h3 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">Compliance</h3>
             <Link href={`${p}/compliance#dora`} className="hover:text-white transition-colors">DORA 2025</Link>
             <Link href={`${p}/compliance#ai-act`} className="hover:text-white transition-colors">AI Act Annex III</Link>
             <Link href={`${p}/compliance#cra`} className="hover:text-white transition-colors">CRA</Link>
@@ -76,17 +76,17 @@ export function Footer() {
 
           {/* Contact */}
           <div className="flex flex-col gap-3">
-            <h4 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">
+            <h3 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">
               {isEn ? 'Contact' : 'Kontakt'}
-            </h4>
+            </h3>
             <a href="mailto:piotr@qunigma.ai" className="hover:text-white transition-colors">piotr@qunigma.ai</a>
           </div>
 
           {/* Company */}
           <div className="flex flex-col gap-3">
-            <h4 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">
+            <h3 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">
               {isEn ? 'Company' : 'Firma'}
-            </h4>
+            </h3>
             <Link href={`${p}/firma`} className="hover:text-white transition-colors">{isEn ? 'About us' : 'O nas'}</Link>
             <Link href={`${p}/wiedza`} className="hover:text-white transition-colors">{isEn ? 'Resources' : 'Wiedza'}</Link>
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
