@@ -44,6 +44,11 @@ export default async function RootLayout({
   return (
     <html lang={lang} suppressHydrationWarning>
       <head>
+        <Script
+          id="cookieyes"
+          src="https://cdn-cookieyes.com/client_data/0c0a3c066b2cd897529a4d864c788510/script.js"
+          strategy="beforeInteractive"
+        />
         <Script id="gtm-head" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
