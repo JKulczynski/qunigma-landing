@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Qunigma' }],
   },
   robots: { index: true, follow: true },
+  verification: { google: 'wpjHMqJmmCsC8qFjgtgrhowqcHtiCoruEiEx7YArMuA' },
   twitter: {
     card: 'summary_large_image',
     title: 'Qunigma | AI-Native Active Defense. MTTAV <2ms.',
