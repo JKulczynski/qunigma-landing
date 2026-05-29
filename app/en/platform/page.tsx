@@ -262,7 +262,7 @@ export default function EnPlatformaPage() {
                   className="text-[32px] md:text-[42px] font-bold leading-tight tracking-tight mb-6"
                   style={{ backgroundImage: 'linear-gradient(135deg, #111827 0%, #6D28D9 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
                 >
-                  Deploy in 48 hours. Zero disruption.
+                  Zero disruption.
                 </h2>
                 <p className="text-[17px] text-gray-600 leading-relaxed mb-10">
                   The platform integrates with existing banking infrastructure through standard APIs. No need to replace SIEM, SOC or core banking systems.

@@ -262,7 +262,7 @@ export default function PlataformaPage() {
                   className="text-[32px] md:text-[42px] font-bold leading-tight tracking-tight mb-6"
                   style={{ backgroundImage: 'linear-gradient(135deg, #111827 0%, #6D28D9 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
                 >
-                  Deploy w 48 godzin. Zero disruption.
+                  Zero disruption.
                 </h2>
                 <p className="text-[17px] text-gray-600 leading-relaxed mb-10">
                   Platforma integruje się z istniejącą infrastrukturą bankową przez standardowe API. Brak konieczności wymiany systemów SIEM, SOC ani core banking.
