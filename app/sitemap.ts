@@ -16,11 +16,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const enPages = [
     { url: `${base}/en`, priority: 1.0 },
-    { url: `${base}/en/platforma`, priority: 0.9 },
-    { url: `${base}/en/rozwiazania`, priority: 0.9 },
+    { url: `${base}/en/platform`, priority: 0.9 },
+    { url: `${base}/en/solutions`, priority: 0.9 },
     { url: `${base}/en/compliance`, priority: 0.8 },
-    { url: `${base}/en/firma`, priority: 0.7 },
-    { url: `${base}/en/wiedza`, priority: 0.7 },
+    { url: `${base}/en/company`, priority: 0.7 },
+    { url: `${base}/en/resources`, priority: 0.7 },
     { url: `${base}/en/privacy`, priority: 0.3 },
   ];
 

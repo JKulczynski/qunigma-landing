@@ -7,9 +7,9 @@ export const metadata: Metadata = {
   title: 'Company | Qunigma, About Us, Team, Mission',
   description: 'Qunigma is an EU-native active cyber defense platform built by AI and security experts for organizations where cybersecurity is a critical business element.',
   alternates: {
-    canonical: 'https://qunigma.ai/en/firma',
+    canonical: 'https://qunigma.ai/en/company',
     languages: {
-      'en-US': 'https://qunigma.ai/en/firma',
+      'en-US': 'https://qunigma.ai/en/company',
       'pl-PL': 'https://qunigma.ai/firma',
     },
   },

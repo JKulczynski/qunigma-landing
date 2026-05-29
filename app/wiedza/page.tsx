@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: 'https://qunigma.ai/wiedza',
     languages: {
       'pl-PL': 'https://qunigma.ai/wiedza',
-      'en-US': 'https://qunigma.ai/en/wiedza',
+      'en-US': 'https://qunigma.ai/en/resources',
     },
   },
 };

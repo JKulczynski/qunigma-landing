@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://qunigma.ai/firma',
     languages: {
       'pl-PL': 'https://qunigma.ai/firma',
-      'en-US': 'https://qunigma.ai/en/firma',
+      'en-US': 'https://qunigma.ai/en/company',
     },
   },
 };

@@ -6,9 +6,9 @@ export const metadata: Metadata = {
   title: 'Resources | Qunigma, AI Security Analyses, Reports, Webinars',
   description: 'Knowledge base on AI-native threats, DORA and AI Act regulations, and active defense architecture for security leaders at EU organizations.',
   alternates: {
-    canonical: 'https://qunigma.ai/en/wiedza',
+    canonical: 'https://qunigma.ai/en/resources',
     languages: {
-      'en-US': 'https://qunigma.ai/en/wiedza',
+      'en-US': 'https://qunigma.ai/en/resources',
       'pl-PL': 'https://qunigma.ai/wiedza',
     },
   },

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     canonical: 'https://qunigma.ai/platforma',
     languages: {
       'pl-PL': 'https://qunigma.ai/platforma',
-      'en-US': 'https://qunigma.ai/en/platforma',
+      'en-US': 'https://qunigma.ai/en/platform',
     },
   },
 };

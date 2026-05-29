@@ -10,8 +10,23 @@ export function SubpageNavbar({ transparent = false }: { transparent?: boolean }
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
   const isEn = pathname.startsWith('/en');
-  const prefix = isEn ? '/en' : '';
-  const langTogglePath = isEn ? (pathname.slice(3) || '/') : `/en${pathname}`;
+
+  const plToEn: Record<string, string> = { platforma: 'platform', rozwiazania: 'solutions', wiedza: 'resources', firma: 'company' };
+  const enToPl: Record<string, string> = { platform: 'platforma', solutions: 'rozwiazania', resources: 'wiedza', company: 'firma' };
+
+  const slug = (enSlug: string, plSlug: string) => isEn ? `/en/${enSlug}` : `/${plSlug}`;
+
+  const langTogglePath = (() => {
+    if (isEn) {
+      const rest = pathname.slice(3) || '/';
+      const segment = rest.split('/').filter(Boolean)[0] || '';
+      return segment ? rest.replace(segment, enToPl[segment] ?? segment) : '/';
+    } else {
+      const segment = pathname.split('/').filter(Boolean)[0] || '';
+      const mapped = plToEn[segment] ?? segment;
+      return segment ? `/en${pathname.replace(segment, mapped)}` : '/en';
+    }
+  })();
 
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? 'hidden' : '';
@@ -39,19 +54,19 @@ export function SubpageNavbar({ transparent = false }: { transparent?: boolean }
           </Link>
 
           <div className="hidden md:flex items-center gap-[30px]">
-            <Link href={`${prefix}/platforma`} className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">
+            <Link href={slug('platform', 'platforma')} className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">
               {isEn ? 'Platform' : 'Platforma'}
             </Link>
-            <Link href={`${prefix}/rozwiazania`} className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">
+            <Link href={slug('solutions', 'rozwiazania')} className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">
               {isEn ? 'Solutions' : 'Rozwiązania'}
             </Link>
-            <Link href={`${prefix}/compliance`} className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">
+            <Link href={slug('compliance', 'compliance')} className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">
               Compliance
             </Link>
-            <Link href={`${prefix}/wiedza`} className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">
+            <Link href={slug('resources', 'wiedza')} className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">
               {isEn ? 'Resources' : 'Wiedza'}
             </Link>
-            <Link href={`${prefix}/firma`} className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">
+            <Link href={slug('company', 'firma')} className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">
               {isEn ? 'Company' : 'Firma'}
             </Link>
           </div>
@@ -89,11 +104,11 @@ export function SubpageNavbar({ transparent = false }: { transparent?: boolean }
       {isMenuOpen && (
         <div className="md:hidden bg-black border-t border-white/10 px-6 py-8 flex flex-col gap-1 overflow-y-auto max-h-[calc(100vh-80px)]">
           {[
-            [isEn ? 'Platform' : 'Platforma', `${prefix}/platforma`],
-            [isEn ? 'Solutions' : 'Rozwiązania', `${prefix}/rozwiazania`],
-            ['Compliance', `${prefix}/compliance`],
-            [isEn ? 'Resources' : 'Wiedza', `${prefix}/wiedza`],
-            [isEn ? 'Company' : 'Firma', `${prefix}/firma`],
+            [isEn ? 'Platform' : 'Platforma', slug('platform', 'platforma')],
+            [isEn ? 'Solutions' : 'Rozwiązania', slug('solutions', 'rozwiazania')],
+            ['Compliance', slug('compliance', 'compliance')],
+            [isEn ? 'Resources' : 'Wiedza', slug('resources', 'wiedza')],
+            [isEn ? 'Company' : 'Firma', slug('company', 'firma')],
           ].map(([label, href]) => (
             <Link key={label} href={href} onClick={() => setIsMenuOpen(false)} className="text-white/80 text-[17px] font-medium py-3 border-b border-white/5 hover:text-purple-400 transition-colors">
               {label}

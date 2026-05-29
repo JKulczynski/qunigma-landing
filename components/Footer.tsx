@@ -26,7 +26,7 @@ function XIcon() {
 export function Footer() {
   const pathname = usePathname();
   const isEn = pathname.startsWith('/en');
-  const p = isEn ? '/en' : '';
+  const slug = (enSlug: string, plSlug: string) => isEn ? `/en/${enSlug}` : `/${plSlug}`;
 
   return (
     <footer className="bg-[#000000] text-white/60 text-sm w-full py-16 px-6 border-t border-white/10">
@@ -48,10 +48,10 @@ export function Footer() {
             <h3 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">
               {isEn ? 'Platform' : 'Platforma'}
             </h3>
-            <Link href={`${p}/platforma#mttav`} className="hover:text-white transition-colors">MTTAV Engine</Link>
-            <Link href={`${p}/platforma#honeypot`} className="hover:text-white transition-colors">Honeypot LLM</Link>
-            <Link href={`${p}/platforma#memory`} className="hover:text-white transition-colors">Memory Guard</Link>
-            <Link href={`${p}/platforma#nhi`} className="hover:text-white transition-colors">NHI Security</Link>
+            <Link href={`${slug('platform', 'platforma')}#mttav`} className="hover:text-white transition-colors">MTTAV Engine</Link>
+            <Link href={`${slug('platform', 'platforma')}#honeypot`} className="hover:text-white transition-colors">Honeypot LLM</Link>
+            <Link href={`${slug('platform', 'platforma')}#memory`} className="hover:text-white transition-colors">Memory Guard</Link>
+            <Link href={`${slug('platform', 'platforma')}#nhi`} className="hover:text-white transition-colors">NHI Security</Link>
           </div>
 
           {/* Solutions */}
@@ -59,19 +59,19 @@ export function Footer() {
             <h3 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">
               {isEn ? 'Solutions' : 'Rozwiązania'}
             </h3>
-            <Link href={`${p}/rozwiazania#fraud`} className="hover:text-white transition-colors">All Green Fraud</Link>
-            <Link href={`${p}/rozwiazania#nhi`} className="hover:text-white transition-colors">NHI Governance</Link>
-            <Link href={`${p}/rozwiazania#llm`} className="hover:text-white transition-colors">LLM Defense</Link>
-            <Link href={`${p}/rozwiazania`} className="hover:text-white transition-colors">Compliance & Risk</Link>
+            <Link href={`${slug('solutions', 'rozwiazania')}#fraud`} className="hover:text-white transition-colors">All Green Fraud</Link>
+            <Link href={`${slug('solutions', 'rozwiazania')}#nhi`} className="hover:text-white transition-colors">NHI Governance</Link>
+            <Link href={`${slug('solutions', 'rozwiazania')}#llm`} className="hover:text-white transition-colors">LLM Defense</Link>
+            <Link href={slug('solutions', 'rozwiazania')} className="hover:text-white transition-colors">Compliance & Risk</Link>
           </div>
 
           {/* Compliance */}
           <div className="flex flex-col gap-3">
             <h3 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">Compliance</h3>
-            <Link href={`${p}/compliance#dora`} className="hover:text-white transition-colors">DORA 2025</Link>
-            <Link href={`${p}/compliance#ai-act`} className="hover:text-white transition-colors">AI Act Annex III</Link>
-            <Link href={`${p}/compliance#cra`} className="hover:text-white transition-colors">CRA</Link>
-            <Link href={`${p}/compliance#nis2`} className="hover:text-white transition-colors">NIS2</Link>
+            <Link href={`${slug('compliance', 'compliance')}#dora`} className="hover:text-white transition-colors">DORA 2025</Link>
+            <Link href={`${slug('compliance', 'compliance')}#ai-act`} className="hover:text-white transition-colors">AI Act Annex III</Link>
+            <Link href={`${slug('compliance', 'compliance')}#cra`} className="hover:text-white transition-colors">CRA</Link>
+            <Link href={`${slug('compliance', 'compliance')}#nis2`} className="hover:text-white transition-colors">NIS2</Link>
           </div>
 
           {/* Contact */}
@@ -87,8 +87,8 @@ export function Footer() {
             <h3 className="text-white font-semibold text-[13px] tracking-[0.08em] mb-1">
               {isEn ? 'Company' : 'Firma'}
             </h3>
-            <Link href={`${p}/firma`} className="hover:text-white transition-colors">{isEn ? 'About us' : 'O nas'}</Link>
-            <Link href={`${p}/wiedza`} className="hover:text-white transition-colors">{isEn ? 'Resources' : 'Wiedza'}</Link>
+            <Link href={slug('company', 'firma')} className="hover:text-white transition-colors">{isEn ? 'About us' : 'O nas'}</Link>
+            <Link href={slug('resources', 'wiedza')} className="hover:text-white transition-colors">{isEn ? 'Resources' : 'Wiedza'}</Link>
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
           </div>
 

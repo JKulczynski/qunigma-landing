@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     canonical: 'https://qunigma.ai/rozwiazania',
     languages: {
       'pl-PL': 'https://qunigma.ai/rozwiazania',
-      'en-US': 'https://qunigma.ai/en/rozwiazania',
+      'en-US': 'https://qunigma.ai/en/solutions',
     },
   },
 };
