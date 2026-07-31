@@ -52,6 +52,7 @@ export function HeroSection() {
             <Link href="/compliance" className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">Compliance</Link>
             <Link href="/wiedza" className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">Wiedza</Link>
             <Link href="/firma" className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">Firma</Link>
+            <Link href="/metodologia" className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">Metodologia</Link>
           </div>
         </div>
 
@@ -84,7 +85,7 @@ export function HeroSection() {
         {/* Mobile Menu Panel */}
         {isMenuOpen && (
           <div className="md:hidden bg-black border-t border-white/10 px-6 py-8 flex flex-col gap-1 overflow-y-auto max-h-[calc(100vh-80px)]">
-            {[['Platforma', '/platforma'], ['Rozwiązania', '/rozwiazania'], ['Compliance', '/compliance'], ['Wiedza', '/wiedza'], ['Firma', '/firma']].map(([label, href]) => (
+            {[['Platforma', '/platforma'], ['Rozwiązania', '/rozwiazania'], ['Compliance', '/compliance'], ['Wiedza', '/wiedza'], ['Firma', '/firma'], ['Metodologia', '/metodologia']].map(([label, href]) => (
               <Link key={label} href={href} onClick={() => setIsMenuOpen(false)} className="text-white/80 text-[17px] font-medium py-3 border-b border-white/5 hover:text-purple-400 transition-colors">{label}</Link>
             ))}
             <div className="flex flex-col gap-3 pt-6">

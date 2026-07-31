@@ -11,8 +11,8 @@ export function SubpageNavbar({ transparent = false }: { transparent?: boolean }
   const pathname = usePathname();
   const isEn = pathname.startsWith('/en');
 
-  const plToEn: Record<string, string> = { platforma: 'platform', rozwiazania: 'solutions', wiedza: 'resources', firma: 'company' };
-  const enToPl: Record<string, string> = { platform: 'platforma', solutions: 'rozwiazania', resources: 'wiedza', company: 'firma' };
+  const plToEn: Record<string, string> = { platforma: 'platform', rozwiazania: 'solutions', wiedza: 'resources', firma: 'company', metodologia: 'methodology' };
+  const enToPl: Record<string, string> = { platform: 'platforma', solutions: 'rozwiazania', resources: 'wiedza', company: 'firma', methodology: 'metodologia' };
 
   const slug = (enSlug: string, plSlug: string) => isEn ? `/en/${enSlug}` : `/${plSlug}`;
 
@@ -69,6 +69,9 @@ export function SubpageNavbar({ transparent = false }: { transparent?: boolean }
             <Link href={slug('company', 'firma')} className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">
               {isEn ? 'Company' : 'Firma'}
             </Link>
+            <Link href={slug('methodology', 'metodologia')} className="text-white text-[14px] font-medium hover:text-purple-400 transition-colors duration-200 py-4">
+              {isEn ? 'Methodology' : 'Metodologia'}
+            </Link>
           </div>
         </div>
 
@@ -109,6 +112,7 @@ export function SubpageNavbar({ transparent = false }: { transparent?: boolean }
             ['Compliance', slug('compliance', 'compliance')],
             [isEn ? 'Resources' : 'Wiedza', slug('resources', 'wiedza')],
             [isEn ? 'Company' : 'Firma', slug('company', 'firma')],
+            [isEn ? 'Methodology' : 'Metodologia', slug('methodology', 'metodologia')],
           ].map(([label, href]) => (
             <Link key={label} href={href} onClick={() => setIsMenuOpen(false)} className="text-white/80 text-[17px] font-medium py-3 border-b border-white/5 hover:text-purple-400 transition-colors">
               {label}

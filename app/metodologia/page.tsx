@@ -3,7 +3,7 @@ import { Footer } from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Metodologia | Qunigma — skąd biorą się nasze liczby',
+  title: 'Metodologia | Qunigma: skąd biorą się nasze liczby',
   description: 'Jak liczymy MTTAV, ROI i oszczędności z eliminacji AI-native fraud. Pełna metodologia stojąca za liczbami na stronie Qunigma.',
   alternates: {
     canonical: 'https://qunigma.ai/metodologia',
@@ -46,10 +46,10 @@ export default function MetodologiaPage() {
             <h2 className="text-[26px] md:text-[32px] font-bold text-gray-900 mb-6 tracking-tight">Czas reakcji</h2>
             <div className="flex flex-col gap-4 text-[16px] text-gray-600 leading-relaxed">
               <p>
-                <strong className="text-gray-900">241 dni</strong> to średni globalny czas identyfikacji i powstrzymania naruszenia danych, publikowany cyklicznie w raporcie IBM &quot;Cost of a Data Breach&quot;. To liczba branżowa, nie nasza — punkt odniesienia pokazujący, jak długo trwa reakcja w typowej organizacji bez aktywnej obrony.
+                <strong className="text-gray-900">241 dni</strong> to średni globalny czas identyfikacji i powstrzymania naruszenia danych, publikowany cyklicznie w raporcie IBM &quot;Cost of a Data Breach&quot;. To liczba branżowa, nie nasza: punkt odniesienia pokazujący, jak długo trwa reakcja w typowej organizacji bez aktywnej obrony.
               </p>
               <p>
-                <strong className="text-gray-900">Poniżej 2ms</strong> to zmierzony przez nas czas MTTAV (Mean Time To Active Vectorization) — od wykrycia anomalii na poziomie pakietu do autonomicznej neutralizacji w naszym środowisku testowym (PoC). To inna metryka niż pełny cykl życia naruszenia (241 dni obejmuje też etapy poza naszą kontrolą, jak eskalację wewnętrzną czy komunikację z regulatorem) — zestawiamy je obok siebie jako ilustrację skali różnicy między detekcją pasywną a aktywną neutralizacją, nie jako porównanie jeden do jednego tej samej miary.
+                <strong className="text-gray-900">Poniżej 2ms</strong> to zmierzony przez nas czas MTTAV (Mean Time To Active Vectorization), od wykrycia anomalii na poziomie pakietu do autonomicznej neutralizacji w naszym środowisku testowym (PoC). To inna metryka niż pełny cykl życia naruszenia (241 dni obejmuje też etapy poza naszą kontrolą, jak eskalację wewnętrzną czy komunikację z regulatorem). Zestawiamy je obok siebie jako ilustrację skali różnicy między detekcją pasywną a aktywną neutralizacją, nie jako porównanie jeden do jednego tej samej miary.
               </p>
             </div>
           </div>
@@ -65,7 +65,7 @@ export default function MetodologiaPage() {
                 To nasze własne modelowanie, nie cytat z pojedynczego raportu. Łączymy publikowane benchmarki kosztu naruszenia danych z danymi o skali strat specyficznych dla oszustw AI-native (deepfake, syntetyczna tożsamość, All Green Fraud) i przekładamy je na scenariusz organizacji wielkości typowego klienta Qunigma.
               </p>
               <p>
-                Traktuj tę liczbę jako ilustrację rzędu wielkości potencjalnej ekspozycji, nie jako gwarantowaną kwotę — realne oszczędności zależą od skali organizacji, obecnego stosu zabezpieczeń i profilu ryzyka. Chętnie policzymy konkretny scenariusz dla Twojej organizacji podczas rozmowy.
+                Traktuj tę liczbę jako ilustrację rzędu wielkości potencjalnej ekspozycji, nie jako gwarantowaną kwotę: realne oszczędności zależą od skali organizacji, obecnego stosu zabezpieczeń i profilu ryzyka. Chętnie policzymy konkretny scenariusz dla Twojej organizacji podczas rozmowy.
               </p>
             </div>
           </div>
@@ -78,10 +78,10 @@ export default function MetodologiaPage() {
             <h2 className="text-[26px] md:text-[32px] font-bold text-gray-900 mb-6 tracking-tight">Jak liczymy ROI i wskaźniki operacyjne</h2>
             <div className="flex flex-col gap-4 text-[16px] text-gray-600 leading-relaxed">
               <p>
-                <strong className="text-gray-900">338% (3-letni ROI)</strong> i <strong className="text-gray-900">+38% produktywności SecOps</strong> pochodzą z naszego wewnętrznego modelu TCO/ROI, budowanego metodologią zbliżoną do standardowych badań &quot;Total Economic Impact&quot; stosowanych w branży bezpieczeństwa (redukcja alert fatigue, czasu analityka na incydent, kosztu narzędzi konsolidowanych przez MTTAV). To nasza estymata na bazie własnych testów PoC, nie liczba przejęta wprost z jednego zewnętrznego raportu — porównywalne, publicznie dostępne badania dla tej kategorii (AI fraud/risk w fintech) pokazują ROI w podobnym rzędzie wielkości.
+                <strong className="text-gray-900">338% (3-letni ROI)</strong> i <strong className="text-gray-900">+38% produktywności SecOps</strong> pochodzą z naszego wewnętrznego modelu TCO/ROI, budowanego metodologią zbliżoną do standardowych badań &quot;Total Economic Impact&quot; stosowanych w branży bezpieczeństwa (redukcja alert fatigue, czasu analityka na incydent, kosztu narzędzi konsolidowanych przez MTTAV). To nasza estymata na bazie własnych testów PoC, nie liczba przejęta wprost z jednego zewnętrznego raportu: porównywalne, publicznie dostępne badania dla tej kategorii (AI fraud/risk w fintech) pokazują ROI w podobnym rzędzie wielkości.
               </p>
               <p>
-                <strong className="text-gray-900">Sankcje DORA/AI Act (do 7% obrotu)</strong> i <strong className="text-gray-900">odpowiedzialność zarządu (€5M + zakaz funkcji)</strong> to łączna, maksymalna ekspozycja regulacyjna zsumowana ze stosu DORA + AI Act + NIS2 — trzy różne akty prawne z różnymi progami kar, przedstawione jako jeden górny pułap ryzyka, nie jako pojedynczy przepis. Pełne rozbicie na poszczególne artykuły przygotowujemy do materiału dla działu compliance — napisz do nas, jeśli potrzebujesz go już teraz.
+                <strong className="text-gray-900">Sankcje DORA/AI Act (do 7% obrotu)</strong> i <strong className="text-gray-900">odpowiedzialność zarządu (€5M + zakaz funkcji)</strong> to łączna, maksymalna ekspozycja regulacyjna zsumowana ze stosu DORA + AI Act + NIS2, trzy różne akty prawne z różnymi progami kar, przedstawione jako jeden górny pułap ryzyka, nie jako pojedynczy przepis. Pełne rozbicie na poszczególne artykuły przygotowujemy do materiału dla działu compliance. Napisz do nas, jeśli potrzebujesz go już teraz.
               </p>
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function MetodologiaPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-[24px] md:text-[28px] font-bold text-gray-900 mb-4 tracking-tight">Masz pytanie o konkretną liczbę?</h2>
             <p className="text-[16px] text-gray-600 mb-8 leading-relaxed">
-              Napisz do nas — chętnie przejdziemy przez metodologię i pokażemy jak liczby wyglądają dla Twojej organizacji.
+              Napisz do nas, chętnie przejdziemy przez metodologię i pokażemy jak liczby wyglądają dla Twojej organizacji.
             </p>
             <a
               href="mailto:info@qunigma.ai"

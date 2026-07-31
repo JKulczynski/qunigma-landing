@@ -60,7 +60,7 @@ export function TeamSection() {
                 : 'Prezes Norbsoft Mobile (12 lat). Enterprise consulting: Samsung, Thomson Reuters, instytucje finansowe.'}
             </p>
             <span className="inline-block px-3 py-1 bg-purple-50 border border-purple-200 text-purple-700 text-[11px] font-semibold rounded-full mb-4">
-              {isEn ? 'Enterprise Compliance & Risk — Financial Institutions' : 'Enterprise Compliance & Risk — instytucje finansowe'}
+              {isEn ? 'Enterprise Compliance & Risk: Financial Institutions' : 'Enterprise Compliance & Risk: instytucje finansowe'}
             </span>
             <a href="https://www.linkedin.com/in/paulcebo/" target="_blank" rel="noopener noreferrer" aria-label="Paul Cebo on LinkedIn" className="hover:opacity-70 transition-opacity">
               <LinkedInIcon />

@@ -109,7 +109,7 @@ export function ComplianceSection() {
             href={isEn ? '/en/methodology' : '/metodologia'}
             className="text-[13px] text-purple-600/80 hover:text-purple-700 font-medium hover:underline"
           >
-            {isEn ? 'How we assess compliance status — methodology ↗' : 'Jak oceniamy status zgodności — metodologia ↗'}
+            {isEn ? 'How we assess compliance status: methodology ↗' : 'Jak oceniamy status zgodności: metodologia ↗'}
           </Link>
         </div>
 

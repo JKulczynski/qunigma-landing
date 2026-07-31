@@ -112,7 +112,7 @@ export function ROISection() {
             href={isEn ? '/en/methodology#roi' : '/metodologia#roi'}
             className="text-[13px] text-purple-600/80 hover:text-purple-700 font-medium hover:underline"
           >
-            {isEn ? 'How we calculate these figures — methodology ↗' : 'Jak liczymy te wartości — metodologia ↗'}
+            {isEn ? 'How we calculate these figures: methodology ↗' : 'Jak liczymy te wartości: metodologia ↗'}
           </Link>
         </div>
 
