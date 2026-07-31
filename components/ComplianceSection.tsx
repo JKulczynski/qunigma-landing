@@ -2,6 +2,7 @@
 
 import { ShieldCheck, Cpu, FileCheck, Network } from "lucide-react";
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 export function ComplianceSection() {
   const isEn = usePathname().startsWith('/en');
@@ -36,27 +37,21 @@ export function ComplianceSection() {
           <div className="bg-white p-10 rounded-xl shadow-md border border-gray-100 flex flex-col hover:border-purple-200 hover:shadow-lg transition-all duration-200">
             <Cpu className="w-10 h-10 text-[#6D28D9] mb-6" strokeWidth={1.5} />
             <h3 className="text-[22px] font-bold mb-4">AI Act Annex III</h3>
-            <p className="text-[16px] text-gray-600 leading-relaxed mb-6">
+            <p className="text-[16px] text-gray-600 leading-relaxed">
               {isEn
                 ? 'Designed to meet cybersecurity requirements for high-risk AI systems.'
                 : 'Zaprojektowane by spełniać wymogi bezpieczeństwa systemów AI wysokiego ryzyka.'}
             </p>
-            <div className="mt-auto">
-              <span className="inline-block px-3 py-1 bg-amber-100 text-amber-800 text-[11px] font-bold rounded-md">⚠ DEADLINE: 02.08.2026</span>
-            </div>
           </div>
 
           <div className="bg-white p-10 rounded-xl shadow-md border border-gray-100 flex flex-col hover:border-purple-200 hover:shadow-lg transition-all duration-200">
             <FileCheck className="w-10 h-10 text-[#6D28D9] mb-6" strokeWidth={1.5} />
             <h3 className="text-[22px] font-bold mb-4">{isEn ? 'CRA Requirements' : 'Wymogi CRA'}</h3>
-            <p className="text-[16px] text-gray-600 leading-relaxed mb-6">
+            <p className="text-[16px] text-gray-600 leading-relaxed">
               {isEn
                 ? 'Cyber Resilience Act certification, 24h incident reporting.'
                 : 'Certyfikacja zgodna z Cyber Resilience Act, 24h raportowanie incydentów.'}
             </p>
-            <div className="mt-auto">
-              <span className="inline-block px-3 py-1 bg-amber-100 text-amber-800 text-[11px] font-bold rounded-md">⚠ DEADLINE: 11.09.2026</span>
-            </div>
           </div>
 
           <div className="bg-white p-10 rounded-xl shadow-md border border-gray-100 flex flex-col hover:border-purple-200 hover:shadow-lg transition-all duration-200">
@@ -107,6 +102,15 @@ export function ComplianceSection() {
             </table>
           </div>
           <p className="md:hidden text-right text-[11px] text-gray-400 mt-2 pr-1 tracking-wide">{isEn ? 'scroll ›' : 'przewiń ›'}</p>
+        </div>
+
+        <div className="text-center mt-6">
+          <Link
+            href={isEn ? '/en/methodology' : '/metodologia'}
+            className="text-[13px] text-purple-600/80 hover:text-purple-700 font-medium hover:underline"
+          >
+            {isEn ? 'How we assess compliance status — methodology ↗' : 'Jak oceniamy status zgodności — metodologia ↗'}
+          </Link>
         </div>
 
       </div>

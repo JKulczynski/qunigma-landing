@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/compliance`, priority: 0.8 },
     { url: `${base}/firma`, priority: 0.7 },
     { url: `${base}/wiedza`, priority: 0.7 },
+    { url: `${base}/metodologia`, priority: 0.6 },
     { url: `${base}/privacy`, priority: 0.3 },
   ];
 
@@ -21,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/en/compliance`, priority: 0.8 },
     { url: `${base}/en/company`, priority: 0.7 },
     { url: `${base}/en/resources`, priority: 0.7 },
+    { url: `${base}/en/methodology`, priority: 0.6 },
     { url: `${base}/en/privacy`, priority: 0.3 },
   ];
 

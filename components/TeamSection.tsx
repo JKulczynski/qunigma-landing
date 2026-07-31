@@ -43,6 +43,9 @@ export function TeamSection() {
                 ? 'BlackBerry Technical Lead. VP AI & Computer Vision, 4AG Robotics. Serial CEO and inventor in IoT.'
                 : 'BlackBerry Technical Lead. VP AI & Computer Vision, 4AG Robotics. Wielokrotny CEO i wynalazca w IoT.'}
             </p>
+            <span className="inline-block px-3 py-1 bg-purple-50 border border-purple-200 text-purple-700 text-[11px] font-semibold rounded-full mb-4">
+              {isEn ? 'AI Governance & Risk Management' : 'AI Governance & Risk Management'}
+            </span>
             <a href="https://www.linkedin.com/in/peter-mankowski-18065619/" target="_blank" rel="noopener noreferrer" aria-label="Peter Mankowski on LinkedIn" className="hover:opacity-70 transition-opacity">
               <LinkedInIcon />
             </a>
@@ -56,6 +59,9 @@ export function TeamSection() {
                 ? 'President of Norbsoft Mobile (12 years). Enterprise consulting: Samsung, Thomson Reuters, financial institutions.'
                 : 'Prezes Norbsoft Mobile (12 lat). Enterprise consulting: Samsung, Thomson Reuters, instytucje finansowe.'}
             </p>
+            <span className="inline-block px-3 py-1 bg-purple-50 border border-purple-200 text-purple-700 text-[11px] font-semibold rounded-full mb-4">
+              {isEn ? 'Enterprise Compliance & Risk — Financial Institutions' : 'Enterprise Compliance & Risk — instytucje finansowe'}
+            </span>
             <a href="https://www.linkedin.com/in/paulcebo/" target="_blank" rel="noopener noreferrer" aria-label="Paul Cebo on LinkedIn" className="hover:opacity-70 transition-opacity">
               <LinkedInIcon />
             </a>

@@ -89,6 +89,7 @@ export function Footer() {
             </h3>
             <Link href={slug('company', 'firma')} className="hover:text-white transition-colors">{isEn ? 'About us' : 'O nas'}</Link>
             <Link href={slug('resources', 'wiedza')} className="hover:text-white transition-colors">{isEn ? 'Resources' : 'Wiedza'}</Link>
+            <Link href={slug('methodology', 'metodologia')} className="hover:text-white transition-colors">{isEn ? 'Methodology' : 'Metodologia'}</Link>
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
           </div>
 

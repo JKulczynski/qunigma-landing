@@ -2,6 +2,7 @@
 
 import { Timer, TrendingUp } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 export function ROISection() {
   const isEn = usePathname().startsWith('/en');
@@ -36,6 +37,9 @@ export function ROISection() {
                 ? 'Reduction in response time, from 241 days to under 2ms. (IBM Cost of a Data Breach 2025)'
                 : 'Redukcja czasu reakcji, z 241 dni do poniżej 2ms. (IBM Cost of a Data Breach 2025)'}
             </p>
+            <Link href={isEn ? '/en/methodology#response-time' : '/metodologia#czas-reakcji'} className="text-[12px] text-[#6D28D9]/70 hover:text-[#6D28D9] font-medium mt-3 hover:underline w-fit">
+              {isEn ? 'source ↗' : 'źródło ↗'}
+            </Link>
           </div>
 
           <div className="bg-[#171717] rounded-2xl p-10 flex flex-col justify-center text-white shadow-xl shadow-black/20">
@@ -51,6 +55,9 @@ export function ROISection() {
                 ? 'Average savings for an enterprise by eliminating AI-native fraud.'
                 : 'Średnia oszczędność dla organizacji poprzez eliminację AI-native fraud.'}
             </p>
+            <Link href={isEn ? '/en/methodology#fraud-savings' : '/metodologia#oszczednosci'} className="text-[12px] text-white/50 hover:text-white/80 font-medium mt-3 hover:underline w-fit">
+              {isEn ? 'source ↗' : 'źródło ↗'}
+            </Link>
           </div>
 
         </div>
@@ -98,6 +105,15 @@ export function ROISection() {
             </table>
           </div>
           <p className="md:hidden text-right text-[11px] text-gray-400 mt-2 pr-1 tracking-wide">{isEn ? 'scroll ›' : 'przewiń ›'}</p>
+        </div>
+
+        <div className="text-center mt-6">
+          <Link
+            href={isEn ? '/en/methodology#roi' : '/metodologia#roi'}
+            className="text-[13px] text-purple-600/80 hover:text-purple-700 font-medium hover:underline"
+          >
+            {isEn ? 'How we calculate these figures — methodology ↗' : 'Jak liczymy te wartości — metodologia ↗'}
+          </Link>
         </div>
 
       </div>
