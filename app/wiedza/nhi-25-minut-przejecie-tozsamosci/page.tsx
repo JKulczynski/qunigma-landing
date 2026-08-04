@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   description: 'Jak realnie wygląda kompromitacja non-human identity (kluczy API, kont serwisowych, tokenów OAuth) w bankowości: udokumentowane incydenty 2023-2025, dane branżowe o dwell time i breakout time oraz wymogi DORA Art. 8.',
   alternates: {
     canonical: 'https://qunigma.ai/wiedza/nhi-25-minut-przejecie-tozsamosci',
+    languages: {
+      'pl-PL': 'https://qunigma.ai/wiedza/nhi-25-minut-przejecie-tozsamosci',
+      'en-US': 'https://qunigma.ai/en/resources/nhi-25-minute-identity-takeover',
+    },
   },
 };
 

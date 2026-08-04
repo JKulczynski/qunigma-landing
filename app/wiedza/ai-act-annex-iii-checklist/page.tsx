@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   description: 'Checklist gotowości na wymogi AI Act dla systemów wysokiego ryzyka w bankowości: Art. 9 (zarządzanie ryzykiem), Art. 15 (dokładność, odporność, cyberbezpieczeństwo) i Art. 17 (system zarządzania jakością), z aktualnym harmonogramem po Digital Omnibus.',
   alternates: {
     canonical: 'https://qunigma.ai/wiedza/ai-act-annex-iii-checklist',
+    languages: {
+      'pl-PL': 'https://qunigma.ai/wiedza/ai-act-annex-iii-checklist',
+      'en-US': 'https://qunigma.ai/en/resources/ai-act-annex-iii-checklist',
+    },
   },
 };
 

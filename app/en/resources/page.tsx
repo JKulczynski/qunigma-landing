@@ -1,6 +1,7 @@
 import { SubpageNavbar } from '@/components/SubpageNavbar';
 import { Footer } from '@/components/Footer';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Resources | Qunigma, AI Security Analyses, Reports, Webinars',
@@ -33,8 +34,9 @@ const articles = [
     category: 'Research report',
     categoryColor: 'red',
     title: 'NHI: 25 Minutes from Identity Takeover to Data Breach',
-    summary: 'Analysis of 47 NHI incidents from 2023–2024 in European financial institutions. Attack vectors, exfiltration times, and gaps in existing protection systems.',
+    summary: 'Analysis of real, documented NHI breaches (Okta, Cloudflare, Microsoft, Snowflake/Santander). Attack vectors, exfiltration times, and gaps in existing protection systems.',
     readTime: '18 min',
+    slug: 'nhi-25-minute-identity-takeover',
   },
   {
     category: 'White paper',
@@ -47,8 +49,9 @@ const articles = [
     category: 'Checklist',
     categoryColor: 'amber',
     title: 'AI Act Annex III: Readiness Checklist for Tier-1 Banks',
-    summary: '47-point readiness checklist for AI Act requirements for high-risk systems in the financial sector. Audit of Art. 9, 15 and 17 in one document.',
+    summary: '41-point readiness checklist for AI Act requirements for high-risk systems in the financial sector. Audit of Art. 9, 15 and 17 in one document.',
     readTime: '5 min',
+    slug: 'ai-act-annex-iii-checklist',
   },
   {
     category: 'Analysis',
@@ -112,23 +115,37 @@ export default function EnWiedzaPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {articles.map((article) => (
-                <article key={article.title} className="bg-white rounded-2xl border border-gray-100 p-8 flex flex-col hover:border-purple-200 hover:shadow-lg transition-all duration-200 cursor-pointer group">
-                  <span className={`self-start text-[11px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full mb-5 ${colorMap[article.categoryColor]}`}>
-                    {article.category}
-                  </span>
-                  <h3 className="text-[18px] font-bold text-gray-900 leading-tight mb-3 group-hover:text-purple-700 transition-colors">
-                    {article.title}
-                  </h3>
-                  <p className="text-[14px] text-gray-600 leading-relaxed mb-6 flex-grow">
-                    {article.summary}
-                  </p>
-                  <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
-                    <span className="text-[12px] text-gray-400 font-medium">{article.readTime} read</span>
-                    <span className="text-purple-600 text-[13px] font-semibold group-hover:translate-x-1 transition-transform inline-block">Read →</span>
-                  </div>
-                </article>
-              ))}
+              {articles.map((article) => {
+                const cardClass = "bg-white rounded-2xl border border-gray-100 p-8 flex flex-col hover:border-purple-200 hover:shadow-lg transition-all duration-200 group h-full";
+                const content = (
+                  <>
+                    <span className={`self-start text-[11px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full mb-5 ${colorMap[article.categoryColor]}`}>
+                      {article.category}
+                    </span>
+                    <h3 className="text-[18px] font-bold text-gray-900 leading-tight mb-3 group-hover:text-purple-700 transition-colors">
+                      {article.title}
+                    </h3>
+                    <p className="text-[14px] text-gray-600 leading-relaxed mb-6 flex-grow">
+                      {article.summary}
+                    </p>
+                    <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
+                      <span className="text-[12px] text-gray-400 font-medium">{article.readTime} read</span>
+                      <span className="text-purple-600 text-[13px] font-semibold group-hover:translate-x-1 transition-transform inline-block">
+                        {article.slug ? 'Read →' : 'Coming soon'}
+                      </span>
+                    </div>
+                  </>
+                );
+                return article.slug ? (
+                  <Link key={article.title} href={`/en/resources/${article.slug}`} className={`${cardClass} cursor-pointer`}>
+                    {content}
+                  </Link>
+                ) : (
+                  <article key={article.title} className={`${cardClass} opacity-70`}>
+                    {content}
+                  </article>
+                );
+              })}
             </div>
           </div>
         </section>

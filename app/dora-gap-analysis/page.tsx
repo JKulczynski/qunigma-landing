@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   description: '44 punkty kontrolne w 5 filarach DORA (rozporządzenie UE 2022/2554), z odniesieniem do konkretnych artykułów, live scoringiem i wskazówką interpretacji wyniku. DORA obowiązuje od 17.01.2025, sprawdź gdzie realnie stoi Twoja organizacja.',
   alternates: {
     canonical: 'https://qunigma.ai/dora-gap-analysis',
+    languages: {
+      'pl-PL': 'https://qunigma.ai/dora-gap-analysis',
+      'en-US': 'https://qunigma.ai/en/dora-gap-analysis',
+    },
   },
 };
 

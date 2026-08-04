@@ -52,7 +52,7 @@ export default function EnHomePage() {
       {
         "@type": "Question",
         "name": "Does Qunigma work on-premise or in the cloud?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Qunigma works both on-premise and in the cloud. It is EU-sovereign — built and operated in the EU, not subject to the US CLOUD Act. Customer data never leaves EU jurisdiction." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Qunigma works both on-premise and in the cloud. It is EU-sovereign, built and operated in the EU, not subject to the US CLOUD Act. Customer data never leaves EU jurisdiction." }
       },
       {
         "@type": "Question",
@@ -62,7 +62,7 @@ export default function EnHomePage() {
       {
         "@type": "Question",
         "name": "Who is Qunigma for?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Qunigma is designed for CISOs, CTOs, and Compliance Officers at EU enterprises operating under DORA, AI Act, and NIS2 — particularly financial institutions, insurers, banks, large corporations, and organizations processing high-risk data." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Qunigma is designed for CISOs, CTOs, and Compliance Officers at EU enterprises operating under DORA, AI Act, and NIS2, particularly financial institutions, insurers, banks, large corporations, and organizations processing high-risk data." }
       }
     ]
   };
@@ -127,7 +127,7 @@ export default function EnHomePage() {
             <div className="mb-8">
               <MTTAVCounter className="text-purple-400 text-[14px] font-mono tracking-wider font-semibold opacity-90" />
             </div>
-            <Link href="/dora-gap-analysis" className="bg-[#F6F2EA] text-[#0A0E1A] px-8 py-3 rounded-full text-[14px] font-medium hover:bg-white transition-all shadow-[0_-1px_20px_rgba(246,242,234,0.2)] inline-block">
+            <Link href="/en/dora-gap-analysis" className="bg-[#F6F2EA] text-[#0A0E1A] px-8 py-3 rounded-full text-[14px] font-medium hover:bg-white transition-all shadow-[0_-1px_20px_rgba(246,242,234,0.2)] inline-block">
               DORA Gap Analysis
             </Link>
           </div>
