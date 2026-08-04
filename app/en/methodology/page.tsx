@@ -83,6 +83,9 @@ export default function MethodologyPage() {
               <p>
                 <strong className="text-gray-900">DORA/AI Act penalties (up to 7% of turnover)</strong> and <strong className="text-gray-900">board liability (€5M + function ban)</strong> represent the combined maximum regulatory exposure across the DORA + AI Act + NIS2 stack, three separate legal instruments with different penalty thresholds, presented as a single upper risk ceiling rather than a single provision. We&apos;re preparing a full article-by-article breakdown for a compliance-team resource. Reach out if you need it now.
               </p>
+              <p>
+                An important clarification: DORA Art. 5 places this responsibility directly on the board as a non-delegable duty, it can&apos;t be fully transferred to the security team or a vendor. That&apos;s why we treat the immutable decision log (who, when, on what basis) as protection for the people making the decision, not just a formal requirement. Supervision is heading the same direction: the revised ECB Guide to Internal Models (2025) explicitly requires machine-learning models to be &quot;adequately explainable&quot;, not just effective, but able to be justified to an auditor.
+              </p>
             </div>
           </div>
         </section>

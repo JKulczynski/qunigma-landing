@@ -83,6 +83,9 @@ export default function MetodologiaPage() {
               <p>
                 <strong className="text-gray-900">Sankcje DORA/AI Act (do 7% obrotu)</strong> i <strong className="text-gray-900">odpowiedzialność zarządu (€5M + zakaz funkcji)</strong> to łączna, maksymalna ekspozycja regulacyjna zsumowana ze stosu DORA + AI Act + NIS2, trzy różne akty prawne z różnymi progami kar, przedstawione jako jeden górny pułap ryzyka, nie jako pojedynczy przepis. Pełne rozbicie na poszczególne artykuły przygotowujemy do materiału dla działu compliance. Napisz do nas, jeśli potrzebujesz go już teraz.
               </p>
+              <p>
+                Ważne doprecyzowanie: DORA Art. 5 nakłada tę odpowiedzialność wprost na zarząd jako obowiązek niedelegowalny, nie da się jej w całości przenieść na dział bezpieczeństwa czy dostawcę. Dlatego traktujemy nienaruszalny log decyzji (kto, kiedy, na jakiej podstawie) jako element ochrony osób podejmujących decyzję, nie tylko formalny wymóg. To też kierunek, w którym idzie nadzór: zrewidowany ECB Guide to Internal Models (2025) wprost wymaga, żeby modele wykorzystujące uczenie maszynowe były &quot;adequately explainable&quot;, nie tylko skuteczne, ale możliwe do wytłumaczenia audytorowi.
+              </p>
             </div>
           </div>
         </section>
