@@ -133,33 +133,6 @@ export default function EnWiedzaPage() {
           </div>
         </section>
 
-        {/* Newsletter */}
-        <section className="bg-[#171717] py-24 px-6 w-full">
-          <div className="max-w-2xl mx-auto text-center">
-            <span className="text-[11px] text-purple-400 font-bold tracking-[0.12em] uppercase mb-4 block">Newsletter</span>
-            <h2
-              className="text-[28px] md:text-[40px] font-bold leading-tight tracking-tight mb-4 font-[family-name:var(--font-playfair)]"
-              style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
-            >
-              Get analyses before you need them.
-            </h2>
-            <p className="text-[16px] text-white/60 mb-10 leading-relaxed">
-              Once a month: new AI-native attack vectors, regulatory changes and practical case studies. Zero spam.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
-              <input
-                type="email"
-                placeholder="your@email.com"
-                className="flex-1 bg-white/10 border border-white/20 text-white placeholder-white/30 px-5 py-3 rounded-full text-[15px] focus:outline-none focus:border-purple-500 transition-colors"
-              />
-              <button className="bg-[#6D28D9] text-white px-7 py-3 rounded-full text-[14px] font-semibold hover:bg-[#5B21B6] transition-colors shrink-0">
-                Subscribe
-              </button>
-            </div>
-            <p className="text-[11px] text-white/30 mt-4">No spam. Unsubscribe at any time.</p>
-          </div>
-        </section>
-
       </main>
       <Footer />
     </>
