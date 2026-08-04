@@ -40,10 +40,10 @@ const modules = [
     tag: '02',
     tagline: 'A trap designed specifically for attacking AI.',
     description:
-      'A decoy language model embedded in client infrastructure, deceiving AI agents, drawing them into a trap, revealing attack methods and delivering threat intelligence.',
+      'A decoy language model embedded in client infrastructure, deceiving AI agents, drawing them into a trap, revealing attack methods and delivering threat intelligence. Isolation and false-positive results measured in our own proof-of-concept test environment, not a bare claim without methodology.',
     stats: [
-      { value: '100%', label: 'Attacker isolation' },
-      { value: 'Zero', label: 'False positives' },
+      { value: '100%', label: 'Attacker isolation (PoC)' },
+      { value: 'Zero', label: 'False positives (PoC)' },
       { value: 'Live', label: 'Threat intelligence' },
     ],
     visual: { top: 'ATTACKING AI', middle: 'HONEYPOT LLM', bottom: 'THREAT INTEL' },
@@ -95,7 +95,7 @@ const faqSchema = {
       "name": "How does Honeypot LLM work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Honeypot LLM is a decoy language model embedded in client infrastructure. It lures attacking AI agents and draws them into a trap, isolating them with 100% effectiveness and zero false positives. It simultaneously collects live threat intelligence about attack methods and vectors."
+        "text": "Honeypot LLM is a decoy language model embedded in client infrastructure. It lures attacking AI agents and draws them into a trap. In our proof-of-concept testing it isolated attackers in 100% of cases with zero false positives. It simultaneously collects live threat intelligence about attack methods and vectors."
       }
     },
     {

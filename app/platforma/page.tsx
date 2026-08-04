@@ -40,10 +40,10 @@ const modules = [
     tag: '02',
     tagline: 'Pułapka zaprojektowana specjalnie dla atakujących AI.',
     description:
-      'Fałszywy model językowy wbudowany w infrastrukturę klienta, zwodzący agenty AI i wciągający je w pułapkę, ujawniając metody ataku i dostarczając danych wywiadowczych o zagrożeniu.',
+      'Fałszywy model językowy wbudowany w infrastrukturę klienta, zwodzący agenty AI i wciągający je w pułapkę, ujawniając metody ataku i dostarczając danych wywiadowczych o zagrożeniu. Wynik izolacji i false positive zmierzony w naszym środowisku testowym (PoC), nie deklaracja bez metodologii.',
     stats: [
-      { value: '100%', label: 'Izolacja atakującego' },
-      { value: 'Zero', label: 'False positive' },
+      { value: '100%', label: 'Izolacja atakującego (PoC)' },
+      { value: 'Zero', label: 'False positive (PoC)' },
       { value: 'Live', label: 'Threat intelligence' },
     ],
     visual: { top: 'ATTACKING AI', middle: 'HONEYPOT LLM', bottom: 'THREAT INTEL' },
@@ -95,7 +95,7 @@ const faqSchema = {
       "name": "Jak działa Honeypot LLM?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Honeypot LLM to fałszywy model językowy wbudowany w infrastrukturę klienta. Zwabia atakujące agenty AI i wciąga je w pułapkę, izolując je ze 100% skutecznością przy zerowej liczbie false positive. Jednocześnie zbiera live threat intelligence o metodach i wektorach ataku."
+        "text": "Honeypot LLM to fałszywy model językowy wbudowany w infrastrukturę klienta. Zwabia atakujące agenty AI i wciąga je w pułapkę. W naszych testach PoC izolował atakującego w 100% przypadków przy zerowej liczbie false positive. Jednocześnie zbiera live threat intelligence o metodach i wektorach ataku."
       }
     },
     {
