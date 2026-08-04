@@ -24,7 +24,7 @@ export function CTASection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
 
-          <div className="bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-purple-600 transition-colors duration-200 cursor-pointer flex flex-col h-full group">
+          <Link href="/ai-security-readiness-analysis" className="bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-purple-600 transition-colors duration-200 cursor-pointer flex flex-col h-full group">
             <h3 className="text-white font-bold mb-3">
               {isEn ? 'AI Security Readiness Analysis' : 'Analiza Gotowości AI Security'}
             </h3>
@@ -36,9 +36,9 @@ export function CTASection() {
             <div className="mt-auto flex justify-end">
               <Download className="w-5 h-5 text-purple-400 group-hover:translate-y-1 transition-transform" />
             </div>
-          </div>
+          </Link>
 
-          <div className="bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-purple-600 transition-colors duration-200 cursor-pointer flex flex-col h-full group">
+          <Link href="/technical-specification-cto" className="bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-purple-600 transition-colors duration-200 cursor-pointer flex flex-col h-full group">
             <h3 className="text-white font-bold mb-3">
               {isEn ? 'Technical Specification for CTO' : 'Specyfikacja Techniczna dla CTO'}
             </h3>
@@ -50,9 +50,9 @@ export function CTASection() {
             <div className="mt-auto flex justify-end">
               <Download className="w-5 h-5 text-purple-400 group-hover:translate-y-1 transition-transform" />
             </div>
-          </div>
+          </Link>
 
-          <div className="bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-purple-600 transition-colors duration-200 cursor-pointer flex flex-col h-full group">
+          <Link href="/dora-ai-act-calculator" className="bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-purple-600 transition-colors duration-200 cursor-pointer flex flex-col h-full group">
             <h3 className="text-white font-bold mb-3">
               {isEn ? 'ROI Matrix: DORA & AI Act' : 'Matryca ROI: DORA & AI Act'}
             </h3>
@@ -64,7 +64,7 @@ export function CTASection() {
             <div className="mt-auto flex justify-end">
               <Download className="w-5 h-5 text-purple-400 group-hover:translate-y-1 transition-transform" />
             </div>
-          </div>
+          </Link>
 
         </div>
       </div>
