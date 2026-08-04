@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { SubpageNavbar } from '@/components/SubpageNavbar';
 import { ThreatsSection } from '@/components/ThreatsSection';
 import { MTTAVVisualSection } from '@/components/MTTAVVisualSection';
@@ -126,9 +127,9 @@ export default function EnHomePage() {
             <div className="mb-8">
               <MTTAVCounter className="text-purple-400 text-[14px] font-mono tracking-wider font-semibold opacity-90" />
             </div>
-            <button className="bg-[#F6F2EA] text-[#0A0E1A] px-8 py-3 rounded-full text-[14px] font-medium hover:bg-white transition-all shadow-[0_-1px_20px_rgba(246,242,234,0.2)]">
+            <Link href="/dora-gap-analysis" className="bg-[#F6F2EA] text-[#0A0E1A] px-8 py-3 rounded-full text-[14px] font-medium hover:bg-white transition-all shadow-[0_-1px_20px_rgba(246,242,234,0.2)] inline-block">
               DORA Gap Analysis
-            </button>
+            </Link>
           </div>
         </section>
 

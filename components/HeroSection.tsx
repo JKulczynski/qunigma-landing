@@ -64,9 +64,9 @@ export function HeroSection() {
           <a href="mailto:info@qunigma.ai" className="hidden md:inline-flex items-center text-white/80 border border-white/20 px-5 py-2.5 rounded-full text-[14px] font-medium hover:border-white/50 hover:text-white transition-colors duration-200">
             Kontakt
           </a>
-          <button className="bg-[#6D28D9] text-white px-4 py-1.5 md:px-6 md:py-2.5 rounded-full text-[13px] md:text-[14px] font-medium hover:bg-[#5B21B6] transition-colors duration-200">
+          <Link href="/dora-gap-analysis" className="bg-[#6D28D9] text-white px-4 py-1.5 md:px-6 md:py-2.5 rounded-full text-[13px] md:text-[14px] font-medium hover:bg-[#5B21B6] transition-colors duration-200">
             Analiza Luk DORA
-          </button>
+          </Link>
 
           <button
             className="md:hidden text-white flex items-center justify-center hover:text-purple-400 transition-colors"
@@ -95,9 +95,9 @@ export function HeroSection() {
               <a href="mailto:info@qunigma.ai" onClick={() => setIsMenuOpen(false)} className="text-center text-white/80 border border-white/20 px-5 py-3 rounded-full text-[15px] font-medium hover:border-white/50 hover:text-white transition-colors">
                 Kontakt
               </a>
-              <button onClick={() => setIsMenuOpen(false)} className="bg-[#6D28D9] text-white px-6 py-3 rounded-full text-[15px] font-medium hover:bg-[#5B21B6] transition-colors">
+              <Link href="/dora-gap-analysis" onClick={() => setIsMenuOpen(false)} className="text-center bg-[#6D28D9] text-white px-6 py-3 rounded-full text-[15px] font-medium hover:bg-[#5B21B6] transition-colors">
                 Analiza Luk DORA
-              </button>
+              </Link>
             </div>
           </div>
         )}
@@ -167,9 +167,9 @@ export function HeroSection() {
         </div>
 
         {/* CTA Button */}
-        <button className="bg-[#F6F2EA] text-[#0A0E1A] px-8 py-3 rounded-full text-[14px] font-medium hover:bg-white transition-all shadow-[0_-1px_20px_rgba(246,242,234,0.2)] pointer-events-auto">
+        <Link href="/dora-gap-analysis" className="bg-[#F6F2EA] text-[#0A0E1A] px-8 py-3 rounded-full text-[14px] font-medium hover:bg-white transition-all shadow-[0_-1px_20px_rgba(246,242,234,0.2)] pointer-events-auto">
           Analiza Luk DORA
-        </button>
+        </Link>
       </div>
 
     </section>

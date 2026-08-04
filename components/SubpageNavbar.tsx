@@ -86,9 +86,9 @@ export function SubpageNavbar({ transparent = false }: { transparent?: boolean }
           <a href="mailto:info@qunigma.ai" className="hidden md:inline-flex items-center text-white/80 border border-white/20 px-5 py-2.5 rounded-full text-[14px] font-medium hover:border-white/50 hover:text-white transition-colors duration-200">
             {isEn ? 'Contact' : 'Kontakt'}
           </a>
-          <button className={`bg-[#6D28D9] text-white px-4 py-1.5 text-[13px] md:px-6 md:py-2.5 rounded-full md:text-[14px] font-medium hover:bg-[#5B21B6] transition-colors duration-200`}>
+          <Link href="/dora-gap-analysis" className={`bg-[#6D28D9] text-white px-4 py-1.5 text-[13px] md:px-6 md:py-2.5 rounded-full md:text-[14px] font-medium hover:bg-[#5B21B6] transition-colors duration-200`}>
             {isEn ? 'DORA Gap Analysis' : 'Analiza Luk DORA'}
-          </button>
+          </Link>
           <button
             className="md:hidden text-white flex items-center justify-center hover:text-purple-400 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -125,9 +125,9 @@ export function SubpageNavbar({ transparent = false }: { transparent?: boolean }
             <a href="mailto:info@qunigma.ai" onClick={() => setIsMenuOpen(false)} className="text-center text-white/80 border border-white/20 px-5 py-3 rounded-full text-[15px] font-medium hover:border-white/50 hover:text-white transition-colors">
               {isEn ? 'Contact' : 'Kontakt'}
             </a>
-            <button onClick={() => setIsMenuOpen(false)} className="bg-[#6D28D9] text-white px-6 py-3 rounded-full text-[15px] font-medium hover:bg-[#5B21B6] transition-colors">
+            <Link href="/dora-gap-analysis" onClick={() => setIsMenuOpen(false)} className="text-center bg-[#6D28D9] text-white px-6 py-3 rounded-full text-[15px] font-medium hover:bg-[#5B21B6] transition-colors">
               {isEn ? 'DORA Gap Analysis' : 'Analiza Luk DORA'}
-            </button>
+            </Link>
           </div>
         </div>
       )}

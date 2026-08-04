@@ -2,6 +2,7 @@
 
 import { Download } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 export function CTASection() {
   const isEn = usePathname().startsWith('/en');
@@ -16,9 +17,9 @@ export function CTASection() {
               ? 'Map your blind spots before they are exploited.'
               : 'Zmapuj swoje martwe punkty, zanim zostaną wykorzystane.'}
           </h2>
-          <button className="bg-[#6D28D9] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-purple-500 transition-colors shadow-[0_0_30px_rgba(109,40,217,0.3)] shrink-0">
+          <Link href="/dora-gap-analysis" className="bg-[#6D28D9] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-purple-500 transition-colors shadow-[0_0_30px_rgba(109,40,217,0.3)] shrink-0">
             {isEn ? 'DORA Gap Analysis' : 'Analiza Luk DORA'}
-          </button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
