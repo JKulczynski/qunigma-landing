@@ -70,13 +70,28 @@ export async function POST(request: Request) {
     notes: body.sector ? `Sektor: ${body.sector}${body.aiActInScope ? ' | Systemy AI Act w zakresie' : ''}` : '',
   };
 
-  // TODO: write to Google Sheets CRM once service account credentials are configured.
-  // This is the exact point where the row above (`record`) should be appended to the
-  // shared "CRM" Google Sheet via the Sheets API (columns: Timestamp, Full Name, Work Email,
-  // Company / Bank, Role / Title, Annual Revenue (EUR), Calculated Exposure (EUR), Country,
-  // Current Security Stack, Phone, Biggest DORA Concern, Lead Status, Notes). Requires a
-  // Google service-account key configured as a Vercel/Cloudflare environment variable; no
-  // such credential exists yet, so for now this handler only validates and acknowledges.
+  // Zapis do Google Sheets CRM przez Apps Script Web App (doPost webhook).
+  // Brak zapisu leada nie blokuje odpowiedzi do klienta: formularz na froncie
+  // i tak pokazuje wynik niezależnie od statusu tego zapisu (patrz CalculatorForm.tsx).
+  const webhookUrl = process.env.GOOGLE_SHEETS_WEBHOOK_URL;
+  const webhookSecret = process.env.GOOGLE_SHEETS_WEBHOOK_SECRET;
+
+  if (webhookUrl) {
+    try {
+      const sheetRes = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...record, secret: webhookSecret }),
+      });
+      if (!sheetRes.ok) {
+        console.error('Google Sheets webhook responded with non-OK status', sheetRes.status);
+      }
+    } catch (err) {
+      console.error('Google Sheets webhook call failed', err);
+    }
+  } else {
+    console.error('GOOGLE_SHEETS_WEBHOOK_URL not configured, lead was not persisted to CRM.');
+  }
 
   return NextResponse.json({ ok: true });
 }
