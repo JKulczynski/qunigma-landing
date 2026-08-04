@@ -52,7 +52,7 @@ const regulations = [
     fullName: 'Cyber Resilience Act',
     status: 'upcoming' as const,
     statusLabel: 'Deadline: 11.09.2026',
-    penalty: 'Do 15M EUR lub 2.5% obrotu',
+    penalty: 'Do 15M EUR lub 2,5% obrotu',
     summary: 'CRA wprowadza obowiązkowe wymogi cybersecurity dla produktów z elementami cyfrowymi, w tym obowiązek ujawniania luk w ciągu 24 godzin i zapewnienie aktualizacji bezpieczeństwa przez cały cykl życia produktu.',
     articles: [
       { art: 'Art. 14', req: 'Ujawnienie luk w ciągu 24 godzin', status: '✓ VDP (Vulnerability Disclosure Program)' },
@@ -91,7 +91,7 @@ export default function CompliancePage() {
             <div className="rounded-full bg-white/10 border border-white/20 px-4 py-1.5 mb-8 inline-block">
               <span className="text-[12px] font-medium tracking-[0.10em] text-white/60 uppercase">Compliance</span>
             </div>
-            <h1 className="text-[38px] md:text-[64px] font-medium leading-[1.1] tracking-tight mb-6">
+            <h1 className="text-[38px] md:text-[64px] font-medium leading-[1.25] tracking-tight mb-6">
               <span className="block text-[#F6F2EA]">Regulacje się zmieniają.</span>
               <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
                 Twoja odpowiedzialność, nie.

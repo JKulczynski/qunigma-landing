@@ -19,7 +19,7 @@ export function ComplianceSection() {
         <p className="text-[20px] text-gray-600 text-center max-w-3xl mx-auto mb-20 leading-relaxed font-medium">
           {isEn
             ? 'The only price of security, full compliance with the world\'s most stringent regulatory standards.'
-            : 'Jedyna cena bezpieczeństwa, pełna zgodność z najsurowszymi regulacyjnymi standardami prawa świata.'}
+            : 'Jedyna cena bezpieczeństwa, pełna zgodność z najsurowszymi na świecie standardami regulacyjnymi.'}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">

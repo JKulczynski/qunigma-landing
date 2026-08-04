@@ -5,7 +5,6 @@ import {
   Calculator,
   ShieldCheck,
   Info,
-  Download,
   Loader2,
   CheckCircle2,
   AlertTriangle,
@@ -98,6 +97,10 @@ function formatEUR(value: number) {
 
 function formatUSD(value: number) {
   return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(value);
+}
+
+function formatPl(value: number) {
+  return new Intl.NumberFormat('pl-PL', { maximumFractionDigits: 2 }).format(value);
 }
 
 type Stage = 'form' | 'gated' | 'result';
@@ -471,7 +474,7 @@ export function CalculatorForm() {
                   <span className="text-[20px] font-bold text-purple-300 tabular-nums print:text-purple-700">{formatEUR(exposure.incidentComponent)}</span>
                 </div>
                 <p className="text-[13px] text-white/50 leading-relaxed print:text-gray-600">
-                  Baza: średni koszt naruszenia w sektorze finansowym {formatUSD(IBM_BREACH_COST_USD)} (IBM Cost of a Data Breach Report 2024), orientacyjnie {formatEUR(IBM_BREACH_COST_EUR)} po przybliżonym przeliczeniu kursem {USD_TO_EUR_RATE} USD/EUR (kurs ustawiony ręcznie na potrzeby tego kalkulatora, nie jest to kurs na żywo). Przeskalowane mnożnikiem wielkości przychodu ({exposure.revenueFactor}x dla przedziału {exposure.revenueTierLabel}) i mnożnikiem segmentu ({exposure.sectorLabel}, {exposure.sectorFactor}x). Oba mnożniki to własny, jawnie deklarowany szacunek Qunigma rzędu wielkości, nie dane z zewnętrznego badania: dwie organizacje o identycznym przychodzie mogą mieć bardzo różny realny koszt incydentu.
+                  Baza: średni koszt naruszenia w sektorze finansowym {formatUSD(IBM_BREACH_COST_USD)} (IBM Cost of a Data Breach Report 2024), orientacyjnie {formatEUR(IBM_BREACH_COST_EUR)} po przybliżonym przeliczeniu kursem {formatPl(USD_TO_EUR_RATE)} USD/EUR (kurs ustawiony ręcznie na potrzeby tego kalkulatora, nie jest to kurs na żywo). Przeskalowane mnożnikiem wielkości przychodu ({formatPl(exposure.revenueFactor)}x dla przedziału {exposure.revenueTierLabel}) i mnożnikiem segmentu ({exposure.sectorLabel}, {formatPl(exposure.sectorFactor)}x). Oba mnożniki to własny, jawnie deklarowany szacunek Qunigma rzędu wielkości, nie dane z zewnętrznego badania: dwie organizacje o identycznym przychodzie mogą mieć bardzo różny realny koszt incydentu.
                 </p>
               </div>
 
@@ -513,7 +516,6 @@ export function CalculatorForm() {
                 onClick={() => window.print()}
                 className="inline-flex items-center gap-2 bg-[#6D28D9] text-white px-6 py-3 rounded-full text-[14px] font-semibold hover:bg-[#5B21B6] transition-colors"
               >
-                <Download className="w-4 h-4" strokeWidth={2} />
                 Zapisz jako PDF
               </button>
               <a
@@ -525,11 +527,14 @@ export function CalculatorForm() {
             </div>
 
             {/* Stopka kontaktowa, zawsze widoczna, także w wydruku */}
-            <div className="mt-16 pt-8 border-t border-white/10 print:border-gray-200 text-[13px] text-white/50 print:text-gray-600 flex flex-col gap-2">
+            <div className="mt-16 pt-8 border-t border-white/10 print:border-gray-200 text-[13px] text-white/50 print:text-gray-600 flex flex-col items-center gap-2 text-center">
               <span className="font-bold text-white print:text-black">Qunigma</span>
-              <a href="mailto:info@qunigma.ai" className="hover:text-white print:text-gray-600">info@qunigma.ai</a>
-              <a href="https://www.linkedin.com/in/peter-mankowski-18065619/" target="_blank" rel="noopener noreferrer" className="hover:text-white print:text-gray-600">Peter Mankowski, LinkedIn</a>
-              <a href="https://www.linkedin.com/in/paulcebo/" target="_blank" rel="noopener noreferrer" className="hover:text-white print:text-gray-600">Paul Cebo, LinkedIn</a>
+              <span>info@qunigma.ai</span>
+              <div className="flex items-center gap-4 mt-1">
+                <a href="https://www.linkedin.com/in/peter-mankowski-18065619/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-white print:text-gray-600">Peter Mankowski, LinkedIn</a>
+                <span className="w-px h-4 bg-white/20 print:bg-gray-300" />
+                <a href="https://www.linkedin.com/in/paulcebo/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-white print:text-gray-600">Paul Cebo, LinkedIn</a>
+              </div>
             </div>
           </div>
         </section>

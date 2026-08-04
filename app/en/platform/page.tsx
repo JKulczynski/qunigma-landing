@@ -119,7 +119,7 @@ const faqSchema = {
       "name": "How fast does Qunigma detect and neutralize threats?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The MTTAV Engine neutralizes threats in under 2ms from anomaly detection — a time window in which no traditional SIEM or SOC can respond. The platform operates autonomously and reduces Mean Time To Detect by 99.4% compared to conventional solutions."
+        "text": "The MTTAV Engine neutralizes threats in under 2ms from anomaly detection, a time window in which no traditional SIEM or SOC can respond. The platform operates autonomously and reduces Mean Time To Detect by 99.4% compared to conventional solutions."
       }
     },
     {
@@ -155,7 +155,7 @@ export default function EnPlatformaPage() {
             <div className="rounded-full bg-white/10 border border-white/20 px-4 py-1.5 mb-8 inline-block">
               <span className="text-[12px] font-medium tracking-[0.10em] text-white/60 uppercase">Architecture</span>
             </div>
-            <h1 className="text-[38px] md:text-[64px] font-medium leading-[1.1] tracking-tight mb-6">
+            <h1 className="text-[38px] md:text-[64px] font-medium leading-[1.25] tracking-tight mb-6">
               <span className="block text-[#F6F2EA]">Four layers of active defense,</span>
               <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
                 one architecture.

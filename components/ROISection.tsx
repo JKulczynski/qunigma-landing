@@ -31,7 +31,7 @@ export function ROISection() {
                 {isEn ? 'OPERATIONAL EFFICIENCY' : 'OPERACYJNA EFEKTYWNOŚĆ'}
               </span>
             </div>
-            <span className="text-[72px] font-extrabold leading-none mb-6 text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #6D28D9 0%, #A855F7 100%)' }}>-99.4%</span>
+            <span className="text-[72px] font-extrabold leading-none mb-6 text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #6D28D9 0%, #A855F7 100%)' }}>{isEn ? '-99.4%' : '-99,4%'}</span>
             <p className="text-[17px] text-gray-600 leading-relaxed font-medium">
               {isEn
                 ? 'Reduction in response time, from 241 days to under 2ms. (IBM Cost of a Data Breach 2025)'

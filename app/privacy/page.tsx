@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Polityka Prywatności | Qunigma',
-  description: 'Polityka prywatności Qunigma — jak zbieramy, wykorzystujemy i chronimy Twoje dane osobowe zgodnie z RODO.',
+  description: 'Polityka prywatności Qunigma: jak zbieramy, wykorzystujemy i chronimy Twoje dane osobowe zgodnie z RODO.',
   alternates: {
     canonical: 'https://qunigma.ai/privacy',
     languages: {
@@ -36,8 +36,8 @@ export default function PrivacyPage() {
               <h2 className="text-[22px] font-bold text-gray-900 mb-3">2. Jakie dane zbieramy</h2>
               <p>Możemy zbierać następujące kategorie danych osobowych:</p>
               <ul className="list-disc pl-6 mt-3 space-y-2">
-                <li><strong>Dane kontaktowe</strong>: imię i nazwisko, adres e-mail, nazwa firmy — gdy wypełniasz formularz kontaktowy lub wnioskujesz o analizę.</li>
-                <li><strong>Dane użytkowania</strong>: adres IP, typ przeglądarki, odwiedzone strony, czas spędzony na stronie — zbierane automatycznie przez narzędzia analityczne.</li>
+                <li><strong>Dane kontaktowe</strong>: imię i nazwisko, adres e-mail, nazwa firmy: gdy wypełniasz formularz kontaktowy lub wnioskujesz o analizę.</li>
+                <li><strong>Dane użytkowania</strong>: adres IP, typ przeglądarki, odwiedzone strony, czas spędzony na stronie: zbierane automatycznie przez narzędzia analityczne.</li>
                 <li><strong>Dane komunikacyjne</strong>: treść wiadomości przesyłanych do nas przez e-mail lub formularze.</li>
               </ul>
             </section>
@@ -46,9 +46,9 @@ export default function PrivacyPage() {
               <h2 className="text-[22px] font-bold text-gray-900 mb-3">3. Podstawa prawna przetwarzania</h2>
               <p>Dane osobowe przetwarzamy na następujących podstawach prawnych zgodnie z RODO:</p>
               <ul className="list-disc pl-6 mt-3 space-y-2">
-                <li><strong>Zgoda</strong> (art. 6 ust. 1 lit. a) — gdy wypełniasz formularz i wyraźnie zgadzasz się na kontakt.</li>
-                <li><strong>Prawnie uzasadnione interesy</strong> (art. 6 ust. 1 lit. f) — w zakresie analityki i doskonalenia naszych usług.</li>
-                <li><strong>Wykonanie umowy</strong> (art. 6 ust. 1 lit. b) — gdy przetwarzanie jest niezbędne do realizacji zobowiązania umownego.</li>
+                <li><strong>Zgoda</strong> (art. 6 ust. 1 lit. a): gdy wypełniasz formularz i wyraźnie zgadzasz się na kontakt.</li>
+                <li><strong>Prawnie uzasadnione interesy</strong> (art. 6 ust. 1 lit. f): w zakresie analityki i doskonalenia naszych usług.</li>
+                <li><strong>Wykonanie umowy</strong> (art. 6 ust. 1 lit. b): gdy przetwarzanie jest niezbędne do realizacji zobowiązania umownego.</li>
               </ul>
             </section>
 
@@ -80,13 +80,13 @@ export default function PrivacyPage() {
               <h2 className="text-[22px] font-bold text-gray-900 mb-3">7. Twoje prawa</h2>
               <p>Na podstawie RODO przysługują Ci następujące prawa:</p>
               <ul className="list-disc pl-6 mt-3 space-y-2">
-                <li><strong>Prawo dostępu</strong> — możesz zażądać kopii danych, które przechowujemy</li>
-                <li><strong>Prawo do sprostowania</strong> — możesz poprawić niedokładne lub niekompletne dane</li>
-                <li><strong>Prawo do usunięcia</strong> — możesz zażądać usunięcia swoich danych osobowych</li>
-                <li><strong>Prawo do ograniczenia przetwarzania</strong> — możesz ograniczyć sposób przetwarzania Twoich danych</li>
-                <li><strong>Prawo do przenoszenia danych</strong> — możesz otrzymać swoje dane w ustrukturyzowanym, nadającym się do odczytu maszynowego formacie</li>
-                <li><strong>Prawo do sprzeciwu</strong> — możesz sprzeciwić się przetwarzaniu opartemu na prawnie uzasadnionych interesach</li>
-                <li><strong>Prawo do wycofania zgody</strong> — w dowolnym momencie, bez wpływu na zgodność z prawem wcześniejszego przetwarzania</li>
+                <li><strong>Prawo dostępu</strong>: możesz zażądać kopii danych, które przechowujemy</li>
+                <li><strong>Prawo do sprostowania</strong>: możesz poprawić niedokładne lub niekompletne dane</li>
+                <li><strong>Prawo do usunięcia</strong>: możesz zażądać usunięcia swoich danych osobowych</li>
+                <li><strong>Prawo do ograniczenia przetwarzania</strong>: możesz ograniczyć sposób przetwarzania Twoich danych</li>
+                <li><strong>Prawo do przenoszenia danych</strong>: możesz otrzymać swoje dane w ustrukturyzowanym, nadającym się do odczytu maszynowego formacie</li>
+                <li><strong>Prawo do sprzeciwu</strong>: możesz sprzeciwić się przetwarzaniu opartemu na prawnie uzasadnionych interesach</li>
+                <li><strong>Prawo do wycofania zgody</strong>: w dowolnym momencie, bez wpływu na zgodność z prawem wcześniejszego przetwarzania</li>
               </ul>
               <p className="mt-4">Aby skorzystać z któregokolwiek z tych praw, skontaktuj się z nami pod adresem <a href="mailto:privacy@qunigma.ai" className="text-purple-600 hover:underline">privacy@qunigma.ai</a>.</p>
             </section>

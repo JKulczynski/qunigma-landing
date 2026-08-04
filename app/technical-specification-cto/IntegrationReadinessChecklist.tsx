@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { CheckCircle2, MinusCircle, XCircle, RotateCcw, Printer } from 'lucide-react';
+import { CheckCircle2, MinusCircle, XCircle, RotateCcw } from 'lucide-react';
 
 type Score = 0 | 1 | 2;
 const SCORE_OPTIONS: { value: Score; label: string }[] = [
@@ -112,7 +112,6 @@ export function IntegrationReadinessChecklist() {
               onClick={() => window.print()}
               className="print:hidden inline-flex items-center gap-2 text-[13px] font-medium text-purple-700 border border-purple-300 bg-white px-4 py-2 rounded-full hover:border-purple-500 hover:bg-purple-50 transition-colors"
             >
-              <Printer className="w-3.5 h-3.5" strokeWidth={2} />
               Zapisz jako PDF
             </button>
           </div>

@@ -48,7 +48,7 @@ export default function Page() {
       {
         "@type": "Question",
         "name": "Czy Qunigma działa on-premise czy w chmurze?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Qunigma działa zarówno on-premise, jak i w chmurze. Jest EU-sovereign — zbudowane i operowane w UE, nie podlega US CLOUD Act. Dane klientów nie opuszczają jurysdykcji UE." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Qunigma działa zarówno on-premise, jak i w chmurze. Jest EU-sovereign, zbudowane i operowane w UE, nie podlega US CLOUD Act. Dane klientów nie opuszczają jurysdykcji UE." }
       },
       {
         "@type": "Question",
@@ -58,7 +58,7 @@ export default function Page() {
       {
         "@type": "Question",
         "name": "Dla kogo jest Qunigma?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Qunigma jest przeznaczone dla CISO, CTO i Compliance Officers w przedsiębiorstwach UE operujących pod DORA, AI Act i NIS2 — szczególnie instytucje finansowe, ubezpieczyciele, banki, duże korporacje i organizacje przetwarzające dane wysokiego ryzyka." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Qunigma jest przeznaczone dla CISO, CTO i Compliance Officers w przedsiębiorstwach UE operujących pod DORA, AI Act i NIS2, szczególnie instytucje finansowe, ubezpieczyciele, banki, duże korporacje i organizacje przetwarzające dane wysokiego ryzyka." }
       }
     ]
   };

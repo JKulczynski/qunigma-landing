@@ -5,7 +5,6 @@ import {
   Calculator,
   ShieldCheck,
   Info,
-  Download,
   Loader2,
   CheckCircle2,
   AlertTriangle,
@@ -58,7 +57,7 @@ const SECTOR_OPTIONS = [
 
 /*
  * Component 2: AI Act, a harmonized, real and verifiable threshold.
- * Art. 99(4) AI Act: for high-risk systems (Art. 16, 25 and related
+ * AI Act Art. 99(4): for high-risk systems (Art. 16, 25 and related
  * provisions, including GPAI model providers' obligations) the
  * penalty is up to €15,000,000 or 3% of global annual turnover,
  * WHICHEVER IS HIGHER. The same figures are already used in
@@ -484,11 +483,11 @@ export function CalculatorForm() {
                 <p className="text-[13px] text-white/50 leading-relaxed print:text-gray-600">
                   {exposure.aiActInScope ? (
                     <>
-                      Art. 99(4) AI Act: for high-risk systems (including Art. 16, 25 and related provisions, as well as GPAI model providers&apos; obligations) the upper penalty limit is the higher of {formatEUR(AI_ACT_FLAT_EUR)} or {AI_ACT_PERCENT * 100}% of global annual turnover. At the revenue you entered, {formatEUR(exposure.revenue)}, {AI_ACT_PERCENT * 100}% of turnover is {formatEUR(AI_ACT_PERCENT * exposure.revenue)}, so the {AI_ACT_PERCENT * exposure.revenue > AI_ACT_FLAT_EUR ? 'percentage threshold' : 'flat €15M amount'} applies. This is a real, harmonized EU provision, the same figure is already cited in the Compliance section of this site.
+                      AI Act Art. 99(4): for high-risk systems (including Art. 16, 25 and related provisions, as well as GPAI model providers&apos; obligations) the upper penalty limit is the higher of {formatEUR(AI_ACT_FLAT_EUR)} or {AI_ACT_PERCENT * 100}% of global annual turnover. At the revenue you entered, {formatEUR(exposure.revenue)}, {AI_ACT_PERCENT * 100}% of turnover is {formatEUR(AI_ACT_PERCENT * exposure.revenue)}, so the {AI_ACT_PERCENT * exposure.revenue > AI_ACT_FLAT_EUR ? 'percentage threshold' : 'flat €15M amount'} applies. This is a real, harmonized EU provision, the same figure is already cited in the Compliance section of this site.
                     </>
                   ) : (
                     <>
-                      We do not include this component, since you indicated that Annex III AI Act systems are not currently in scope of your organization&apos;s activity. If this changes (e.g. deploying AI-based credit scoring), the real upper penalty limit is the higher of {formatEUR(AI_ACT_FLAT_EUR)} or 3% of global annual turnover, Art. 99(4) AI Act.
+                      We do not include this component, since you indicated that Annex III AI Act systems are not currently in scope of your organization&apos;s activity. If this changes (e.g. deploying AI-based credit scoring), the real upper penalty limit is the higher of {formatEUR(AI_ACT_FLAT_EUR)} or 3% of global annual turnover, AI Act Art. 99(4).
                     </>
                   )}
                 </p>
@@ -513,7 +512,6 @@ export function CalculatorForm() {
                 onClick={() => window.print()}
                 className="inline-flex items-center gap-2 bg-[#6D28D9] text-white px-6 py-3 rounded-full text-[14px] font-semibold hover:bg-[#5B21B6] transition-colors"
               >
-                <Download className="w-4 h-4" strokeWidth={2} />
                 Save as PDF
               </button>
               <a
@@ -525,11 +523,14 @@ export function CalculatorForm() {
             </div>
 
             {/* Contact footer, always visible, including in print */}
-            <div className="mt-16 pt-8 border-t border-white/10 print:border-gray-200 text-[13px] text-white/50 print:text-gray-600 flex flex-col gap-2">
+            <div className="mt-16 pt-8 border-t border-white/10 print:border-gray-200 text-[13px] text-white/50 print:text-gray-600 flex flex-col items-center gap-2 text-center">
               <span className="font-bold text-white print:text-black">Qunigma</span>
-              <a href="mailto:info@qunigma.ai" className="hover:text-white print:text-gray-600">info@qunigma.ai</a>
-              <a href="https://www.linkedin.com/in/peter-mankowski-18065619/" target="_blank" rel="noopener noreferrer" className="hover:text-white print:text-gray-600">Peter Mankowski, LinkedIn</a>
-              <a href="https://www.linkedin.com/in/paulcebo/" target="_blank" rel="noopener noreferrer" className="hover:text-white print:text-gray-600">Paul Cebo, LinkedIn</a>
+              <span>info@qunigma.ai</span>
+              <div className="flex items-center gap-4 mt-1">
+                <a href="https://www.linkedin.com/in/peter-mankowski-18065619/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-white print:text-gray-600">Peter Mankowski, LinkedIn</a>
+                <span className="w-px h-4 bg-white/20 print:bg-gray-300" />
+                <a href="https://www.linkedin.com/in/paulcebo/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-white print:text-gray-600">Paul Cebo, LinkedIn</a>
+              </div>
             </div>
           </div>
         </section>

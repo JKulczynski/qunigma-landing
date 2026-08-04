@@ -61,7 +61,7 @@ export default function FirmaPage() {
             <div className="rounded-full bg-white/10 border border-white/20 px-4 py-1.5 mb-8 inline-block">
               <span className="text-[12px] font-medium tracking-[0.10em] text-white/60 uppercase">Firma</span>
             </div>
-            <h1 className="text-[38px] md:text-[64px] font-medium leading-[1.1] tracking-tight mb-6">
+            <h1 className="text-[38px] md:text-[64px] font-medium leading-[1.25] tracking-tight mb-6">
               <span className="block text-[#F6F2EA]">Zbudowane w UE,</span>
               <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
                 przez ekspertów. Dla liderów bezpieczeństwa.
@@ -128,7 +128,7 @@ export default function FirmaPage() {
                 Nie operujemy z pięciogwiazdkowych kurortów i nie znajdziesz nas na prywatnych odrzutowcach. Nasze zasoby nie są wydawane na luksusowe wyjazdy pracownicze, są inwestowane w portfele patentowe i taktyki obronne, które chronią naszych klientów. Wierzymy, że cyberbezpieczeństwo należy do rąk tych, którzy naprawdę spędzili dekady w "okopach."
               </p>
               <p>
-                Pomyśl o nas jak o starszym bracie, który zawsze miał twoje plecy w liceum. Gdy chuligani szukali celu, to my staliśmy w luce. Strzegliśmy obwodu przez długi czas, i nie zamierzamy teraz mrugać.
+                Pomyśl o nas jak o starszym bracie, który zawsze miał twoje plecy w liceum. Gdy chuligani szukali celu, to my staliśmy w luce. Strzegliśmy obwodu przez długi czas i nie zamierzamy teraz mrugać.
               </p>
             </div>
           </div>

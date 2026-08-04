@@ -181,8 +181,11 @@ export function GapAnalysisChecklist() {
                       <div className="flex-1">
                         <p className="text-[15px] text-gray-800 leading-relaxed">{item.text}</p>
                         <span className="inline-block mt-2 text-[11px] font-bold text-purple-600/80 tracking-wide uppercase">{item.ref}</span>
+                        <span className="hidden print:inline-block mt-2 ml-2 text-[11px] font-bold text-gray-700">
+                          [Odpowiedź: {current !== undefined ? SCORE_OPTIONS.find((o) => o.value === current)?.label : 'Nie oceniono'}]
+                        </span>
                       </div>
-                      <div className="flex gap-2 shrink-0" role="group" aria-label={`Ocena: ${item.text}`}>
+                      <div className="print:hidden flex gap-2 shrink-0" role="group" aria-label={`Ocena: ${item.text}`}>
                         {SCORE_OPTIONS.map((opt) => {
                           const selected = current === opt.value;
                           const Icon = opt.value === 2 ? CheckCircle2 : opt.value === 1 ? MinusCircle : XCircle;
@@ -219,10 +222,19 @@ export function GapAnalysisChecklist() {
       })}
 
       {/* Wynik */}
-      <section id="wynik" className="bg-[#171717] py-24 px-6 w-full scroll-mt-24">
+      <section id="wynik" className="bg-[#171717] py-24 px-6 w-full scroll-mt-24 print:bg-white print:text-black print:py-8">
         <div className="max-w-3xl mx-auto">
-          <span className="text-[11px] text-purple-400 font-bold tracking-[0.12em] uppercase mb-4 block">Twój wynik</span>
-          <h2 className="text-[26px] md:text-[32px] font-bold text-white mb-6 tracking-tight">
+          <div className="flex items-center justify-between gap-4 flex-wrap mb-4">
+            <span className="text-[11px] text-purple-400 print:text-purple-700 font-bold tracking-[0.12em] uppercase">Twój wynik</span>
+            <button
+              type="button"
+              onClick={() => window.print()}
+              className="print:hidden inline-flex items-center gap-2 bg-[#6D28D9] text-white px-4 py-2 rounded-full text-[13px] font-semibold hover:bg-[#5B21B6] transition-colors"
+            >
+              Zapisz jako PDF
+            </button>
+          </div>
+          <h2 className="text-[26px] md:text-[32px] font-bold text-white print:text-black mb-6 tracking-tight">
             Odpowiedziano na {answeredCount} z {allItems.length} punktów
           </h2>
 
@@ -259,7 +271,7 @@ export function GapAnalysisChecklist() {
             })}
           </div>
 
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-wrap items-center gap-4 print:hidden">
             <button
               type="button"
               onClick={reset}

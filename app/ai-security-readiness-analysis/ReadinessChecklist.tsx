@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { CheckCircle2, MinusCircle, XCircle, RotateCcw, Printer } from 'lucide-react';
+import { CheckCircle2, MinusCircle, XCircle, RotateCcw } from 'lucide-react';
 
 type RawItem = [text: string, note: string];
 type ChecklistItem = { id: string; text: string; note: string };
@@ -24,7 +24,7 @@ const sections: Section[] = [
     eyebrow: 'Sekcja A z 6 · Baseline MTTAV · 5 punktów',
     title: 'Obecny czas reakcji: baseline',
     intro:
-      'MTTAV, Mean Time to Autonomous Validation, to czas od pojawienia się zagrożenia do jego autonomicznej walidacji przez system obronny, bez czekania na człowieka w pętli. Ta sekcja mapuje, gdzie realnie stoi Wasz SOC dziś, zanim przejdziemy do konkretnych kategorii ryzyka w kolejnych sekcjach.',
+      'MTTAV, Mean Time To Active Vectorization, to czas od pojawienia się zagrożenia do jego autonomicznej neutralizacji przez system obronny, bez czekania na człowieka w pętli. Ta sekcja mapuje, gdzie realnie stoi Twój SOC dziś, zanim przejdziemy do konkretnych kategorii ryzyka w kolejnych sekcjach.',
     bg: 'F6F2EA',
     items: buildItems('a', [
       [
@@ -32,7 +32,7 @@ const sections: Section[] = [
         'Benchmark dla w pełni autonomicznej walidacji: poniżej 2 ms. CrowdStrike mierzy średni eCrime breakout time (czas od uzyskania przyczółka do ruchu bocznego) na 29 minut w 2025 roku, z rekordem 27 sekund (Global Threat Report 2025-2026).',
       ],
       [
-        'Mean Time to Autonomous Validation (MTTAV) jest zdefiniowany, mierzony i raportowany jako konkretna metryka operacyjna SOC, nie pojęcie teoretyczne.',
+        'Mean Time To Active Vectorization (MTTAV) jest zdefiniowany, mierzony i raportowany jako konkretna metryka operacyjna SOC, nie pojęcie teoretyczne.',
         'Bez zmierzonej wartości bazowej trudno wykazać postęp albo uzasadnić przed zarządem inwestycję w automatyzację.',
       ],
       [
@@ -346,7 +346,6 @@ export function ReadinessChecklist() {
               onClick={() => window.print()}
               className="print:hidden inline-flex items-center gap-2 bg-[#6D28D9] text-white px-4 py-2 rounded-full text-[13px] font-semibold hover:bg-[#5B21B6] transition-colors"
             >
-              <Printer className="w-3.5 h-3.5" strokeWidth={2} />
               Zapisz jako PDF
             </button>
           </div>

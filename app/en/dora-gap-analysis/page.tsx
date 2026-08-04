@@ -52,7 +52,7 @@ export default function DoraGapAnalysisPage() {
             <div className="rounded-full bg-purple-500/15 border border-purple-500/30 px-4 py-1.5 mb-8 inline-block">
               <span className="text-[12px] font-medium tracking-[0.10em] text-purple-300 uppercase">DORA Gap Analysis</span>
             </div>
-            <h1 className="text-[32px] md:text-[52px] font-medium leading-[1.15] tracking-tight mb-6">
+            <h1 className="text-[32px] md:text-[52px] font-medium leading-[1.3] tracking-tight mb-6">
               <span className="block text-[#F6F2EA]">DORA has applied since 17.01.2025.</span>
               <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
                 Find out where you really stand.
@@ -111,7 +111,7 @@ export default function DoraGapAnalysisPage() {
               {[
                 { band: '80-100%', label: 'Low gap', desc: 'A good position. Maintain it with regular review, at least once a year, at the same cadence as the regulation itself.', color: 'text-emerald-700 bg-emerald-50' },
                 { band: '50-79%', label: 'Medium gap', desc: 'The foundation is there, but discrete operational gaps remain, for example an untested exit strategy with a critical provider or an incomplete ICT asset register. A typical result for organizations that implemented DORA on time but have not closed every thread.', color: 'text-amber-700 bg-amber-50' },
-                { band: '0-49%', label: 'High gap', desc: 'A significant share of obligations is not met or documented. Priority: Pillar 1 (governance, since without it it is hard to demonstrate compliance anywhere else) and Pillar 2 (the ability to meet the 4-hour window for the initial notification).', color: 'text-rose-700 bg-rose-50' },
+                { band: '0-49%', label: 'High gap', desc: 'A significant share of obligations is not met or documented. Priority: Pillar 1 (governance, since without it, it is hard to demonstrate compliance anywhere else) and Pillar 2 (the ability to meet the 4-hour window for the initial notification).', color: 'text-rose-700 bg-rose-50' },
               ].map((row) => (
                 <div key={row.band} className="flex flex-col sm:flex-row sm:items-center gap-3 px-6 py-5 border-b last:border-0 border-gray-100">
                   <span className={`inline-flex items-center justify-center text-[13px] font-bold px-3 py-1 rounded-full shrink-0 ${row.color}`}>{row.band} · {row.label}</span>
@@ -225,10 +225,33 @@ export default function DoraGapAnalysisPage() {
             </p>
             <a
               href="mailto:info@qunigma.ai"
-              className="inline-block bg-[#6D28D9] text-white px-8 py-3.5 rounded-full text-[15px] font-semibold hover:bg-[#5B21B6] transition-colors"
+              className="inline-block bg-[#6D28D9] text-white px-8 py-3.5 rounded-full text-[15px] font-semibold hover:bg-[#5B21B6] transition-colors mb-8"
             >
               info@qunigma.ai
             </a>
+            <div className="flex flex-col items-center gap-2 text-[14px] text-gray-500">
+              <p className="font-semibold text-gray-700">Qunigma</p>
+              <p>info@qunigma.ai</p>
+              <div className="flex items-center gap-4 mt-1">
+                <a
+                  href="https://www.linkedin.com/in/peter-mankowski-18065619/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-700 hover:text-purple-900 underline underline-offset-2"
+                >
+                  Peter Mankowski, LinkedIn
+                </a>
+                <span className="w-px h-4 bg-gray-300" />
+                <a
+                  href="https://www.linkedin.com/in/paulcebo/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-700 hover:text-purple-900 underline underline-offset-2"
+                >
+                  Paul Cebo, LinkedIn
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 

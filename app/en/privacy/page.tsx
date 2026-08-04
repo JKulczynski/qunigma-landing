@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Qunigma',
-  description: 'Qunigma Privacy Policy — how we collect, use, and protect your personal data in compliance with GDPR.',
+  description: 'Qunigma Privacy Policy, how we collect, use, and protect your personal data in compliance with GDPR.',
   alternates: {
     canonical: 'https://qunigma.ai/en/privacy',
     languages: {
@@ -36,8 +36,8 @@ export default function EnPrivacyPage() {
               <h2 className="text-[22px] font-bold text-gray-900 mb-3">2. What Data We Collect</h2>
               <p>We may collect the following categories of personal data:</p>
               <ul className="list-disc pl-6 mt-3 space-y-2">
-                <li><strong>Contact data</strong>: name, email address, company name — when you submit a contact form or request an analysis.</li>
-                <li><strong>Usage data</strong>: IP address, browser type, pages visited, time spent — collected automatically via analytics tools.</li>
+                <li><strong>Contact data</strong>: name, email address, company name, when you submit a contact form or request an analysis.</li>
+                <li><strong>Usage data</strong>: IP address, browser type, pages visited, time spent, collected automatically via analytics tools.</li>
                 <li><strong>Communication data</strong>: content of messages you send us via email or forms.</li>
               </ul>
             </section>
@@ -46,16 +46,16 @@ export default function EnPrivacyPage() {
               <h2 className="text-[22px] font-bold text-gray-900 mb-3">3. Legal Basis for Processing</h2>
               <p>We process your personal data on the following legal bases under GDPR:</p>
               <ul className="list-disc pl-6 mt-3 space-y-2">
-                <li><strong>Consent</strong> (Art. 6(1)(a)) — when you submit a form and explicitly agree to being contacted.</li>
-                <li><strong>Legitimate interests</strong> (Art. 6(1)(f)) — for analytics and improving our services.</li>
-                <li><strong>Contract performance</strong> (Art. 6(1)(b)) — when processing is necessary to fulfil a contractual obligation.</li>
+                <li><strong>Consent</strong> (Art. 6(1)(a)): when you submit a form and explicitly agree to being contacted.</li>
+                <li><strong>Legitimate interests</strong> (Art. 6(1)(f)): for analytics and improving our services.</li>
+                <li><strong>Contract performance</strong> (Art. 6(1)(b)): when processing is necessary to fulfill a contractual obligation.</li>
               </ul>
             </section>
 
             <section>
               <h2 className="text-[22px] font-bold text-gray-900 mb-3">4. How We Use Your Data</h2>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Responding to enquiries and delivering requested analyses</li>
+                <li>Responding to inquiries and delivering requested analyses</li>
                 <li>Sending relevant information about our services (with your consent)</li>
                 <li>Improving website performance and user experience</li>
                 <li>Complying with legal obligations</li>
@@ -80,13 +80,13 @@ export default function EnPrivacyPage() {
               <h2 className="text-[22px] font-bold text-gray-900 mb-3">7. Your Rights</h2>
               <p>Under GDPR, you have the following rights:</p>
               <ul className="list-disc pl-6 mt-3 space-y-2">
-                <li><strong>Right of access</strong> — request a copy of the data we hold about you</li>
-                <li><strong>Right to rectification</strong> — correct inaccurate or incomplete data</li>
-                <li><strong>Right to erasure</strong> — request deletion of your personal data</li>
-                <li><strong>Right to restriction</strong> — limit how we process your data</li>
-                <li><strong>Right to data portability</strong> — receive your data in a structured, machine-readable format</li>
-                <li><strong>Right to object</strong> — object to processing based on legitimate interests</li>
-                <li><strong>Right to withdraw consent</strong> — at any time, without affecting prior processing</li>
+                <li><strong>Right of access</strong>: request a copy of the data we hold about you</li>
+                <li><strong>Right to rectification</strong>: correct inaccurate or incomplete data</li>
+                <li><strong>Right to erasure</strong>: request deletion of your personal data</li>
+                <li><strong>Right to restriction</strong>: limit how we process your data</li>
+                <li><strong>Right to data portability</strong>: receive your data in a structured, machine-readable format</li>
+                <li><strong>Right to object</strong>: object to processing based on legitimate interests</li>
+                <li><strong>Right to withdraw consent</strong>: at any time, without affecting prior processing</li>
               </ul>
               <p className="mt-4">To exercise any of these rights, contact us at <a href="mailto:privacy@qunigma.ai" className="text-purple-600 hover:underline">privacy@qunigma.ai</a>.</p>
             </section>

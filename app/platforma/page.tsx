@@ -29,7 +29,7 @@ const modules = [
       'Rdzeń platformy. Wykrywa anomalie na poziomie pakietu w czasie rzeczywistym i autonomicznie neutralizuje zagrożenie zanim dotrze do systemu docelowego. Żaden SIEM nie działa w tej skali czasowej.',
     stats: [
       { value: '<2ms', label: 'Czas neutralizacji' },
-      { value: '99.4%', label: 'Redukcja MTTD' },
+      { value: '99,4%', label: 'Redukcja MTTD' },
       { value: '24/7', label: 'Autonomiczna ochrona' },
     ],
     visual: { top: 'THREAT AGENT', middle: 'MTTAV ENGINE', bottom: 'NEUTRALIZED' },
@@ -155,7 +155,7 @@ export default function PlataformaPage() {
             <div className="rounded-full bg-white/10 border border-white/20 px-4 py-1.5 mb-8 inline-block">
               <span className="text-[12px] font-medium tracking-[0.10em] text-white/60 uppercase">Architektura</span>
             </div>
-            <h1 className="text-[38px] md:text-[64px] font-medium leading-[1.1] tracking-tight mb-6">
+            <h1 className="text-[38px] md:text-[64px] font-medium leading-[1.25] tracking-tight mb-6">
               <span className="block text-[#F6F2EA]">Cztery warstwy aktywnej obrony,</span>
               <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
                 jedna architektura.

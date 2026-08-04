@@ -52,7 +52,7 @@ export default function DoraGapAnalysisPage() {
             <div className="rounded-full bg-purple-500/15 border border-purple-500/30 px-4 py-1.5 mb-8 inline-block">
               <span className="text-[12px] font-medium tracking-[0.10em] text-purple-300 uppercase">DORA Gap Analysis</span>
             </div>
-            <h1 className="text-[32px] md:text-[52px] font-medium leading-[1.15] tracking-tight mb-6">
+            <h1 className="text-[32px] md:text-[52px] font-medium leading-[1.3] tracking-tight mb-6">
               <span className="block text-[#F6F2EA]">DORA obowiązuje od 17.01.2025.</span>
               <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
                 Sprawdź, gdzie naprawdę stoisz.
@@ -225,10 +225,33 @@ export default function DoraGapAnalysisPage() {
             </p>
             <a
               href="mailto:info@qunigma.ai"
-              className="inline-block bg-[#6D28D9] text-white px-8 py-3.5 rounded-full text-[15px] font-semibold hover:bg-[#5B21B6] transition-colors"
+              className="inline-block bg-[#6D28D9] text-white px-8 py-3.5 rounded-full text-[15px] font-semibold hover:bg-[#5B21B6] transition-colors mb-8"
             >
               info@qunigma.ai
             </a>
+            <div className="flex flex-col items-center gap-2 text-[14px] text-gray-500">
+              <p className="font-semibold text-gray-700">Qunigma</p>
+              <p>info@qunigma.ai</p>
+              <div className="flex items-center gap-4 mt-1">
+                <a
+                  href="https://www.linkedin.com/in/peter-mankowski-18065619/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-700 hover:text-purple-900 underline underline-offset-2"
+                >
+                  Peter Mankowski, LinkedIn
+                </a>
+                <span className="w-px h-4 bg-gray-300" />
+                <a
+                  href="https://www.linkedin.com/in/paulcebo/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-700 hover:text-purple-900 underline underline-offset-2"
+                >
+                  Paul Cebo, LinkedIn
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 

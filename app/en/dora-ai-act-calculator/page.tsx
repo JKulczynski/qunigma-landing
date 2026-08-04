@@ -23,7 +23,7 @@ const faq = [
   },
   {
     q: 'Where does the AI Act figure come from?',
-    a: 'From the text of the regulation. Art. 99(4) AI Act sets a harmonized, public and verifiable upper limit on penalties for high-risk systems (including Art. 16, 25 and related provisions, as well as GPAI model providers\' obligations): the higher of €15,000,000 or 3% of global annual turnover. The same figures are already cited in the Compliance section of this site. We include this component only when you indicate that Annex III systems actually operate in your organization.',
+    a: 'From the text of the regulation. AI Act Art. 99(4) sets a harmonized, public and verifiable upper limit on penalties for high-risk systems (including Art. 16, 25 and related provisions, as well as GPAI model providers\' obligations): the higher of €15,000,000 or 3% of global annual turnover. The same figures are already cited in the Compliance section of this site. We include this component only when you indicate that Annex III systems actually operate in your organization.',
   },
   {
     q: 'Is this a binding valuation or an actuarial forecast?',
@@ -56,7 +56,7 @@ export default function DoraAiActCalculatorPage() {
             <div className="rounded-full bg-purple-500/15 border border-purple-500/30 px-4 py-1.5 mb-8 inline-block">
               <span className="text-[12px] font-medium tracking-[0.10em] text-purple-300 uppercase">DORA &amp; AI Act ROI Calculator</span>
             </div>
-            <h1 className="text-[32px] md:text-[52px] font-medium leading-[1.15] tracking-tight mb-6">
+            <h1 className="text-[32px] md:text-[52px] font-medium leading-[1.3] tracking-tight mb-6">
               <span className="block text-[#F6F2EA]">You&apos;re not buying savings.</span>
               <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
                 You&apos;re buying insurance against risk.
@@ -113,7 +113,7 @@ export default function DoraAiActCalculatorPage() {
                 <strong className="text-gray-900">Component 1, operational incident cost.</strong> The starting point is the average cost of a data breach in the financial sector from the IBM Cost of a Data Breach 2024 report, the same figure we cite in another material on this site. We convert it to EUR on an indicative basis (a manually set rate, not a live rate, explicitly shown in the result) and scale it with two Qunigma-specific multipliers: revenue size and business segment. Both multipliers are explicitly labeled as a Qunigma estimate, not data from an external study, in exactly the same spirit in which we describe the €4.2M figure in our general methodology.
               </p>
               <p>
-                <strong className="text-gray-900">Component 2, AI Act penalty.</strong> This is the only element of this calculator based on a single, harmonized EU provision, not an estimate. Art. 99(4) AI Act sets an upper limit on the penalty for high-risk systems (Art. 16, 25 and related provisions, as well as GPAI model providers&apos; obligations): the higher of €15,000,000 or 3% of global annual turnover. We include this component only when you indicate that Annex III systems actually operate in your organization, since otherwise the provision does not apply.
+                <strong className="text-gray-900">Component 2, AI Act penalty.</strong> This is the only element of this calculator based on a single, harmonized EU provision, not an estimate. AI Act Art. 99(4) sets an upper limit on the penalty for high-risk systems (Art. 16, 25 and related provisions, as well as GPAI model providers&apos; obligations): the higher of €15,000,000 or 3% of global annual turnover. We include this component only when you indicate that Annex III systems actually operate in your organization, since otherwise the provision does not apply.
               </p>
               <p>
                 <strong className="text-gray-900">What we deliberately don&apos;t calculate.</strong> We don&apos;t give a single penalty amount for DORA, because no such harmonized rate exists: sanctions are set by national supervisory authorities. We also don&apos;t reduce the result based on a declared security stack, because we don&apos;t have a credible, publicly verified multiplier linking a specific tool to a specific risk reduction. We prefer not to give a number rather than give one we can&apos;t defend.
@@ -123,7 +123,7 @@ export default function DoraAiActCalculatorPage() {
             <div className="rounded-2xl border border-gray-200 overflow-hidden">
               {[
                 { label: 'Incident cost (benchmark)', desc: 'IBM Cost of a Data Breach 2024 (financial sector) x revenue multiplier x segment multiplier. An order-of-magnitude estimate.', tag: 'Estimate' },
-                { label: 'AI Act penalty (high-risk systems)', desc: 'The higher of €15M or 3% of turnover, only when Annex III systems are in scope. Art. 99(4) AI Act.', tag: 'Provision' },
+                { label: 'AI Act penalty (high-risk systems)', desc: 'The higher of €15M or 3% of turnover, only when Annex III systems are in scope. AI Act Art. 99(4).', tag: 'Provision' },
                 { label: 'DORA', desc: 'No single harmonized rate, a matter for national supervisors. Shown qualitatively, with no made-up figure.', tag: 'Qualitative' },
               ].map((row) => (
                 <div key={row.label} className="flex flex-col sm:flex-row sm:items-center gap-3 px-6 py-5 border-b last:border-0 border-gray-100">

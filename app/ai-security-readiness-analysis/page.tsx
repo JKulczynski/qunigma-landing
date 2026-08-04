@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: 'Czym różni się MTTAV Exposure Score od formalnego audytu bezpieczeństwa?',
-    a: 'To narzędzie samooceny wstępnej, wypełniane przez Wasz zespół w kilkanaście minut, nie przez niezależnego audytora. Nie zastępuje testów penetracyjnych, formalnego red teamingu ani przeglądu przez zewnętrznego audytora bezpieczeństwa. Jego zadanie jest węższe: szybko pokazać, w których z sześciu obszarów prawdopodobnie macie największą ekspozycję, zanim zamówicie kosztowny, pełny audyt albo zanim regulator albo atakujący zada to pytanie pierwszy.',
+    a: 'To narzędzie samooceny wstępnej, wypełniane przez Twój zespół w kilkanaście minut, nie przez niezależnego audytora. Nie zastępuje testów penetracyjnych, formalnego red teamingu ani przeglądu przez zewnętrznego audytora bezpieczeństwa. Jego zadanie jest węższe: szybko pokazać, w których z sześciu obszarów prawdopodobnie masz największą ekspozycję, zanim zamówisz kosztowny, pełny audyt albo zanim regulator albo atakujący zada to pytanie pierwszy.',
   },
   {
     q: 'Dlaczego w sekcji NHI nie ma statystyki "tożsamości maszynowe przewyższają ludzkie 80 do 1"?',
@@ -52,8 +52,8 @@ export default function AiSecurityReadinessAnalysisPage() {
             <div className="rounded-full bg-purple-500/15 border border-purple-500/30 px-4 py-1.5 mb-8 inline-block">
               <span className="text-[12px] font-medium tracking-[0.10em] text-purple-300 uppercase">AI Security Readiness Analysis</span>
             </div>
-            <h1 className="text-[32px] md:text-[52px] font-medium leading-[1.15] tracking-tight mb-6">
-              <span className="block text-[#F6F2EA]">Wasz MTTAV Exposure Score,</span>
+            <h1 className="text-[32px] md:text-[52px] font-medium leading-[1.3] tracking-tight mb-6">
+              <span className="block text-[#F6F2EA]">Twój MTTAV Exposure Score,</span>
               <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
                 gotowy na jutrzejszy board meeting.
               </span>
@@ -84,13 +84,13 @@ export default function AiSecurityReadinessAnalysisPage() {
               <ClipboardList className="w-5 h-5 text-purple-600" strokeWidth={2} />
               <span className="text-[11px] text-purple-600 font-bold tracking-[0.12em] uppercase">Dla kogo i po co</span>
             </div>
-            <h2 className="text-[26px] md:text-[32px] font-bold text-gray-900 mb-6 tracking-tight">Nie kolejny audyt, tylko szybka mapa Waszej ekspozycji</h2>
+            <h2 className="text-[26px] md:text-[32px] font-bold text-gray-900 mb-6 tracking-tight">Nie kolejny audyt, tylko szybka mapa Twojej ekspozycji</h2>
             <div className="flex flex-col gap-4 text-[16px] text-gray-600 leading-relaxed">
               <p>
                 Ten dokument jest przeznaczony dla <strong className="text-gray-900">CISO i zespołów SOC</strong>, które na co dzień żyją z wolumenem alertów opisanym w sekcji F, dla <strong className="text-gray-900">compliance officerów i zespołów ryzyka</strong>, które odpowiadają za sekcję E, oraz dla <strong className="text-gray-900">zarządu i komitetu ryzyka</strong>, do których ostatecznie trafia wynik. Art. 5 DORA czyni odpowiedzialność za ryzyko ICT niedelegowalnym obowiązkiem organu zarządzającego, więc traktowanie tego wyłącznie jako zadania technicznego samo w sobie jest luką.
               </p>
               <p>
-                Przy każdym punkcie oceń stan faktyczny jako <strong className="text-gray-900">Tak</strong> (w pełni wdrożone), <strong className="text-gray-900">Częściowo / Nie wiem</strong> (proces istnieje częściowo albo nie macie pewności) albo <strong className="text-gray-900">Nie</strong> (brak). Wynik liczy się na żywo w Twojej przeglądarce, nic nie jest zapisywane ani wysyłane na żaden serwer. Po zakończeniu możesz zapisać wynik jako PDF przyciskiem w sekcji wyników, wydruk pokazuje Twoje odpowiedzi jako czysty, gotowy do prezentacji dokument.
+                Przy każdym punkcie oceń stan faktyczny jako <strong className="text-gray-900">Tak</strong> (w pełni wdrożone), <strong className="text-gray-900">Częściowo / Nie wiem</strong> (proces istnieje częściowo albo nie masz pewności) albo <strong className="text-gray-900">Nie</strong> (brak). Wynik liczy się na żywo w Twojej przeglądarce, nic nie jest zapisywane ani wysyłane na żaden serwer. Po zakończeniu możesz zapisać wynik jako PDF przyciskiem w sekcji wyników, wydruk pokazuje Twoje odpowiedzi jako czysty, gotowy do prezentacji dokument.
               </p>
             </div>
           </div>
@@ -167,7 +167,7 @@ export default function AiSecurityReadinessAnalysisPage() {
                 Sekcja B (NHI Exposure) łączy się bezpośrednio z Art. 8 DORA, identyfikacją aktywów ICT: klucze API, konta serwisowe i tokeny OAuth funkcjonalnie są zasobami ICT wspierającymi konkretne procesy biznesowe, więc mieszczą się w zakresie tego obowiązku, nawet jeśli przepis nie posługuje się dosłownie terminem "non-human identity". Osobny materiał na tej stronie opisuje cztery udokumentowane incydenty NHI z lat 2023-2024 i to, czego realnie wymaga Art. 8 w tym zakresie.
               </p>
               <p>
-                Sekcja C (memory poisoning) i sekcja E razem odpowiadają na pytanie, czy Wasze systemy AI wysokiego ryzyka realnie spełniają AI Act Art. 15 (dokładność, solidność, cyberbezpieczeństwo), nie tylko formalnie go cytują w dokumentacji. Nieprzestrzeganie tego wymogu podlega karze do 15 mln EUR lub 3% globalnego obrotu, nie do 35 mln EUR lub 7%, ta wyższa stawka dotyczy wyłącznie zakazanych praktyk z Art. 5 AI Act.
+                Sekcja C (memory poisoning) i sekcja E razem odpowiadają na pytanie, czy Twoje systemy AI wysokiego ryzyka realnie spełniają AI Act Art. 15 (dokładność, solidność, cyberbezpieczeństwo), nie tylko formalnie go cytują w dokumentacji. Nieprzestrzeganie tego wymogu podlega karze do 15 mln EUR lub 3% globalnego obrotu, nie do 35 mln EUR lub 7%, ta wyższa stawka dotyczy wyłącznie zakazanych praktyk z Art. 5 AI Act.
               </p>
             </div>
           </div>
@@ -219,31 +219,40 @@ export default function AiSecurityReadinessAnalysisPage() {
         </section>
 
         {/* Kontakt, zawsze widoczny, także w wydruku */}
-        <section className="bg-white py-16 px-6 w-full border-t border-gray-100 print:border-t-2 print:border-black print:py-6">
+        <section className="bg-white py-24 px-6 w-full border-t border-gray-100 print:border-t-2 print:border-black print:py-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-[20px] font-bold text-gray-900 mb-4 tracking-tight">Qunigma</h2>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-[14px] text-gray-600">
-              <a href="mailto:info@qunigma.ai" className="text-purple-700 hover:underline font-medium">
-                info@qunigma.ai
-              </a>
-              <span className="hidden sm:inline text-gray-300">·</span>
-              <a
-                href="https://www.linkedin.com/in/peter-mankowski-18065619/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-purple-700 hover:underline"
-              >
-                Peter Mankowski, LinkedIn
-              </a>
-              <span className="hidden sm:inline text-gray-300">·</span>
-              <a
-                href="https://www.linkedin.com/in/paulcebo/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-purple-700 hover:underline"
-              >
-                Paul Cebo, LinkedIn
-              </a>
+            <h2 className="text-[24px] md:text-[28px] font-bold text-gray-900 mb-4 tracking-tight print:hidden">Chcesz omówić swój wynik z zespołem?</h2>
+            <p className="text-[16px] text-gray-600 mb-8 leading-relaxed print:hidden">
+              Napisz do nas z wynikiem MTTAV Exposure Score, przejdziemy razem przez sekcje z największą ekspozycją i wskażemy, od czego realnie zacząć.
+            </p>
+            <a
+              href="mailto:info@qunigma.ai"
+              className="inline-block bg-[#6D28D9] text-white px-8 py-3.5 rounded-full text-[15px] font-semibold hover:bg-[#5B21B6] transition-colors mb-8 print:hidden"
+            >
+              info@qunigma.ai
+            </a>
+            <div className="flex flex-col items-center gap-2 text-[14px] text-gray-500">
+              <p className="font-semibold text-gray-700">Qunigma</p>
+              <p>info@qunigma.ai</p>
+              <div className="flex items-center gap-4 mt-1">
+                <a
+                  href="https://www.linkedin.com/in/peter-mankowski-18065619/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-700 hover:text-purple-900 underline underline-offset-2"
+                >
+                  Peter Mankowski, LinkedIn
+                </a>
+                <span className="w-px h-4 bg-gray-300" />
+                <a
+                  href="https://www.linkedin.com/in/paulcebo/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-700 hover:text-purple-900 underline underline-offset-2"
+                >
+                  Paul Cebo, LinkedIn
+                </a>
+              </div>
             </div>
           </div>
         </section>

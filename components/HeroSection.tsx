@@ -140,7 +140,7 @@ export function HeroSection() {
         </div>
 
         {/* Headline */}
-        <h1 className="text-[38px] md:text-[72px] font-medium leading-[1.1] mb-4 md:mb-6 tracking-tight">
+        <h1 className="text-[38px] md:text-[72px] font-medium leading-[1.25] mb-4 md:mb-6 tracking-tight">
           <span className="block text-[#F6F2EA]">Pasywna detekcja</span>
           <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
             to przeszłość.

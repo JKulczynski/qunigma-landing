@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { CheckCircle2, MinusCircle, XCircle, RotateCcw, Printer } from 'lucide-react';
+import { CheckCircle2, MinusCircle, XCircle, RotateCcw } from 'lucide-react';
 
 type RawItem = [text: string, note: string];
 type ChecklistItem = { id: string; text: string; note: string };
@@ -24,7 +24,7 @@ const sections: Section[] = [
     eyebrow: 'Section A of 6 · MTTAV Baseline · 5 items',
     title: 'Current response time: baseline',
     intro:
-      'MTTAV, Mean Time to Autonomous Validation, is the time from a threat appearing to its autonomous validation by a defensive system, without waiting for a human in the loop. This section maps where your SOC actually stands today, before we move to specific risk categories in the sections that follow.',
+      'MTTAV, Mean Time To Active Vectorization, is the time from a threat appearing to its autonomous neutralization by a defensive system, without waiting for a human in the loop. This section maps where your SOC actually stands today, before we move to specific risk categories in the sections that follow.',
     bg: 'F6F2EA',
     items: buildItems('a', [
       [
@@ -32,11 +32,11 @@ const sections: Section[] = [
         'Benchmark for fully autonomous validation: under 2 ms. CrowdStrike measures the average eCrime breakout time (time from initial foothold to lateral movement) at 29 minutes in 2025, with a record of 27 seconds (Global Threat Report 2025-2026).',
       ],
       [
-        'Mean Time to Autonomous Validation (MTTAV) is defined, measured and reported as a concrete SOC operational metric, not a theoretical concept.',
+        'Mean Time To Active Vectorization (MTTAV) is defined, measured and reported as a concrete SOC operational metric, not a theoretical concept.',
         'Without a measured baseline it is hard to demonstrate progress, or to justify an automation investment to the board.',
       ],
       [
-        'The volume of alerts processed daily by the SOC is known, documented, and fits within the team’s real capacity.',
+        'The volume of alerts processed daily by the SOC is known, documented, and fits within the team\'s real capacity.',
         'Ponemon Institute, 2026 State of SecOps Report: enterprises report an average of 4,330 alerts per day, of which only 37% are actually investigated.',
       ],
       [
@@ -79,7 +79,7 @@ const sections: Section[] = [
       ],
       [
         'The number of NHIs with write or administrative permissions in the production environment is known and regularly reviewed.',
-        '"We don’t know" on this question means an unidentified gap, not a neutral absence of data.',
+        '"We don\'t know" on this question means an unidentified gap, not a neutral absence of data.',
       ],
     ]),
   },
@@ -88,7 +88,7 @@ const sections: Section[] = [
     eyebrow: 'Section C of 6 · Memory Poisoning · 5 items',
     title: 'Risk of AI agent memory poisoning (OWASP ASI06)',
     intro:
-      'Memory poisoning (OWASP ASI06, from the OWASP Top 10 for Agentic Applications) is a persistent corruption of an AI agent’s memory: a malicious entry survives the end of a session and can influence the agent’s decisions weeks after the infection. Research cited by OWASP reports success rates for such attacks in the range of 80-99% against unsecured LLM agent implementations. AI Act Art. 15 requires high-risk systems to maintain "an appropriate level of accuracy, robustness and cybersecurity" throughout their lifecycle, including measures against training data poisoning and model poisoning.',
+      'Memory poisoning (OWASP ASI06, from the OWASP Top 10 for Agentic Applications) is a persistent corruption of an AI agent\'s memory: a malicious entry survives the end of a session and can influence the agent\'s decisions weeks after the infection. Research cited by OWASP reports success rates for such attacks in the range of 80-99% against unsecured LLM agent implementations. AI Act Art. 15 requires high-risk systems to maintain "an appropriate level of accuracy, robustness and cybersecurity" throughout their lifecycle, including measures against training data poisoning and model poisoning.',
     bg: 'F6F2EA',
     items: buildItems('c', [
       [
@@ -118,7 +118,7 @@ const sections: Section[] = [
     eyebrow: 'Section D of 6 · All Green Fraud · 5 items',
     title: 'The "All Green Fraud" detection gap',
     intro:
-      '"All Green Fraud" describes a pattern where malware falsifies system logs: dashboards show an "all OK" status while active data exfiltration is under way. The scale of the problem is real regardless of what you call it: IBM’s Cost of a Data Breach Report 2025 puts the full lifecycle of a breach, from intrusion to identification and containment, at an average of 241 days (181 days to detect + 60 days to contain), the lowest figure in nine years, and still over eight months.',
+      '"All Green Fraud" describes a pattern where malware falsifies system logs: dashboards show an "all OK" status while active data exfiltration is under way. The scale of the problem is real regardless of what you call it: IBM\'s Cost of a Data Breach Report 2025 puts the full lifecycle of a breach, from intrusion to identification and containment, at an average of 241 days (181 days to detect + 60 days to contain), the lowest figure in nine years, and still over eight months.',
     bg: 'white',
     items: buildItems('d', [
       [
@@ -156,7 +156,7 @@ const sections: Section[] = [
         'Penalties: administrative fines imposed by the national supervisor under the provisions transposing DORA; on this site we use a working figure of up to 2% of annual turnover.',
       ],
       [
-        'The management body’s personal, non-delegable responsibility for ICT risk (DORA Art. 5) is formally documented, not just written into a policy on paper.',
+        'The management body\'s personal, non-delegable responsibility for ICT risk (DORA Art. 5) is formally documented, not just written into a policy on paper.',
         'DORA Art. 5 makes this responsibility a non-delegable duty of the management body: it is personal liability, not only corporate. The amount of any personal fine is set by the national supervisor under the provisions transposing DORA Art. 50-52; DORA itself does not set a single harmonized amount across the EU.',
       ],
       [
@@ -178,7 +178,7 @@ const sections: Section[] = [
     eyebrow: 'Section F of 6 · SOC Capacity · 5 items',
     title: 'SOC capacity versus threat volume',
     intro:
-      'The operational capacity of a SOC only makes sense measured against the volume of threats it has to handle. CrowdStrike’s Global Threat Report 2025-2026 measures the average eCrime breakout time (time from foothold to lateral movement) at 29-48 minutes, with a record of 27 seconds. A human SOC team, without automation support, is physically unable to respond within that window to every alert individually.',
+      'The operational capacity of a SOC only makes sense measured against the volume of threats it has to handle. CrowdStrike\'s Global Threat Report 2025-2026 measures the average eCrime breakout time (time from foothold to lateral movement) at 29-48 minutes, with a record of 27 seconds. A human SOC team, without automation support, is physically unable to respond within that window to every alert individually.',
     bg: 'white',
     items: buildItems('f', [
       [
@@ -234,7 +234,7 @@ function bandFor(pct: number) {
   return {
     label: 'Critical exposure',
     color: 'red',
-    desc: 'Immediate action is needed. Remember: the management body’s responsibility for ICT risk (DORA Art. 5) is personal and non-delegable, not only corporate.',
+    desc: 'Immediate action is needed. Remember: the management body\'s responsibility for ICT risk (DORA Art. 5) is personal and non-delegable, not only corporate.',
   };
 }
 
@@ -346,7 +346,6 @@ export function ReadinessChecklist() {
               onClick={() => window.print()}
               className="print:hidden inline-flex items-center gap-2 bg-[#6D28D9] text-white px-4 py-2 rounded-full text-[13px] font-semibold hover:bg-[#5B21B6] transition-colors"
             >
-              <Printer className="w-3.5 h-3.5" strokeWidth={2} />
               Save as PDF
             </button>
           </div>

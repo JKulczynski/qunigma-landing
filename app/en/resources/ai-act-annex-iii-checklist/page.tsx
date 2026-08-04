@@ -20,7 +20,7 @@ type Item = { text: string; ref: string };
 const article9: Item[] = [
   { text: 'Risk management system established, implemented, documented and maintained for each high-risk AI system.', ref: 'Art. 9(1)' },
   { text: "The process operates as a continuous, iterative cycle with regular review and updating throughout the system's lifecycle.", ref: 'Art. 9(2)' },
-  { text: "Known and reasonably foreseeable risks to health, safety and fundamental rights identified and analysed in light of the system's intended purpose.", ref: 'Art. 9(2)(a)' },
+  { text: "Known and reasonably foreseeable risks to health, safety and fundamental rights identified and analyzed in light of the system's intended purpose.", ref: 'Art. 9(2)(a)' },
   { text: 'Risks arising from intended use and from reasonably foreseeable misuse estimated and evaluated.', ref: 'Art. 9(2)(b)' },
   { text: 'Built-in mechanism for evaluating new risks based on data from the post-market monitoring system.', ref: 'Art. 9(2)(c)' },
   { text: 'Appropriate, targeted risk management measures implemented for each identified risk.', ref: 'Art. 9(2)(d)' },
@@ -30,7 +30,7 @@ const article9: Item[] = [
   { text: "Testing carried out at every relevant stage of the system's development process.", ref: 'Art. 9(6)' },
   { text: 'Final testing carried out before the system is placed on the market, against predetermined metrics and probabilistic thresholds appropriate to the intended purpose.', ref: 'Art. 9(8)' },
   { text: 'Documented decision on any use of real-world testing.', ref: 'Art. 9(7), Art. 60' },
-  { text: "Potential adverse impact of the system on persons under 18 and other vulnerable groups among the bank's customers analysed and documented.", ref: 'Art. 9(9)' },
+  { text: "Potential adverse impact of the system on persons under 18 and other vulnerable groups among the bank's customers analyzed and documented.", ref: 'Art. 9(9)' },
   { text: "Verified whether the bank's existing operational or ICT risk management system (e.g. the framework adopted for DORA) can integrate the Art. 9 requirements instead of creating a parallel, duplicative process.", ref: 'Art. 9(10)' },
 ];
 
@@ -41,7 +41,7 @@ const article15: Item[] = [
   { text: "Technical measures implemented for resilience against errors, faults and inconsistencies arising within the system itself or its operating environment.", ref: 'Art. 15(4)' },
   { text: 'Organisational measures implemented to support system resilience, complementary to technical measures.', ref: 'Art. 15(4)' },
   { text: 'Technical redundancy solutions considered and, where appropriate, implemented, including backup or fail-safe plans.', ref: 'Art. 15(4)' },
-  { text: "For systems that continue to learn after being placed on the market: measures implemented to minimise the risk of feedback loops and biases affecting subsequent decisions.", ref: 'Art. 15(4)' },
+  { text: "For systems that continue to learn after being placed on the market: measures implemented to minimize the risk of feedback loops and biases affecting subsequent decisions.", ref: 'Art. 15(4)' },
   { text: "Measures implemented for resilience against attempts by unauthorised third parties to alter the system's use, outputs or performance.", ref: 'Art. 15(5)' },
   { text: 'Specific technical measures implemented against data poisoning.', ref: 'Art. 15(5)' },
   { text: 'Specific technical measures implemented against model poisoning.', ref: 'Art. 15(5)' },
@@ -54,8 +54,8 @@ const article17: Item[] = [
   { text: 'Design, design control and design verification techniques and procedures established.', ref: 'Art. 17(1)(b)' },
   { text: 'Techniques, procedures and systematic actions for quality assurance of system development established.', ref: 'Art. 17(1)(c)' },
   { text: 'Procedures for examination, testing and validation before, during and after development, with a defined testing frequency.', ref: 'Art. 17(1)(d)' },
-  { text: 'Applicable technical specifications and harmonised standards applied, and, where these are not fully available, alternative means of ensuring compliance defined.', ref: 'Art. 17(1)(e)' },
-  { text: 'Data management system covering data acquisition, collection, analysis, labelling, storage, filtration, mining, aggregation and retention.', ref: 'Art. 17(1)(f)' },
+  { text: 'Applicable technical specifications and harmonized standards applied, and, where these are not fully available, alternative means of ensuring compliance defined.', ref: 'Art. 17(1)(e)' },
+  { text: 'Data management system covering data acquisition, collection, analysis, labeling, storage, filtration, mining, aggregation and retention.', ref: 'Art. 17(1)(f)' },
   { text: 'Risk management system compliant with Art. 9 implemented as an integral part of the QMS.', ref: 'Art. 17(1)(g)' },
   { text: 'Post-market monitoring system established and maintained.', ref: 'Art. 17(1)(h), Art. 72' },
   { text: 'Procedures for reporting serious incidents established.', ref: 'Art. 17(1)(i), Art. 73' },
@@ -63,7 +63,7 @@ const article17: Item[] = [
   { text: 'System for record-keeping and documentation retention established.', ref: 'Art. 17(1)(k)' },
   { text: 'Resource management, including measures to ensure security of supply.', ref: 'Art. 17(1)(l)' },
   { text: 'Accountability framework for management and other staff defined.', ref: 'Art. 17(1)(m)' },
-  { text: 'Proportionality of the QMS to the size of the organisation confirmed and documented, without reducing the required level of rigour and protection.', ref: 'Art. 17(2)' },
+  { text: 'Proportionality of the QMS to the size of the organization confirmed and documented, without reducing the required level of rigour and protection.', ref: 'Art. 17(2)' },
   { text: "Mapping completed of which QMS elements the bank can satisfy through existing internal governance arrangements under EU financial services law, and which three elements (risk management, post-market monitoring, incident reporting) must remain separate despite the partial exemption.", ref: 'Art. 17(4)' },
 ];
 
@@ -85,8 +85,8 @@ const faq = [
     a: "Systems used solely to confirm that a person is who they claim to be (one-to-one verification) are explicitly excluded from the definition of remote biometric identification in Annex III point 1. The high-risk classification concerns remote biometric identification and biometric categorisation, not standard identity verification during onboarding.",
   },
   {
-    q: 'Do the DORA TLPT penetration tests replace the Art. 15 AI Act cybersecurity requirements?',
-    a: "No, these are two separate obligations with different scope. TLPT under Art. 26 and 27 DORA, carried out on a cycle of at most three years following the TIBER-EU methodology, test the resilience of the entire ICT infrastructure supporting critical functions. Art. 15 AI Act requires the resilience of the specific AI system against data poisoning, model poisoning, adversarial attacks and confidentiality attacks already at the design stage. In practice, a well-designed TLPT scope should cover high-risk AI systems as part of critical infrastructure, but this does not exempt an organisation from the separate documentation required by Art. 15.",
+    q: 'Do the DORA TLPT penetration tests replace the AI Act Art. 15 cybersecurity requirements?',
+    a: "No, these are two separate obligations with different scope. TLPT under Art. 26 and 27 DORA, carried out on a cycle of at most three years following the TIBER-EU methodology, test the resilience of the entire ICT infrastructure supporting critical functions. AI Act Art. 15 requires the resilience of the specific AI system against data poisoning, model poisoning, adversarial attacks and confidentiality attacks already at the design stage. In practice, a well-designed TLPT scope should cover high-risk AI systems as part of critical infrastructure, but this does not exempt an organization from the separate documentation required by Art. 15.",
   },
 ];
 
@@ -114,7 +114,7 @@ export default function AIActAnnexIIIChecklistPage() {
             <div className="rounded-full bg-amber-500/15 border border-amber-500/30 px-4 py-1.5 mb-8 inline-block">
               <span className="text-[12px] font-medium tracking-[0.10em] text-amber-300 uppercase">Checklist</span>
             </div>
-            <h1 className="text-[32px] md:text-[52px] font-medium leading-[1.15] tracking-tight mb-6">
+            <h1 className="text-[32px] md:text-[52px] font-medium leading-[1.3] tracking-tight mb-6">
               <span className="block text-[#F6F2EA]">AI Act Annex III:</span>
               <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
                 readiness checklist for Tier-1 banks.
@@ -183,7 +183,7 @@ export default function AIActAnnexIIIChecklistPage() {
                 The key change for banks: <strong className="text-gray-900">the new application date for the main obligations for standalone high-risk systems under Annex III is 2 December 2027</strong>, 16 months later than originally planned. For AI systems embedded in products regulated under Annex I (a different category from the one covered in this document), the deadline was postponed to 2 August 2028.
               </p>
               <p>
-                This doesn&apos;t mean August 2026 has lost its significance. <strong className="text-gray-900">The Art. 50 transparency obligations were not postponed</strong> and apply from 2 August 2026 as originally scheduled, covering matters such as labelling synthetic content and informing individuals that they are interacting with an AI system. The only exception is the technical watermarking mechanism under Art. 50(2), for which a four-month transitional period until 2 December 2026 was introduced, but only for systems already on the market before August 2026.
+                This doesn&apos;t mean August 2026 has lost its significance. <strong className="text-gray-900">The Art. 50 transparency obligations were not postponed</strong> and apply from 2 August 2026 as originally scheduled, covering matters such as labeling synthetic content and informing individuals that they are interacting with an AI system. The only exception is the technical watermarking mechanism under Art. 50(2), for which a four-month transitional period until 2 December 2026 was introduced, but only for systems already on the market before August 2026.
               </p>
               <p>
                 Practical consequence for your internal timeline: you now have more time to implement Art. 9, 15 and 17 for Annex III systems than plans made before July 2026 assumed. This is a good moment to check whether your compliance project plan still assumes the outdated August deadline, and to rebalance priorities instead of rushing against a deadline that no longer applies.
@@ -250,10 +250,10 @@ export default function AIActAnnexIIIChecklistPage() {
                 DORA Art. 5 places responsibility for ICT risk management directly on the management body, as a non-delegable duty. A high-risk AI system fits the same logic: an immutable log of risk decisions under Art. 9 (who identified the risk, when, on what basis) also protects the people making the decision, not just formally satisfies the requirement.
               </p>
               <p>
-                DORA Art. 26 and 27 require threat-led penetration testing (TLPT), following the TIBER-EU methodology, at least once every three years for entities identified by the supervisor. A well-designed TLPT scope should cover high-risk AI systems as part of critical infrastructure, but this does not exempt an organisation from the separate Art. 15 requirements.
+                DORA Art. 26 and 27 require threat-led penetration testing (TLPT), following the TIBER-EU methodology, at least once every three years for entities identified by the supervisor. A well-designed TLPT scope should cover high-risk AI systems as part of critical infrastructure, but this does not exempt an organization from the separate Art. 15 requirements.
               </p>
               <p>
-                The revised ECB Guide to Internal Models, published in July 2025, introduced for the first time explicit supervisory expectations for machine-learning models used in internal models: they must be adequately explainable, and model complexity must be justified by its effectiveness. This is the same direction as Art. 15 AI Act: documentation and explainability of the system, not just its effectiveness.
+                The revised ECB Guide to Internal Models, published in July 2025, introduced for the first time explicit supervisory expectations for machine-learning models used in internal models: they must be adequately explainable, and model complexity must be justified by its effectiveness. This is the same direction as AI Act Art. 15: documentation and explainability of the system, not just its effectiveness.
               </p>
             </div>
           </div>

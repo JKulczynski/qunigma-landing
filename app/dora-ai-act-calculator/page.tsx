@@ -56,10 +56,10 @@ export default function DoraAiActCalculatorPage() {
             <div className="rounded-full bg-purple-500/15 border border-purple-500/30 px-4 py-1.5 mb-8 inline-block">
               <span className="text-[12px] font-medium tracking-[0.10em] text-purple-300 uppercase">Kalkulator ROI: DORA &amp; AI Act</span>
             </div>
-            <h1 className="text-[32px] md:text-[52px] font-medium leading-[1.15] tracking-tight mb-6">
-              <span className="block text-[#F6F2EA]">Nie kupujecie oszczędności.</span>
+            <h1 className="text-[32px] md:text-[52px] font-medium leading-[1.3] tracking-tight mb-6">
+              <span className="block text-[#F6F2EA]">Nie kupujesz oszczędności.</span>
               <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
-                Kupujecie ubezpieczenie od ryzyka.
+                Kupujesz ubezpieczenie od ryzyka.
               </span>
             </h1>
             <p className="text-[17px] text-white/70 max-w-[680px] mx-auto leading-relaxed mb-4">

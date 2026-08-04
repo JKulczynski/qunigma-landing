@@ -108,7 +108,7 @@ export default function EnHomePage() {
             <div className="rounded-full bg-white/10 border border-white/20 px-4 py-1.5 mb-8 inline-block">
               <span className="text-[13px] font-medium tracking-[0.08em] text-white/70 uppercase">EU-Native Active Cyber Defense</span>
             </div>
-            <h1 className="text-[38px] md:text-[72px] font-medium leading-[1.1] mb-6 tracking-tight">
+            <h1 className="text-[38px] md:text-[72px] font-medium leading-[1.25] mb-6 tracking-tight">
               <span className="block text-[#F6F2EA]">Passive detection</span>
               <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
                 is the past.

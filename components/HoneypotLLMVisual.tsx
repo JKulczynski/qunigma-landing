@@ -57,7 +57,7 @@ export function HoneypotLLMVisual() {
   return (
     <div className="relative flex flex-col items-center justify-center w-full h-full py-8 z-10 font-mono gap-7 px-2">
 
-      {/* Main row: attacker — line — honeypot | real system */}
+      {/* Main row: attacker, line, honeypot | real system */}
       <div className="flex items-center w-full px-5 gap-2">
 
         {/* Attacking AI */}

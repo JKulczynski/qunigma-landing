@@ -52,7 +52,7 @@ export default function AiSecurityReadinessAnalysisPage() {
             <div className="rounded-full bg-purple-500/15 border border-purple-500/30 px-4 py-1.5 mb-8 inline-block">
               <span className="text-[12px] font-medium tracking-[0.10em] text-purple-300 uppercase">AI Security Readiness Analysis</span>
             </div>
-            <h1 className="text-[32px] md:text-[52px] font-medium leading-[1.15] tracking-tight mb-6">
+            <h1 className="text-[32px] md:text-[52px] font-medium leading-[1.3] tracking-tight mb-6">
               <span className="block text-[#F6F2EA]">Your MTTAV Exposure Score,</span>
               <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F6F2EA 30%, #6D28D9 100%)' }}>
                 ready for tomorrow&apos;s board meeting.
@@ -219,31 +219,40 @@ export default function AiSecurityReadinessAnalysisPage() {
         </section>
 
         {/* Contact, always visible, including in print */}
-        <section className="bg-white py-16 px-6 w-full border-t border-gray-100 print:border-t-2 print:border-black print:py-6">
+        <section className="bg-white py-24 px-6 w-full border-t border-gray-100 print:border-t-2 print:border-black print:py-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-[20px] font-bold text-gray-900 mb-4 tracking-tight">Qunigma</h2>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-[14px] text-gray-600">
-              <a href="mailto:info@qunigma.ai" className="text-purple-700 hover:underline font-medium">
-                info@qunigma.ai
-              </a>
-              <span className="hidden sm:inline text-gray-300">·</span>
-              <a
-                href="https://www.linkedin.com/in/peter-mankowski-18065619/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-purple-700 hover:underline"
-              >
-                Peter Mankowski, LinkedIn
-              </a>
-              <span className="hidden sm:inline text-gray-300">·</span>
-              <a
-                href="https://www.linkedin.com/in/paulcebo/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-purple-700 hover:underline"
-              >
-                Paul Cebo, LinkedIn
-              </a>
+            <h2 className="text-[24px] md:text-[28px] font-bold text-gray-900 mb-4 tracking-tight print:hidden">Want to discuss your result with our team?</h2>
+            <p className="text-[16px] text-gray-600 mb-8 leading-relaxed print:hidden">
+              Reach out with your MTTAV Exposure Score, we will go through the sections with the highest exposure together and point out where to realistically start.
+            </p>
+            <a
+              href="mailto:info@qunigma.ai"
+              className="inline-block bg-[#6D28D9] text-white px-8 py-3.5 rounded-full text-[15px] font-semibold hover:bg-[#5B21B6] transition-colors mb-8 print:hidden"
+            >
+              info@qunigma.ai
+            </a>
+            <div className="flex flex-col items-center gap-2 text-[14px] text-gray-500">
+              <p className="font-semibold text-gray-700">Qunigma</p>
+              <p>info@qunigma.ai</p>
+              <div className="flex items-center gap-4 mt-1">
+                <a
+                  href="https://www.linkedin.com/in/peter-mankowski-18065619/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-700 hover:text-purple-900 underline underline-offset-2"
+                >
+                  Peter Mankowski, LinkedIn
+                </a>
+                <span className="w-px h-4 bg-gray-300" />
+                <a
+                  href="https://www.linkedin.com/in/paulcebo/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-700 hover:text-purple-900 underline underline-offset-2"
+                >
+                  Paul Cebo, LinkedIn
+                </a>
+              </div>
             </div>
           </div>
         </section>
