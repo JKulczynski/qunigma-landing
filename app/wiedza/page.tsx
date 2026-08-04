@@ -1,6 +1,7 @@
 import { SubpageNavbar } from '@/components/SubpageNavbar';
 import { Footer } from '@/components/Footer';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Wiedza | Qunigma, Analizy, Raporty, Webinaria AI Security',
@@ -35,6 +36,7 @@ const articles = [
     title: 'NHI: 25 minut od przejęcia tożsamości do wycieku danych',
     summary: 'Analiza realnych, udokumentowanych naruszeń NHI (Okta, Cloudflare, Microsoft, Snowflake/Santander). Wektory ataku, czasy eksfiltracji i luki w istniejących systemach ochrony.',
     readTime: '18 min',
+    slug: 'nhi-25-minut-przejecie-tozsamosci',
   },
   {
     category: 'White paper',
@@ -49,6 +51,7 @@ const articles = [
     title: 'AI Act Annex III: Checklist gotowości dla banków Tier-1',
     summary: '41-punktowy checklist gotowości na wymogi AI Act dla systemów wysokiego ryzyka w sektorze finansowym. Audyt Art. 9, 15 i 17 w jednym dokumencie.',
     readTime: '5 min',
+    slug: 'ai-act-annex-iii-checklist',
   },
   {
     category: 'Analiza',
@@ -112,23 +115,37 @@ export default function WiedzaPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {articles.map((article) => (
-                <article key={article.title} className="bg-white rounded-2xl border border-gray-100 p-8 flex flex-col hover:border-purple-200 hover:shadow-lg transition-all duration-200 cursor-pointer group">
-                  <span className={`self-start text-[11px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full mb-5 ${colorMap[article.categoryColor]}`}>
-                    {article.category}
-                  </span>
-                  <h3 className="text-[18px] font-bold text-gray-900 leading-tight mb-3 group-hover:text-purple-700 transition-colors">
-                    {article.title}
-                  </h3>
-                  <p className="text-[14px] text-gray-600 leading-relaxed mb-6 flex-grow">
-                    {article.summary}
-                  </p>
-                  <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
-                    <span className="text-[12px] text-gray-400 font-medium">{article.readTime} czytania</span>
-                    <span className="text-purple-600 text-[13px] font-semibold group-hover:translate-x-1 transition-transform inline-block">Czytaj →</span>
-                  </div>
-                </article>
-              ))}
+              {articles.map((article) => {
+                const cardClass = "bg-white rounded-2xl border border-gray-100 p-8 flex flex-col hover:border-purple-200 hover:shadow-lg transition-all duration-200 group h-full";
+                const content = (
+                  <>
+                    <span className={`self-start text-[11px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full mb-5 ${colorMap[article.categoryColor]}`}>
+                      {article.category}
+                    </span>
+                    <h3 className="text-[18px] font-bold text-gray-900 leading-tight mb-3 group-hover:text-purple-700 transition-colors">
+                      {article.title}
+                    </h3>
+                    <p className="text-[14px] text-gray-600 leading-relaxed mb-6 flex-grow">
+                      {article.summary}
+                    </p>
+                    <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
+                      <span className="text-[12px] text-gray-400 font-medium">{article.readTime} czytania</span>
+                      <span className="text-purple-600 text-[13px] font-semibold group-hover:translate-x-1 transition-transform inline-block">
+                        {article.slug ? 'Czytaj →' : 'Wkrótce'}
+                      </span>
+                    </div>
+                  </>
+                );
+                return article.slug ? (
+                  <Link key={article.title} href={`/wiedza/${article.slug}`} className={`${cardClass} cursor-pointer`}>
+                    {content}
+                  </Link>
+                ) : (
+                  <article key={article.title} className={`${cardClass} opacity-70`}>
+                    {content}
+                  </article>
+                );
+              })}
             </div>
           </div>
         </section>
