@@ -33,7 +33,7 @@ const articles = [
     category: 'Raport badawczy',
     categoryColor: 'red',
     title: 'NHI: 25 minut od przejęcia tożsamości do wycieku danych',
-    summary: 'Analiza 47 incydentów NHI z lat 2023–2024 w europejskich instytucjach finansowych. Wektory ataku, czasy eksfiltracji i luki w istniejących systemach ochrony.',
+    summary: 'Analiza realnych, udokumentowanych naruszeń NHI (Okta, Cloudflare, Microsoft, Snowflake/Santander). Wektory ataku, czasy eksfiltracji i luki w istniejących systemach ochrony.',
     readTime: '18 min',
   },
   {
@@ -47,7 +47,7 @@ const articles = [
     category: 'Checklist',
     categoryColor: 'amber',
     title: 'AI Act Annex III: Checklist gotowości dla banków Tier-1',
-    summary: '47-punktowy checklist gotowości na wymogi AI Act dla systemów wysokiego ryzyka w sektorze finansowym. Audyt Art. 9, 15 i 17 w jednym dokumencie.',
+    summary: '41-punktowy checklist gotowości na wymogi AI Act dla systemów wysokiego ryzyka w sektorze finansowym. Audyt Art. 9, 15 i 17 w jednym dokumencie.',
     readTime: '5 min',
   },
   {
