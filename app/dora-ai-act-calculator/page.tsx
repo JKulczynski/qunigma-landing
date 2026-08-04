@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   description: 'Policz orientacyjną ekspozycję regulacyjną i operacyjną Twojego banku: benchmark kosztu incydentu (IBM 2024) i zharmonizowana kara AI Act dla systemów wysokiego ryzyka. Transparentna metodologia, każda liczba z widocznym wzorem i źródłem.',
   alternates: {
     canonical: 'https://qunigma.ai/dora-ai-act-calculator',
+    languages: {
+      'pl-PL': 'https://qunigma.ai/dora-ai-act-calculator',
+      'en-US': 'https://qunigma.ai/en/dora-ai-act-calculator',
+    },
   },
 };
 

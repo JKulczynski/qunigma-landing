@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   description: 'Diagnostyczne pytania o Twoją architekturę, wyjaśnienie jak działają moduły Qunigma i czego nie obejmują, mapowanie DORA/AI Act/NIS2 na realne wymogi oraz live checklist złożoności integracji. Bez rejestracji.',
   alternates: {
     canonical: 'https://qunigma.ai/technical-specification-cto',
+    languages: {
+      'pl-PL': 'https://qunigma.ai/technical-specification-cto',
+      'en-US': 'https://qunigma.ai/en/technical-specification-cto',
+    },
   },
 };
 
