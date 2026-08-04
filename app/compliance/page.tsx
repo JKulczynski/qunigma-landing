@@ -36,9 +36,9 @@ const regulations = [
     name: 'AI Act Annex III',
     fullName: 'EU Artificial Intelligence Act, High-Risk Systems',
     status: 'upcoming' as const,
-    statusLabel: 'Deadline: 02.08.2026',
+    statusLabel: 'Wymogi od 02.12.2027',
     penalty: 'Do 3% obrotu lub 15M EUR',
-    summary: 'Systemy AI sklasyfikowane jako wysokiego ryzyka (m.in. scoring kredytowy, ocena ryzyka) muszą spełnić rygorystyczne wymogi cybersecurity, zarządzania jakością i zarządzania ryzykiem.',
+    summary: 'Systemy AI sklasyfikowane jako wysokiego ryzyka (m.in. scoring kredytowy, ocena ryzyka) muszą spełnić rygorystyczne wymogi cybersecurity, zarządzania jakością i zarządzania ryzykiem. Termin przesunięty pakietem Digital Omnibus (Rozporządzenie UE 2026/1744, w mocy od 27.07.2026); obowiązki transparentności z Art. 50 AI Act nadal obowiązują od 02.08.2026.',
     articles: [
       { art: 'Art. 9', req: 'System zarządzania ryzykiem AI', status: '✓ MTTAV risk scoring w czasie rzeczywistym' },
       { art: 'Art. 15', req: 'Dokładność, solidność i cybersecurity', status: '✓ Memory Guard SHA-256' },
@@ -111,7 +111,7 @@ export default function CompliancePage() {
               {[
                 { name: 'NIS2', date: 'Okt 2024', active: true },
                 { name: 'DORA', date: 'Sty 2025', active: true },
-                { name: 'AI Act Annex III', date: 'Sie 2026', active: false },
+                { name: 'AI Act Annex III', date: 'Gru 2027', active: false },
                 { name: 'CRA', date: 'Wrz 2026', active: false },
               ].map((item) => (
                 <div key={item.name} className={`rounded-xl p-5 border text-center ${item.active ? 'bg-emerald-950/40 border-emerald-700/40' : 'bg-amber-950/30 border-amber-700/30'}`}>

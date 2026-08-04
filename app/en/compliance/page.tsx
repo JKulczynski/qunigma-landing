@@ -36,9 +36,9 @@ const regulations = [
     name: 'AI Act Annex III',
     fullName: 'EU Artificial Intelligence Act, High-Risk Systems',
     status: 'upcoming' as const,
-    statusLabel: 'Deadline: 02.08.2026',
+    statusLabel: 'Requirements from 02.12.2027',
     penalty: 'Up to 3% of turnover or €15M',
-    summary: 'AI systems classified as high-risk (including credit scoring, risk assessment) must meet rigorous cybersecurity, quality management, and risk management requirements.',
+    summary: 'AI systems classified as high-risk (including credit scoring, risk assessment) must meet rigorous cybersecurity, quality management, and risk management requirements. Deadline pushed back by the Digital Omnibus package (Regulation (EU) 2026/1744, in force since 27.07.2026); AI Act Art. 50 transparency obligations still apply from 02.08.2026.',
     articles: [
       { art: 'Art. 9', req: 'AI risk management system', status: '✓ MTTAV real-time risk scoring' },
       { art: 'Art. 15', req: 'Accuracy, robustness and cybersecurity', status: '✓ Memory Guard SHA-256' },
@@ -111,7 +111,7 @@ export default function EnCompliancePage() {
               {[
                 { name: 'NIS2', date: 'Oct 2024', active: true },
                 { name: 'DORA', date: 'Jan 2025', active: true },
-                { name: 'AI Act Annex III', date: 'Aug 2026', active: false },
+                { name: 'AI Act Annex III', date: 'Dec 2027', active: false },
                 { name: 'CRA', date: 'Sep 2026', active: false },
               ].map((item) => (
                 <div key={item.name} className={`rounded-xl p-5 border text-center ${item.active ? 'bg-emerald-950/40 border-emerald-700/40' : 'bg-amber-950/30 border-amber-700/30'}`}>
